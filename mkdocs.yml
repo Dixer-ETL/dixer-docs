@@ -1,0 +1,80 @@
+site_name: Dixer
+site_author: Santiago De la Cruz
+site_url: https://dixer.stgo.do
+copyright: Copyright © 2020 Santiago De la Cruz - All Rights Reserved
+
+# Ignore warnings relative path when build
+nav:
+  - Home:
+    - Dixer: README.md
+    - Editions: Editions.md
+    - System requirements: System-requirements.md
+  - Getting started:
+    - Getting Dixer: documentation/Getting-Dixer.md
+    - Package config file (PCF): documentation/Package-config-file.md
+    - The key exec_workflow: documentation/Key-exec-workflow.md
+    - Create a variable: documentation/Create-a-variable.md
+    - Default variables: documentation/Default-variables.md
+    - Create an expression:
+      - Expressions:  documentation/expressions/README.md
+      - String methods: documentation/expressions/String-methods.md
+      - Int methods: documentation/expressions/Int-methods.md
+      - Float methods: documentation/expressions/Float-methods.md
+      - Bool methods: documentation/expressions/Bool-methods.md
+      - Datetime methods: documentation/expressions/Datetime-methods.md
+    - Create a connection: documentation/Create-a-connection.md
+    - Encodings: documentation/Encodings.md
+    - Jobs types:
+      - List jobs types: documentation/Jobs-types.md
+      - Data Migration (dataflow):
+        - Migrate from source to destination: documentation/jobs/dataflow/Migrate-from-source-to-destination.md
+        - Expression Mapping: documentation/jobs/dataflow/Expression-Mapping.md
+        - Skip Rule Expression: documentation/jobs/dataflow/Skip-Rule-Expression.md
+        - Execute a workflow for each row transferred:  documentation/jobs/dataflow/Foreach-row.md
+        - Supported data types: documentation/jobs/dataflow/Supported-datatypes.md
+        - Examples dataflow: documentation/jobs/dataflow/Examples-dataflow.md
+      - Exec a query (query): documentation/jobs/Exec-a-query.md
+      - Exec a process (process): documentation/jobs/Exec-a-process.md
+      - Exec a delay (delay): documentation/jobs/Exec-a-delay.md
+      - Make a HTTP request (httprequest): documentation/jobs/Make-a-HTTP-request.md
+      - Make a SOAP request (soaprequest): documentation/jobs/Make-a-SOAP-request.md
+      - File operations (fileoperation): documentation/jobs/File-operations.md
+      - FTP operations (ftpoperation): documentation/jobs/FTP-operations.md
+      - Send a mail (mail): documentation/jobs/Send-a-mail.md
+    - Handle Jobs events: documentation/Handle-jobs-events.md
+    - Time and date formatting: documentation/Time-and-date-formatting.md
+    - Log: documentation/Log.md
+    - Command line: documentation/Command-line.md
+    - Encrypt and decrypt the PCF: documentation/Encrypt-and-decrypt-the-PCF.md
+    - Error codes: documentation/Error-codes.md
+  - Download:
+    - Download: Download.md
+  - Pricing:
+    - Pricing: Pricing.md
+  - Support:
+    - Support: Support.md
+    - Security police: Security-police.md
+  - Release notes:
+    - Changelog: Changelog.md
+
+
+theme:
+    name: material
+    features:
+    - tabs
+    - instant
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.details
+  - markdown.extensions.toc:
+      permalink: true
+
+plugins:
+- search # necessary for search to work
+- minify:
+    minify_html: true
+- git-revision-date-localized
