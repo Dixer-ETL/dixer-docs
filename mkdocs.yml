@@ -1,5 +1,6 @@
 site_name: Dixer
 site_author: Santiago De la Cruz
+repo_name: xhit/dixer-docs
 repo_url: https://github.com/xhit/dixer-docs/
 edit_uri: blob/master/docs/
 site_url: https://dixer.stgo.do
@@ -11,6 +12,7 @@ nav:
     - Dixer: README.md
     - Editions: Editions.md
     - System requirements: System-requirements.md
+    - Coming soon: Coming-soon.md
   - Getting started:
     - Getting Dixer: documentation/Getting-Dixer.md
     - Package config file (PCF): documentation/Package-config-file.md
