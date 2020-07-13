@@ -3,7 +3,7 @@
 Dixer has a couple options depending on your needs:
 
 1. Evaluation: a edition to evaluate the product. Practically is free for PCF with 25 seconds to do all jobs.
-2. Buy an [edition](Editions.md) to a specific host and operative system.
+2. Buy an [edition](Editions.md) to a specific host, operative system and hostname.
 
 Here is the pricing model of Dixer based in editions:
 
@@ -22,4 +22,4 @@ A one-time payment license that includes one year of updates.
 When buy it, send a mail to [`support+lic@stgo.do`](mailto:support+lic@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply with a link will be sent with a license and binary file attached to it.
 
 !!! tip
-    Please use the [evaluation binary](Download.md) before buy a license.
+    Please use the [evaluation binary](Download.md) before buying a license.
