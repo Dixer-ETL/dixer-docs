@@ -1,5 +1,7 @@
 site_name: Dixer
 site_author: Santiago De la Cruz
+repo_url: https://github.com/xhit/dixer-docs/
+edit_uri: blob/master/docs/
 site_url: https://dixer.stgo.do
 copyright: Copyright © 2020 Santiago De la Cruz - All Rights Reserved
 
