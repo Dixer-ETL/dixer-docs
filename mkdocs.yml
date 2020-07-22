@@ -45,6 +45,7 @@ nav:
       - File operations (fileoperation): documentation/jobs/File-operations.md
       - FTP operations (ftpoperation): documentation/jobs/FTP-operations.md
       - Send a mail (mail): documentation/jobs/Send-a-mail.md
+      - For Loop (for): documentation/jobs/for.md
     - Handle Jobs events: documentation/Handle-jobs-events.md
     - Time and date formatting: documentation/Time-and-date-formatting.md
     - Log: documentation/Log.md
