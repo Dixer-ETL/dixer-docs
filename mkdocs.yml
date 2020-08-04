@@ -67,7 +67,7 @@ theme:
     name: material
     features:
     - tabs
-    - instant
+    # - instant
 
 markdown_extensions:
   - admonition
