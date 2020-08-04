@@ -1,9 +1,11 @@
 # Dixer documentation
 
+Documentation of [Dixer](https://dixer.stgo.do), the little but complete ETL and pipelines tool!
+
 To build this documentation:
 
 - mkdocs 1.1.2
-- mkdocs material 5.4.0 `pip install mkdocs-material`
+- mkdocs material 5.5.2 `pip install mkdocs-material`
 - python 3.8.3
 
 ## Plugins
