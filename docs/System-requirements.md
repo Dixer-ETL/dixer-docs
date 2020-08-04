@@ -24,15 +24,15 @@ Dixer officially support the following OS and Archs:
 
 ### Windows
 
-Windows Server 2008 R2 and higher or Windows 7 and higher. x86 and x64.
+Windows Server 2008 R2 and higher or Windows 7 and higher. Only x64.
 
 ### Linux
 
-Kernel version 2.6.23 or later. x86 and x64.
+Kernel version 2.6.23 or later. Only x64.
 
 ### macOS
 
-macOS (OS X) 10.11 or higher. x64 only.
+macOS (OS X) 10.11 or higher. Only x64.
 
 ## Not officially supported OS and archs
 
@@ -40,10 +40,12 @@ Dixer offer evaluation binaries in these OS and Archs, but aren't officially sup
 
 ### Windows (others)
 
+* x86
 * ARMv7 binary
 
 ### Linux (others)
 
+* x86
 * ARM (v5,v6,v7,v8): requires newer kernels at least v3.1
 * MIPS, MIPSLE, MIPS64
 * MIPS64LE: kernel 4.1 fails, works 4.8
@@ -79,3 +81,6 @@ Kernel version 4.6 or higher. x64 only.
 ### AIX
 
 PPC64 arch only.
+
+!!! info
+    PPC64 and PPC64LE only for POWER8 (ISA v2.07 instructions).

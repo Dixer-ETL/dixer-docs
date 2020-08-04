@@ -10,38 +10,28 @@ Latest stable version: [**1.0.0**](Changelog.md#100-_-july-09-2020)
 
 ??? tip "Editions"
     === "White"
-        - [x86](../dl/1.0.0/white/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/windows/dixer_386.exe" target="_blank">File Hash</a>**
         - [x64](../dl/1.0.0/white/windows/dixer_amd64.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/windows/dixer_amd64.exe" target="_blank">File Hash</a>**
     === "Sky"
-        - [x86](../dl/1.0.0/sky/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/windows/dixer_386.exe" target="_blank">File Hash</a>**
         - [x64](../dl/1.0.0/sky/windows/dixer_amd64.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/windows/dixer_amd64.exe" target="_blank">File Hash</a>**
     === "Red"
-        - [x86](../dl/1.0.0/red/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
         - [x64](../dl/1.0.0/red/windows/dixer_amd64.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/red/windows/dixer_amd64.exe" target="_blank">File Hash</a>**
     === "Green"
-        - [x86](../dl/1.0.0/green/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
         - [x64](../dl/1.0.0/green/windows/dixer_amd64.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/green/windows/dixer_amd64.exe" target="_blank">File Hash</a>**
     === "Full"
-        - [x86](../dl/1.0.0/full/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
         - [x64](../dl/1.0.0/full/windows/dixer_amd64.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/full/windows/dixer_amd64.exe" target="_blank">File Hash</a>**
 
 ### Linux
 
 ??? tip "Editions"
     === "White"
-        - [x86](../dl/1.0.0/white/linux/dixer_386) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_386" target="_blank">File Hash</a>**
         - [x64](../dl/1.0.0/white/linux/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_amd64" target="_blank">File Hash</a>**
     === "Sky"
-        - [x86](../dl/1.0.0/sky/linux/dixer_386) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_386" target="_blank">File Hash</a>**
         - [x64](../dl/1.0.0/sky/linux/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_amd64" target="_blank">File Hash</a>**
     === "Red"
-        - [x86](../dl/1.0.0/red/linux/dixer_386) &nbsp;&nbsp;&nbsp; *coming soon*
         - [x64](../dl/1.0.0/red/linux/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/red/linux/dixer_amd64" target="_blank">File Hash</a>**
     === "Green"
-        - [x86](../dl/1.0.0/green/linux/dixer_386) &nbsp;&nbsp;&nbsp; *coming soon*
         - [x64](../dl/1.0.0/green/linux/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/green/linux/dixer_amd64" target="_blank">File Hash</a>**
     === "Full"
-        - [x86](../dl/1.0.0/full/linux/dixer_386) &nbsp;&nbsp;&nbsp; *coming soon*
         - [x64](../dl/1.0.0/full/linux/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/full/linux/dixer_amd64" target="_blank">File Hash</a>**
 
 ### macOS
@@ -64,14 +54,23 @@ Latest stable version: [**1.0.0**](Changelog.md#100-_-july-09-2020)
 
 ??? tip "Editions"
     === "White"
+        - [x86](../dl/1.0.0/white/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/windows/dixer_386.exe" target="_blank">File Hash</a>**
         - [ARMv7](../dl/1.0.0/white/windows/dixer_armV7.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/windows/dixer_armV7.exe" target="_blank">File Hash</a>**
     === "Sky"
+        - [x86](../dl/1.0.0/sky/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/windows/dixer_386.exe" target="_blank">File Hash</a>**
         - [ARMv7](../dl/1.0.0/white/windows/dixer_armV7.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/windows/dixer_armV7.exe" target="_blank">File Hash</a>**
+    === "Red"
+        - [x86](../dl/1.0.0/red/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
+    === "Green"
+        - [x86](../dl/1.0.0/green/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
+    === "Full"
+        - [x86](../dl/1.0.0/full/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
 
 ### Linux
 
 ??? tip "Editions"
     === "White"
+        - [x86](../dl/1.0.0/white/linux/dixer_386) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_386" target="_blank">File Hash</a>**
         - [ARMv5](../dl/1.0.0/white/linux/dixer_armV5) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_armV5" target="_blank">File Hash</a>**
         - [ARMv6](../dl/1.0.0/white/linux/dixer_armV6) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_armV6" target="_blank">File Hash</a>**
         - [ARMv7](../dl/1.0.0/white/linux/dixer_armV7) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_armV7" target="_blank">File Hash</a>**
@@ -84,6 +83,7 @@ Latest stable version: [**1.0.0**](Changelog.md#100-_-july-09-2020)
         - [PPC64LE](../dl/1.0.0/white/linux/dixer_ppc64le) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_ppc64le" target="_blank">File Hash</a>**
         - [S/390x](../dl/1.0.0/white/linux/dixer_s390x) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/white/linux/dixer_s390x" target="_blank">File Hash</a>**
     === "Sky"
+        - [x86](../dl/1.0.0/sky/linux/dixer_386) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_386" target="_blank">File Hash</a>**
         - [ARMv5](../dl/1.0.0/sky/linux/dixer_armV5) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_armV5" target="_blank">File Hash</a>**
         - [ARMv6](../dl/1.0.0/sky/linux/dixer_armV6) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_armV6" target="_blank">File Hash</a>**
         - [ARMv7](../dl/1.0.0/sky/linux/dixer_armV7) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_armV7" target="_blank">File Hash</a>**
@@ -95,6 +95,12 @@ Latest stable version: [**1.0.0**](Changelog.md#100-_-july-09-2020)
         - [PPC64](../dl/1.0.0/sky/linux/dixer_ppc64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_ppc64" target="_blank">File Hash</a>**
         - [PPC64LE](../dl/1.0.0/sky/linux/dixer_ppc64le) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_ppc64le" target="_blank">File Hash</a>**
         - [S/390x](../dl/1.0.0/sky/linux/dixer_s390x) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.0/sky/linux/dixer_s390x" target="_blank">File Hash</a>**
+    === "Red"
+        - [x86](../dl/1.0.0/red/linux/dixer_386) &nbsp;&nbsp;&nbsp; *coming soon*
+    === "Green"
+        - [x86](../dl/1.0.0/green/linux/dixer_386) &nbsp;&nbsp;&nbsp; *coming soon*
+    === "Full"
+        - [x86](../dl/1.0.0/full/linux/dixer_386) &nbsp;&nbsp;&nbsp; *coming soon*
 
 ### AIX
 

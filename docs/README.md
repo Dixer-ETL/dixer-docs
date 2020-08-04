@@ -2,7 +2,7 @@
 
 ## What is Dixer?
 
-Dixer is a tool to that can be used to execute a wide range of data transformation and data migration task. Also includes jobs for performing workflow functions like sending email messages, file and FTP operations, data sources and destinations, delay, make a HTTP or SOAP request and more.
+Dixer is a tool to that can be used to execute a wide range of ETL, data transformation and data migration task. Also includes jobs for performing workflow functions like sending email messages, file and FTP operations, data sources and destinations, delay, make a HTTP or SOAP request and more.
 
 ## Documentation
 

@@ -15,6 +15,7 @@
     * [File operations (fileoperation)](jobs/File-operations.md)
     * [FTP operations (ftpoperation)](jobs/FTP-operations.md)
     * [Send a mail (mail)](jobs/Send-a-mail.md)
+    * [For loop (for)](jobs/For.md)
 * [Handle Jobs events](Handle-jobs-events.md)
 * [Time and date formatting](Time-and-date-formatting.md)
 * [Log](Log.md)
