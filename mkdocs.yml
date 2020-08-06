@@ -53,6 +53,8 @@ nav:
     - Error codes: documentation/Error-codes.md
   - Download:
     - Download: Download.md
+    - Older versions:
+      - '1.0.0': olderversions/1.0.0.md
   - Pricing:
     - Pricing: Pricing.md
   - Support:
