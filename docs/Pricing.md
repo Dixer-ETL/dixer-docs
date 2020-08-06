@@ -15,7 +15,7 @@ Here is the pricing model of Dixer based in editions:
 | [Green](Editions.md#green-edition) | USD $149 | [Buy](https://www.paypal.me/hit/149) |
 | [Full](Editions.md#full-edition)   | USD $249 | [Buy](https://www.paypal.me/hit/249) |
 
-License is only supported for [officially supported OS and archs](System-requirements.md#officially-supported-os-and-archs).
+License is only supported for Windows, Linux and macOS.
 
 A one-time payment license that includes one year of updates.
 
