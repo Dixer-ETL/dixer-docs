@@ -8,12 +8,11 @@ copyright: Copyright © 2020 Santiago De la Cruz - All Rights Reserved
 
 # Ignore warnings relative path when build
 nav:
-  - Home:
-    - Dixer: README.md
+  - Home: index.md
+  - Getting started:
+    - What is Dixer?: Getting-started.md
     - Editions: Editions.md
     - System requirements: System-requirements.md
-    - Coming soon: Coming-soon.md
-  - Getting started:
     - Getting Dixer: documentation/Getting-Dixer.md
     - Package config file (PCF): documentation/Package-config-file.md
     - The key exec_workflow: documentation/Key-exec-workflow.md
@@ -61,6 +60,8 @@ nav:
     - Security police: Security-police.md
   - Release notes:
     - Changelog: Changelog.md
+  - Coming soon:
+    - Coming soon: Coming-soon.md
 
 
 theme:
@@ -77,6 +78,9 @@ markdown_extensions:
   - pymdownx.details
   - markdown.extensions.toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
 - search # necessary for search to work
