@@ -42,11 +42,11 @@ Latest stable version: [**1.0.1**](Changelog.md#101-_-august-06-2020)
     === "Sky"
         - [x64](../dl/1.0.1/sky/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.1/sky/darwin/dixer_amd64" target="_blank">File Hash</a>**
     === "Red"
-        - [x64](../dl/1.0.1/red/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; *coming soon*
+        - [x64](../dl/1.0.1/red/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.1/red/darwin/dixer_amd64" target="_blank">File Hash</a>**
     === "Green"
-        - [x64](../dl/1.0.1/green/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; *coming soon*
+        - [x64](../dl/1.0.1/green/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.1/green/darwin/dixer_amd64" target="_blank">File Hash</a>**
     === "Full"
-        - [x64](../dl/1.0.1/full/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; *coming soon*
+        - [x64](../dl/1.0.1/full/darwin/dixer_amd64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.0.1/full/darwin/dixer_amd64" target="_blank">File Hash</a>**
 
 ## Not officially supported platforms
 
