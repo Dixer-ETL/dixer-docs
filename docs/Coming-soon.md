@@ -31,3 +31,7 @@ With this, you can for example create a `process` job for each OS and group them
 ## New destination for `dataflow`: Markdown table
 
 Allow to stream data to a markdown table.
+
+## New destination for `dataflow`: HTML table
+
+Allow to stream data to a html table.
