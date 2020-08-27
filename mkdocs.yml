@@ -55,6 +55,7 @@ nav:
     - Download: Download.md
     - Older versions:
       - '1.0.0': olderversions/1.0.0.md
+      - '1.0.1': olderversions/1.0.1.md
   - Pricing:
     - Pricing: Pricing.md
   - Support:
