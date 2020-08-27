@@ -24,7 +24,7 @@ The custom duration is a string defined with time parts:
 - `d`: day.
 - `w`: week.
 
-The format should be from major to minor time part. For example, for 90 seconds you can set:
+For example, for 90 seconds you can set:
 
 ```
 90s

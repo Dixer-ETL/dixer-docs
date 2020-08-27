@@ -16,6 +16,7 @@ This version upgrade the runtime to `go1.14.7`.
 * Output of job type `process` is saved when timeout exceeded or unexpected exit code is returned.
 * Job type `for` now is called `bucle`. The old name is deprecated. This version is the last to support it.
 * Performance improvements in job type `delay`.
+* The `custom_duration` key in `delay` job type can accept the duration doesn't matter the order of units.
 * Performance improvements inserting in Oracle table when there is a destination column with data type `INTERVAL DAY TO SECOND`.
 
 ### Bug Fixes
