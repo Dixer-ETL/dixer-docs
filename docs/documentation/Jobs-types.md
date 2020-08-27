@@ -13,7 +13,7 @@ The supported are:
 - [`fileoperation`](jobs/File-operations.md): to execute a file system task (copy, move, rename, etc...).
 - [`ftpoperation`](jobs/FTP-operations.md): to execute a FTP operation (upload, download, etc...).
 - [`mail`](jobs/Send-a-mail.md): to send a email.
-- [`for`](jobs/For.md): to execute a workflow in bucle.
+- [`bucle`](jobs/Bucle.md): to execute a workflow in bucle.
 
 !!! note "Important note"
         All job types have these keys:

@@ -1,6 +1,6 @@
-# For loop
+# Bucle
 
-Dixer provides a way to do a bucle like a for with `for` job type.
+Dixer provides a way to do a bucle like a for with `bucle` job type.
 
 This job type execute a workflow with configured init and iteracions values.
 
@@ -20,8 +20,8 @@ With infinite
 ```toml
 [[jobs]]
 id = '185'
-name = 'Infinite FOR'
-type = 'for'
+name = 'Infinite BUCLE'
+type = 'bucle'
 ignore_error = false
 disable = false
 infinite = true
@@ -33,8 +33,8 @@ Without infinite
 ```toml
 [[jobs]]
 id = '47'
-name = 'FOR'
-type = 'for'
+name = 'BUCLE'
+type = 'bucle'
 ignore_error = false
 disable = false
 init = 1

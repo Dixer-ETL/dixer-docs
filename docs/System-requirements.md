@@ -49,8 +49,9 @@ Dixer offer evaluation binaries in these OS and Archs, but aren't officially sup
 * ARM (v5,v6,v7,v8): requires newer kernels at least v3.1
 * MIPS, MIPSLE, MIPS64
 * MIPS64LE: kernel 4.1 fails, works 4.8
-* PPC64 and PPC64LE
+* PPC64 and PPC64LE. POWER8 and POWER9
 * S/390x
+* RISC-V 64 bits
 
 ### OpenBSD
 
@@ -80,7 +81,4 @@ Kernel version 4.6 or higher. x64 only.
 
 ### AIX
 
-PPC64 arch only.
-
-!!! info
-    PPC64 and PPC64LE only for POWER8 (ISA v2.07 instructions).
+PPC64 arch only. POWER8 and POWER9.
