@@ -14,6 +14,7 @@ The supported are:
 - [`ftpoperation`](jobs/FTP-operations.md): to execute a FTP operation (upload, download, etc...).
 - [`mail`](jobs/Send-a-mail.md): to send a email.
 - [`bucle`](jobs/Bucle.md): to execute a workflow in bucle.
+- [`jobsgroup`](jobs/Jobs-group.md): to execute a workflow like a unique job.
 
 !!! note "Important note"
         All job types have these keys:
