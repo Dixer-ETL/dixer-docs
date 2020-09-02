@@ -7,10 +7,12 @@ This version upgrade the runtime to `go1.14.8`.
 ### New
 * New destination: HTML Table.
 * New destination: Markdown Table.
+* New job type [`jobsgroup`](documentation/jobs/Jobs-group.md).
+* Ability to execute a job or complete worlflow in defined comma separated list of OS.
 * Allow unescape xml element values with new mapping key `source_xml_unescape`.
 * Allow CDATA in destination XML element value with new key `destination_xml_cdata`.
 * Added optimized binaries for POWER9 in archs ppc64 and ppc64le and Operative Systems Linux and AIX.
-* Added experimental binary RISC-V 64 bit for Linux. (Not support FirebirdSQL).
+* Added experimental binary RISC-V 64 bit for Linux. (Without support for FirebirdSQL).
 
 ### Enhancement
 * Output of job type `process` is saved when timeout exceeded or unexpected exit code is returned.

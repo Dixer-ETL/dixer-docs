@@ -24,3 +24,4 @@ The supported are:
         - `type`: mandatory type of the job. String.
         - `disable`: optional to enable or disable the job. Bool. Default `false`.
         - `ignore_error`: optional key to exit or not when an error happens. Bool. Default `false`.
+        - `os`: optional key to defined a [comma separated list of operative system](OS-list.md) that job can run. If empty, no OS restriction. String.

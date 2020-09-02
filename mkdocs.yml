@@ -45,6 +45,7 @@ nav:
       - FTP operations (ftpoperation): documentation/jobs/FTP-operations.md
       - Send a mail (mail): documentation/jobs/Send-a-mail.md
       - Bucle (bucle): documentation/jobs/Bucle.md
+      - Jobs group (jobsgroup): documentation/jobs/Jobs-group.md
     - Handle Jobs events: documentation/Handle-jobs-events.md
     - Time and date formatting: documentation/Time-and-date-formatting.md
     - Log: documentation/Log.md

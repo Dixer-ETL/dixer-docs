@@ -59,6 +59,7 @@ Dixer offers a variety of features. The importans are called **Jobs** with can d
 * Security: you can encrypt your package and execute with a password for execution.
 * Encrypt password connections: you can encrypt your password of connections to avoid others see your passwords in package file.
 * Multiple formats for your package file: You can create your package in TOML, YAML or JSON, choose your favorite!
+* Ability to execute a job or complete workflow in a list of defined operative systems.
 
 ## Supported sources and destinations
 
