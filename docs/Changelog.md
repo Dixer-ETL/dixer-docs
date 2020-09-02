@@ -2,7 +2,7 @@
 
 ## 1.1.0 <small>_ UNRELEASED</small>
 
-This version upgrade the runtime to `go1.14.7`.
+This version upgrade the runtime to `go1.14.8`.
 
 ### New
 * New destination: HTML Table.
@@ -26,7 +26,7 @@ This version upgrade the runtime to `go1.14.7`.
 ### Libraries upgrades
 * FirebirdSQL driver upgraded to commit [0cfab755829a](https://github.com/nakagami/firebirdsql/tree/0cfab755829a)
 * go-toml library upgraded to version [v1.8.0](https://github.com/pelletier/go-toml/tree/v1.8.0)
-* SQLite3 driver upgraded to version [v1.14.1](https://github.com/mattn/go-sqlite3/tree/v1.14.1)
+* SQLite3 driver upgraded to version [v1.14.2](https://github.com/mattn/go-sqlite3/tree/v1.14.2)
 * go-simple-mail library upgraded to version [v2.5.1](https://github.com/xhit/go-simple-mail/tree/v2.5.1)
 * xml-stream-parser library upgraded to version [v1.4.0](https://github.com/tamerh/xml-stream-parser/tree/v1.4.0)
 * ftp library upgraded to commit [39e3779af0db](https://github.com/jlaffaye/ftp/tree/39e3779af0db)
