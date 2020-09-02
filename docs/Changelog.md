@@ -8,6 +8,8 @@ This version upgrade the runtime to `go1.14.8`.
 * New destination: HTML Table.
 * New destination: Markdown Table.
 * New job type [`jobsgroup`](documentation/jobs/Jobs-group.md).
+* New job type [`compress`](documentation/jobs/Compress.md).
+* New job type [`decompress`](documentation/jobs/Decompress.md).
 * Ability to execute a job or complete worlflow in defined comma separated list of OS.
 * Allow unescape xml element values with new mapping key `source_xml_unescape`.
 * Allow CDATA in destination XML element value with new key `destination_xml_cdata`.

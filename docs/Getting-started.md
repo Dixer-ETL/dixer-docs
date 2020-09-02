@@ -46,6 +46,9 @@ Dixer offers a variety of features. The importans are called **Jobs** with can d
 * SOAP request
 * Delay
 * Bucle of workflow
+* Execute a group of jobs or workflow
+* Compress
+* Decompress
 
 ### Aditional features
 

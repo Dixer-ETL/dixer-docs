@@ -8,7 +8,7 @@ Keys
 
 - `init`: Optional. The init value of for. Int. Default `0`.
 - `init_var`: Optional. Variable with the init value. String.
-- `iterations`: Optional. The en value from init value of for. Int. Default `0`.
+- `iterations`: Optional. The end value from init value of for. Int. Default `0`.
 - `iterations_var`: Optional. Variable with the iterations value. String.
 - `infinite`: Optional. Define if loop is infinite. Bool. Default `false`.
 - `infinite_var`: Optional. Variable with the infinite value. String.

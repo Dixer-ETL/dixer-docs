@@ -17,6 +17,8 @@
     * [Send a mail (mail)](jobs/Send-a-mail.md)
     * [For loop (for)](jobs/For.md)
     * [Jobs group (for)](jobs/Jobs-group.md)
+    * [Compress (compress)](jobs/Compress.md)
+    * [Decompress (decompress)](jobs/Decompress.md)
 * [Handle Jobs events](Handle-jobs-events.md)
 * [Time and date formatting](Time-and-date-formatting.md)
 * [Log](Log.md)
