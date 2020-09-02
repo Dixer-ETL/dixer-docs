@@ -17,6 +17,8 @@ Dixer allows to migrate data from and to:
 * Ragged Right File
 * Fixed Width File
 * SAP HANA DB
+* HTML Table (only destination)
+* Markdown Table (only destination)
 
 **Microsoft SQL Server requires TLS 1.2 (MSSQL 2008 SP4 or superior, MSSQL 2008 R2 SP3 or superior)*
 
@@ -47,6 +49,8 @@ The type is `dataflow`.
     - `source_json_array_index`: Optional. To define the index to get from a JSON array type value when source is JSON. int
     - `destination_json_number_as_string`: Optional. Use to define if number input should be a string in JSON object destination. Bool. Default `false`.
     - `destination_json_bool_as_string`: Optional. Use to define if bool input should be a string in JSON object destination. Bool. Default `false`.
+    - `source_xml_unescape`: Optional. Use to define if value from xml source should be unescaped. Bool. Default `false`.
+    - `destination_xml_cdata`: Optional. Use to define if value to xml source should be CDATA. Bool. Default `false`.
 - `skip`: Optional. To define a rule with an expression to skip rows when match. Object
     - `rule`: Optional. To define expression to skip rows if match. String.
     - `rule_var`: Optional. To set variable with defined expression to skip rows if match. String.
@@ -140,6 +144,12 @@ Keys for `destination_config`:
 
 - None
 
+## HTML Table
+
+Keys for `destination_config`:
+
+- None
+
 ## Databases
 
 Keys for `source_config`:
@@ -211,7 +221,7 @@ In Microsoft SQL Server, is possible to use the [Bulk Copy Fast Load Feature](ht
 
 ## Mapping
 
-The mapping values for `column_source` and `column_destination` is different depending the source and destination.
+The mapping values for `column_source` and `column_destination` is different depending the source and destination. See the mapping keys in [Keys for job `dataflow`](#keys-for-job-dataflow).
 
 For `column_source` in CSV, Ragged Right and Fixed Width are the index of columns in the file, starting with 0.
 

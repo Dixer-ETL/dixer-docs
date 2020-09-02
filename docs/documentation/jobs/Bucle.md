@@ -1,6 +1,6 @@
-# For loop
+# Bucle
 
-Dixer provides a way to do a bucle like a for with `for` job type.
+Dixer provides a way to do a bucle like a for with `bucle` job type.
 
 This job type execute a workflow with configured init and iteracions values.
 
@@ -8,7 +8,7 @@ Keys
 
 - `init`: Optional. The init value of for. Int. Default `0`.
 - `init_var`: Optional. Variable with the init value. String.
-- `iterations`: Optional. The en value from init value of for. Int. Default `0`.
+- `iterations`: Optional. The end value from init value of for. Int. Default `0`.
 - `iterations_var`: Optional. Variable with the iterations value. String.
 - `infinite`: Optional. Define if loop is infinite. Bool. Default `false`.
 - `infinite_var`: Optional. Variable with the infinite value. String.
@@ -20,8 +20,8 @@ With infinite
 ```toml
 [[jobs]]
 id = '185'
-name = 'Infinite FOR'
-type = 'for'
+name = 'Infinite BUCLE'
+type = 'bucle'
 ignore_error = false
 disable = false
 infinite = true
@@ -33,8 +33,8 @@ Without infinite
 ```toml
 [[jobs]]
 id = '47'
-name = 'FOR'
-type = 'for'
+name = 'BUCLE'
+type = 'bucle'
 ignore_error = false
 disable = false
 init = 1

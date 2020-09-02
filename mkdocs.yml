@@ -44,7 +44,10 @@ nav:
       - File operations (fileoperation): documentation/jobs/File-operations.md
       - FTP operations (ftpoperation): documentation/jobs/FTP-operations.md
       - Send a mail (mail): documentation/jobs/Send-a-mail.md
-      - For Loop (for): documentation/jobs/for.md
+      - Bucle (bucle): documentation/jobs/Bucle.md
+      - Jobs group (jobsgroup): documentation/jobs/Jobs-group.md
+      - Compress (compress): documentation/jobs/Compress.md
+      - Decompress (decompress): documentation/jobs/Decompress.md
     - Handle Jobs events: documentation/Handle-jobs-events.md
     - Time and date formatting: documentation/Time-and-date-formatting.md
     - Log: documentation/Log.md
@@ -55,6 +58,7 @@ nav:
     - Download: Download.md
     - Older versions:
       - '1.0.0': olderversions/1.0.0.md
+      - '1.0.1': olderversions/1.0.1.md
   - Pricing:
     - Pricing: Pricing.md
   - Support:
@@ -70,7 +74,7 @@ theme:
     name: material
     features:
     - tabs
-    # - instant
+    - instant
 
 markdown_extensions:
   - admonition

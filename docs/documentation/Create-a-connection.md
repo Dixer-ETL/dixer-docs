@@ -8,7 +8,7 @@ A third key `name` is optional.
 
 The `type` key is the type of the connection.
 
-The keys `encoding` and `encoding_var` are use to set the encoding of the connections type `csv`, `json`, `xml`, `ragged-right` and `fixed-width`. See encoding list supported: [Encodings](Encodings.md)
+The keys `encoding` and `encoding_var` are use to set the encoding of the connections type `csv`, `json`, `xml`, `ragged-right` and `fixed-width`. See encoding list supported: [Encodings](Encodings.md). If not set, default is `UTF-8`.
 
 !!! note
     You can use keys needed only. If for example the path of a file is a variable (`path_var` key) then isn't neccesary to use the `path` key.
@@ -33,6 +33,8 @@ The keys `encoding` and `encoding_var` are use to set the encoding of the connec
 - [`http`](#connection-to-http-url)
 - [`smtp`](#connection-to-smtp-server)
 - [`sap-hdb`](#connection-to-sap-hana-database)
+- [`html-table`](#connection-to-html-table)
+- [`markdown-table`](#connection-to-markdown-table)
 
 ## Connection to CSV file
 
@@ -1208,7 +1210,7 @@ Keys:
 - `auth_type_var`: optional. Key to set a variable with the authentication type. String.
 
 !!! warning
-    `timeout` key is ignored for job type `soaprequest`. Also Digest authentication is not supported for `soaprequest`.
+    Digest authentication is not supported for `soaprequest`.
 
     For `soaprequest`, if the wsdl file is local, the url should be `file://` and the path of wsdl file. Example: `file://C:/WSDL_Directory/ipservice.asmx`
 
@@ -1471,3 +1473,110 @@ Examples:
 
 !!! note
     In these examples the keys `port_var`, `schema_var`, `host_var`, `username_var`, `password_var`, `password_encrypted` and `password_encrypted_var` can be omitted because are empty.
+  
+## Connection to HTML Table
+
+Keys:
+
+- `path`: the path of file. String.
+- `path_var`: key to set a variable with the path. String.
+- `encoding`: encoding of file. String. Default is `UTF-8` if not is specified.
+- `encoding_var`: key to set a variable with the encoding. String.
+
+Examples:
+
+=== "TOML"
+    ```toml
+    [[connections]]
+    id = 'html-table-conn1'
+    type = 'html-table'
+    name = 'HTML TABLE CONNECTION'
+    path = 'test/out_files/test.html'
+    path_var = ''
+    encoding = 'UTF-8'
+    encoding_var = ''
+    ```
+
+=== "YAML"
+    ```yaml
+    connections:
+      - id: html-table-conn1
+        type: html-table
+        name: HTML TABLE CONNECTION
+        path: test/out_files/test.html
+        path_var: ''
+        encoding: 'UTF-8'
+        encoding_var: ''
+    ```
+
+=== "JSON"
+    ```json
+    "connections": [
+        {
+          "id": "html-table-conn1",
+          "type": "html-table",
+          "name": "HTML TABLE CONNECTION",
+          "path": "test/out_files/test.html",
+          "path_var": "",
+          "encoding": "UTF-8",
+          "encoding_var": ""
+        }
+      ]
+    ```
+
+!!! note
+    In these examples the keys `path_var` and `encoding_var` can be omitted because are empty.
+
+## Connection to Markdown Table
+
+Keys:
+
+- `path`: the path of file. String.
+- `path_var`: key to set a variable with the path. String.
+- `encoding`: encoding of file. String. Default is `UTF-8` if not is specified.
+- `encoding_var`: key to set a variable with the encoding. String.
+
+Examples:
+
+=== "TOML"
+    ```toml
+    [[connections]]
+    id = 'markdown-table-conn1'
+    type = 'markdown-table'
+    name = 'MARKDOWN TABLE CONNECTION'
+    path = 'test/out_files/test.md'
+    path_var = ''
+    encoding = 'UTF-8'
+    encoding_var = ''
+    ```
+
+=== "YAML"
+    ```yaml
+    connections:
+      - id: markdown-table-conn1
+        type: markdown-table
+        name: MARKDOWN TABLE CONNECTION
+        path: test/out_files/test.md
+        path_var: ''
+        encoding: 'UTF-8'
+        encoding_var: ''
+    ```
+
+=== "JSON"
+    ```json
+    "connections": [
+        {
+          "id": "markdown-table-conn1",
+          "type": "markdown-table",
+          "name": "MARKDOWN TABLE CONNECTION",
+          "path": "test/out_files/test.md",
+          "path_var": "",
+          "encoding": "UTF-8",
+          "encoding_var": ""
+        }
+      ]
+    ```
+
+!!! note
+    In these examples the keys `path_var` and `encoding_var` can be omitted because are empty.
+    
