@@ -15,6 +15,8 @@ The supported are:
 - [`mail`](jobs/Send-a-mail.md): to send a email.
 - [`bucle`](jobs/Bucle.md): to execute a workflow in bucle.
 - [`jobsgroup`](jobs/Jobs-group.md): to execute a workflow like a unique job.
+- [`compress`](jobs/Compress.md): to compress files and directories in a zip file.
+- [`decompress`](jobs/Decompress.md): to decompress a zip file in a given path.
 
 !!! note "Important note"
         All job types have these keys:
