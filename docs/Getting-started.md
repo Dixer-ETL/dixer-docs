@@ -90,7 +90,7 @@ Dixer allow to migrate data from and to:
 
 **IBM-DB2 requires [clidriver](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/). In Windows is runtime need it, but others OS need it to execute the Dixer binary.*
 
-**Oracle requires [Oracle Instant Client](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/) at runtime.*
+**Oracle requires [Oracle Instant Client](https://www.oracle.com/database/technologies/instant-client/downloads.html) at runtime.*
 
 **SQLite3 authentication with user and password not supported. Also encrypted databases not supported.*
 
