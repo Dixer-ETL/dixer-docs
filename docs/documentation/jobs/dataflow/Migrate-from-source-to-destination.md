@@ -182,8 +182,7 @@ Batch insert uses a prepared statement with inserts configured with `rows_per_ba
 Also there are limits in some databases for batch insert:
 
 - Microsoft SQL Server: The limit is `1000 / total columns to transfer` so if there are 2 columns, the limit is `500` and so on.
-- MySQL: The limit is `65535 / total columns to transfer`.
-TODO (check other limits)
+- MySQL and PostgreSQL: The limit is `65535 / total columns to transfer`.
 
 In PostgreSQL, is possible to use the [COPY] feature to increase speed inserting in PostgreSQL table. The performance is +85% faster without this feature. You can enable it adding these keys to `destination_config`:
 
