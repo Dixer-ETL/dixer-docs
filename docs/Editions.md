@@ -12,11 +12,11 @@ White Edition + SQLite3 support. Binaries in all platforms.
 
 ## Red Edition
 
-White Edition + Oracle support. Binaries only in officially supported platforms.
+Sky Edition + Oracle support. Binaries only in officially supported platforms.
 
 ## Green Edition
 
-White Edition + IBM DB2 support. Binaries only in officially supported platforms.
+Sky Edition + IBM DB2 support. Binaries only in officially supported platforms.
 
 ## Full Edition
 
