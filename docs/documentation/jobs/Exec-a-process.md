@@ -15,6 +15,8 @@ Keys:
 - `output_path_var`: optional. Variable with output path. String.
 - `timeout`: optional. A timeout in seconds for stop the execution when is reached. Int.
 - `timeout_var`: optional. Variable with timeout in seconds. String.
+- `start_in`: optional. The execution directory of the process. String.
+- `start_in_var`: optional. Variable with he execution directory of the process. String.
 - `expected_code`: optional. A expected_code to make this job succedd. Int. Default `0`.
 - `expected_code_var`: optional. Variable with expected_code integer. String.
 
@@ -41,6 +43,8 @@ timeout = 0
 expected_code = 0
 save_output = true
 ```
+!!! tip
+    You can save the output in a variable setting the `output_path` to `variable::var_name`
 
 !!! warning
     On Windows, if process path and at least one argument contains spaces the job will create a temporal .bat file in same directory that Dixer binary. This is a work around of this [bug](https://github.com/golang/go/issues/17149). This work around can be fail for complex command.

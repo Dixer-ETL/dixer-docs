@@ -15,11 +15,11 @@ Here is the pricing model of Dixer based in editions:
 | [Green](Editions.md#green-edition) | USD $149 | [Buy](https://www.paypal.me/hit/149) |
 | [Full](Editions.md#full-edition)   | USD $249 | [Buy](https://www.paypal.me/hit/249) |
 
-License is only supported for Windows, Linux and macOS.
+License is only supported for `Windows`, `Linux` and `macOS` on `amd64` and `386` archs.
 
 A one-time payment license that includes one year of updates.
 
-When buy it, send a mail to [`support+lic@stgo.do`](mailto:support+lic@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply with a link will be sent with binary file attached to it.
+When buy it, send a mail to [`support+lic@stgo.do`](mailto:support+lic@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply will be sent with license file attached to it.
 
 !!! tip
     Please use the [evaluation binary](Download.md) before buying a license.

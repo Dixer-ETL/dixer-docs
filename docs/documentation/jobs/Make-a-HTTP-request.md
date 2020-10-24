@@ -53,4 +53,7 @@ save_output = true
 ```
 
 !!! tip
+    You can save the output in a variable setting the `output_path` to `variable::var_name`
+
+!!! tip
     You can use this job type to download a file. To do this set to 0 the `timeout` key in your HTTP connection and set `url` with the link of file. Later, in your job, set `save_output` to true and `output_path` with the path of downloaded file.

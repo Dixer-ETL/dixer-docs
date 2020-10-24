@@ -47,3 +47,6 @@ params_value_var = [
 ]
 save_output_var = ''
 ```
+
+!!! tip
+    You can save the output in a variable setting the `output_path` to `variable::var_name`

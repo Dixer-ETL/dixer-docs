@@ -7,6 +7,9 @@ Options:
 -h, --help
         display this help information
 
+-lic, --license
+        license file path
+
 -f, --file
         PCF file path
 

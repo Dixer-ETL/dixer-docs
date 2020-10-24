@@ -145,3 +145,19 @@ Returns a bool. If `st` value is `1`, `t`, `T`, `true`, `TRUE` or `True` returns
 ```javascript
 st.ToBool().Value //returns false
 ```
+
+## `GetMD5()`
+
+Returns the MD5 of the string. Example:
+
+```javascript
+st.GetMD5().Value //returns "2ad55f487fa740783751f2e77ae49e35"
+```
+
+## `GetMD5FilePath()`
+
+Returns the MD5 of the file if `st` is a filepath. Returns empty when error. Example:
+
+```javascript
+st.GetMD5FilePath().Value //returns the MD5 of a file path
+```

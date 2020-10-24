@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.2.0 <small>_ UNRELEASED</small>
+
+This version increase the evaluation time from 25 seconds to 1 minute.
+
+### New
+* Posibility to specify the execution directory of a process in `process` job with the new key `start_in`.
+* New method for string expression to get the MD5 of the string or a filepath.
+* Save the output returned for `soaprequest`, `httprequest` and `process` in a variable.
+
+### Enhancement
+* Get error returned writing output for `soaprequest`, `httprequest` and `process`. Error code `8106`.
+* New flags `--license` and `-lic` to specify the path of the license file.
+* To connect to a DB, the port is optional and used default ports depending the RDBMS.
+
+### Bug Fixes
+* Fixed invalid escape in some values in JSON destination.
+* Fixed connecting to an instance in MSSQL Server.
+
 ## 1.1.0 <small>_ September 02, 2020</small>
 
 This version upgrade the runtime to `go1.14.8`.
