@@ -13,6 +13,7 @@ This version increase the evaluation time from 25 seconds to 1 minute.
 * Get error returned writing output for `soaprequest`, `httprequest` and `process`. Error code `8106`.
 * New flags `--license` and `-lic` to specify the path of the license file.
 * To connect to a DB, the port is optional and use default ports depending the RDBMS.
+* Performance improvements in `dataflow` when destination is a JSON file.
 
 ### Bug Fixes
 * Fixed invalid escape in some values in JSON destination.

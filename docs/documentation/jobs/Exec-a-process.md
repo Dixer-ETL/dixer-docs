@@ -16,7 +16,7 @@ Keys:
 - `timeout`: optional. A timeout in seconds for stop the execution when is reached. Int.
 - `timeout_var`: optional. Variable with timeout in seconds. String.
 - `start_in`: optional. The execution directory of the process. String.
-- `start_in_var`: optional. Variable with he execution directory of the process. String.
+- `start_in_var`: optional. Variable with the execution directory of the process. String.
 - `expected_code`: optional. A expected_code to make this job succedd. Int. Default `0`.
 - `expected_code_var`: optional. Variable with expected_code integer. String.
 
