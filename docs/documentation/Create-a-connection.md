@@ -115,7 +115,7 @@ Keys:
 - `host_var`: key to set a variable with the host. String.
 - `database`: database to connect in MySQL server. String
 - `database_var`: key to set a variable with the database. String.
-- `port`: port to connect to the database in MySQL server. Integer
+- `port`: port to connect to the database in MySQL server. Integer. Default 3306.
 - `port_var`: key to set a variable with the port. String.
 - `username`: username to connect to the database in MySQL server. String
 - `username_var`: key to set a variable with the username. String.
@@ -202,7 +202,7 @@ Keys:
 - `host_var`: key to set a variable with the host. String.
 - `database`: database to connect in MSSQL server. String
 - `database_var`: key to set a variable with the database. String.
-- `port`: port to connect to the database in MSSQL server. Integer
+- `port`: port to connect to the database in MSSQL server. Integer. Default 1433.
 - `port_var`: key to set a variable with the port. String.
 - `windows_auth`: set true if you want to connect to the database in MSSQL server using Windows Authentication (only supported in Windows). Bool
 - `windows_auth_var`: key to set a variable with the windows_auth boolean value. String.
@@ -221,7 +221,7 @@ Examples:
     id = 'mssql-conn1'
     type = 'mssql'
     name = 'mssql Connection'
-    host = 'localhost'
+    host = 'localhost/instance'
     windows_auth = true
     username = 'test'
     password = 'pass'
@@ -243,7 +243,7 @@ Examples:
       - id: mssql-conn1
         type: mssql
         name: mssql Connection
-        host: localhost
+        host: localhost/instance
         windows_auth: true
         username: test
         password: pass
@@ -266,7 +266,7 @@ Examples:
           "id": "mssql-conn1",
           "type": "mssql",
           "name": "mssql Connection",
-          "host": "localhost",
+          "host": "localhost/instance",
           "windows_auth": true,
           "username": "test",
           "password": "pass",
@@ -515,7 +515,7 @@ Keys:
 - `host_var`: key to set a variable with the host. String.
 - `database`: database to connect in PostgreSQL server. String
 - `database_var`: key to set a variable with the database. String.
-- `port`: port to connect to the database in PostgreSQL server. Integer
+- `port`: port to connect to the database in PostgreSQL server. Integer. Default 5432.
 - `port_var`: key to set a variable with the port. String.
 - `username`: username to connect to the database in PostgreSQL server. String
 - `username_var`: key to set a variable with the username. String.
@@ -653,7 +653,7 @@ Keys:
 - `host_var`: key to set a variable with the host. String.
 - `database`: path of database to connect in Firebird SQL server. String
 - `database_var`: key to set a variable with the path of database. String.
-- `port`: port to connect to the database in Firebird SQL server. Integer
+- `port`: port to connect to the database in Firebird SQL server. Integer. Default 3050.
 - `port_var`: key to set a variable with the port. String.
 - `username`: username to connect to the database in Firebird SQL server. String
 - `username_var`: key to set a variable with the username. String.
@@ -781,7 +781,7 @@ Keys:
 
 - `host`: ip or name of the Oracle server. String
 - `host_var`: key to set a variable with the host. String.
-- `port`: port to connect in Oracle server. Integer
+- `port`: port to connect in Oracle server. Integer. Default 1521.
 - `port_var`: key to set a variable with the port. String.
 - `servicename`: service name or SID to connect in Oracle server. String
 - `servicename_var`: key to set a variable with the service name or SID. String.
@@ -866,7 +866,7 @@ Keys:
 
 - `host`: ip or name of the IBM DB2 server. String
 - `host_var`: key to set a variable with the host. String.
-- `port`: port to connect to dababase in IBM DB2 server. Integer
+- `port`: port to connect to dababase in IBM DB2 server. Integer. Default 50000.
 - `port_var`: key to set a variable with the port. String.
 - `database`: database to connect in IBM DB2 server. String
 - `database_var`: key to set a variable with the database. String.
@@ -1395,7 +1395,7 @@ Keys:
 
 - `host`: ip or name of the SAP HANA DB server. String
 - `host_var`: key to set a variable with the host. String.
-- `port`: port to connect to dababase in SAP HANA DB server. Integer
+- `port`: port to connect to dababase in SAP HANA DB server. Integer. Default 39013.
 - `port_var`: key to set a variable with the port. String.
 - `schema`: schema to connect in SAP HANA DB server. String
 - `schema_var`: key to set a variable with the schema. String.
