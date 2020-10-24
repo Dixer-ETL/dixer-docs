@@ -21,6 +21,15 @@ The evaluation time increased from 25 seconds to 1 minute.
 * Fixed invalid escape in some values in JSON destination.
 * Fixed connecting to an instance in MSSQL Server.
 
+### Libraries upgrades
+* FirebirdSQL driver upgraded to version [v0.9.0](https://github.com/nakagami/firebirdsql/tree/v0.9.0)
+* go-toml library upgraded to version [v1.8.1](https://github.com/pelletier/go-toml/tree/v1.8.1)
+* SQLite3 driver upgraded to version [v1.14.4](https://github.com/mattn/go-sqlite3/tree/v1.14.4)
+* ftp library upgraded to commit [0de5c29d4555](https://github.com/jlaffaye/ftp/tree/0de5c29d4555)
+* Excelize library upgraded to commit [9d470bb38f99](https://github.com/360EntSecGroup-Skylar/excelize/tree/9d470bb38f99)
+* Expr library upgraded to version [v1.8.9](https://github.com/antonmedv/expr/tree/v1.8.9)
+* Crypto library upgraded to commit [9e8e0b390897](https://github.com/golang/crypto/tree/9e8e0b390897)
+
 ## 1.1.0 <small>_ September 02, 2020</small>
 
 This version upgrade the runtime to `go1.14.8`.
