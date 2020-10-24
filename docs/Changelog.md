@@ -2,7 +2,9 @@
 
 ## 1.2.0 <small>_ UNRELEASED</small>
 
-This version increase the evaluation time from 25 seconds to 1 minute.
+This version upgrade the runtime to `go1.14.10`.
+
+The evaluation time increased from 25 seconds to 1 minute.
 
 ### New
 * Posibility to specify the execution directory of a process in `process` job with the new key `start_in`.
