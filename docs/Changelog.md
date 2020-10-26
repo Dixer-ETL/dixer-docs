@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.0 <small>_ UNRELEASED</small>
+## 1.2.0 <small>_ October 26, 2020</small>
 
 This version upgrade the runtime to `go1.14.10`.
 
