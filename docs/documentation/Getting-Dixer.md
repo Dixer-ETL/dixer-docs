@@ -24,7 +24,7 @@ macOS:
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:THE_PATH_OF_CLIDRIVER/lib
 ```
 
-### Using a non-root account for dmidecode (only for licensed binaries)
+### Using a non-root account for dmidecode (only if you have a license)
 
 In Linux, to use a license it's neccesary to allow a non-root account for `dmidecode`.
 
