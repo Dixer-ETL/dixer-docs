@@ -29,6 +29,7 @@ The evaluation time increased from 25 seconds to 1 minute.
 * Excelize library upgraded to commit [9d470bb38f99](https://github.com/360EntSecGroup-Skylar/excelize/tree/9d470bb38f99)
 * Expr library upgraded to version [v1.8.9](https://github.com/antonmedv/expr/tree/v1.8.9)
 * Crypto library upgraded to commit [9e8e0b390897](https://github.com/golang/crypto/tree/9e8e0b390897)
+* Oracle driver upgraded to version [v0.20.5](https://github.com/godror/godror/tree/v0.20.5)
 
 ## 1.1.0 <small>_ September 02, 2020</small>
 
