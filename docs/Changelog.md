@@ -9,7 +9,7 @@ This version upgrade the runtime to `go1.15.3`.
 * New keys `source_is_variable` and `source_is_expression` in mapping for dataflow to defined if derivated column is a expression or variable. The old way using a prefix `variable::` and `expr::` are working but are deprecated.
 
 ### Changes
-* In version [1.1.0](#110-_-september-02-2020) `for` was deprecated by `bucle`, now is removed.
+* In version [1.1.0](#110-_-september-02-2020) the job type `for` was deprecated by `bucle`, now is removed.
 * Correction in message for error code `8056` to better clarity.
 
 ### Bug Fixes
