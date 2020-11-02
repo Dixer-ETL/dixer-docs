@@ -57,6 +57,7 @@ nav:
   - Download:
     - Download: Download.md
     - Older versions:
+      - '1.2.0': olderversions/1.2.0.md
       - '1.1.0': olderversions/1.1.0.md
       - '1.0.1': olderversions/1.0.1.md
       - '1.0.0': olderversions/1.0.0.md

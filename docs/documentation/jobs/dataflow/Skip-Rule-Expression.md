@@ -6,7 +6,7 @@ For this, add in the job with type `dataflow` the objects key `skip`.
 
 Keys:
 
-- `rule`: mandatory if enabled. Specified the rule returning a bool with expression mapping (without preffix `expr::`). String.
+- `rule`: mandatory if enabled. Specified the rule returning a bool with expression mapping. String.
 - `rule_var`: optional. Specified var containing a rule. String.
 - `disable`: optional. Disable the Skip Rule Expression for the job. Bool. Default `false`
 - `disable_var`: optional. Specified var containing a bool to disable the Skip Rule Expression. String.

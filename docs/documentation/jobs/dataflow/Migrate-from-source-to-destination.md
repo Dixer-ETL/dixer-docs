@@ -42,6 +42,8 @@ The type is `dataflow`.
     - `column_source`: Mandatory. To define the source column. String.
     - `column_destination`: Mandatory. (*but not necessary when destination are Fixed Width or Ragged Right*) to define the destination column. String.
     - `omit`: Optional. To define omit the column in destination. Bool.
+    - `source_is_variable`: Optional. To define if `column_source` is a variable. Bool. 
+    - `source_is_expression`: Optional. To define if `column_source` is an expression. Bool. 
     - `null_when_empty`: Optional. To define if `null` will be inserted in destination database if source value is empty. Bool.
     - `trim_space`: Optional. To trim all trailing spaces in the value when source is a file CSV, Fixed Width, JSON, XML, XLSX, Ragged Right. Bool.
     - `source_datetime_format`: Optional. To define the format of a datetime in the source where this is not a database and destination is a database (SQLITE3 excluded). String. [How formatting](../../Time-and-date-formatting.md).

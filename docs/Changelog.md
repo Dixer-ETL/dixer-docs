@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.3.0 <small>_ UNRELEASED</small>
+
+This version upgrade the runtime to `go1.15.3`.
+
+### New
+* New method for string expression `RegexReplace` to replace all characters that match expression.
+* New keys `source_is_variable` and `source_is_expression` in mapping for dataflow to defined if derivated column is a expression or variable. The old way using a prefix `variable::` and `expr::` are working but are deprecated.
+
+### Changes
+* In version [1.1.0](#110-_-september-02-2020) `for` was deprecated by `bucle`, now is removed.
+* Correction in message for error code `8056` to better clarity.
+
+### Bug Fixes
+* Fixed invalid escape in some values in JSON destination.
+* Fixed connecting to an instance in MSSQL Server.
+
+### Libraries upgrades
+* PostgreSQL driver upgraded to commit [083382b7e](https://github.com/lib/pq/commit/083382b7e6fc78cc91eb57afab268fe2f1b6ed6d)
+* MSSQL driver upgraded to commit [1e08a3fab](https://github.com/denisenkom/go-mssqldb/tree/1e08a3fab20416d36c5fe538e75939710003f611)
+* SAP HANA DB driver upgraded to version [v0.102.2](https://github.com/SAP/go-hdb/tree/v0.102.2)
+* Go text package upgraded to commit [22f1617af](https://github.com/golang/text/tree/22f1617af38ed4cd65b3b96e02bab267e560155c)
+
 ## 1.2.0 <small>_ October 26, 2020</small>
 
 This version upgrade the runtime to `go1.14.10`.

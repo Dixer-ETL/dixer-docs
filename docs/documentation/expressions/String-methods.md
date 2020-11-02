@@ -161,3 +161,15 @@ Returns the MD5 of the file if `st` is a filepath. Returns empty when error. Exa
 ```javascript
 st.GetMD5FilePath().Value //returns the MD5 of a file path
 ```
+
+## `RegexReplace(regex string, replacement string)`
+
+Returns the replacement string matches with the specified regular expression. You can use `$` for groups. If regex is not valid, so empty string is returned. Examples:
+
+```javascript
+st.RegexReplace('a','DIXER').Value //returns ' DIXERbcdefgh ijklmnop '
+```
+
+```javascript
+st.RegexReplace('(a)','${1}DIXER').Value //returns ' aDIXERbcdefgh ijklmnop '
+```

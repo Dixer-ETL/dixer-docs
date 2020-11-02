@@ -2,10 +2,10 @@
 
 This feature allows to add a derivated column in your mapping with evaluates a expression or get the value of a variable for a new mapping column.
 
-It's possible to evaluate the value of a mapping and create a derivated column with expression with preffix `expr::` and format the expression in this form in the column source:
+It's possible to evaluate the value of a mapping and create a derivated column with expression with the key `source_is_expression` in `true` and format the expression in this form in the column source:
 
 ```javascript
-expr::mapping.string.0.Value + ' ' + mapping.string.1.Value
+mapping.string.0.Value + ' ' + mapping.string.1.Value
 ```
 
 This means that the column is a expression where mapping index 0 will be concatenated with mapping index 1. Example mapping:
@@ -20,7 +20,8 @@ column_source = 'lastname'
 column_destination = 'lastname'
 
 [[jobs.mapping]]
-column_source = 'expr::mapping.string.0.Value + ' ' + mapping.string.1.Value'
+column_source = 'mapping.string.0.Value + ' ' + mapping.string.1.Value'
+source_is_expression = true
 column_destination = 'concatenated_name'
 ```
 
@@ -32,7 +33,8 @@ If you change the order, the index also changes. This example add `concatenated_
 
 ```toml
 [[jobs.mapping]]
-column_source = 'expr::mapping.string.1.Value + ' ' + mapping.string.2.Value'
+column_source = 'mapping.string.1.Value + ' ' + mapping.string.2.Value'
+source_is_expression = true
 column_destination = 'concatenated_name'
 
 [[jobs.mapping]]
@@ -48,7 +50,8 @@ Also you can omit the columns for only get the derivated column:
 
 ```toml
 [[jobs.mapping]]
-column_source = 'expr::mapping.string.1.Value + ' ' + mapping.string.2.Value'
+column_source = 'mapping.string.1.Value + ' ' + mapping.string.2.Value'
+source_is_expression = true
 column_destination = 'concatenated_name'
 
 [[jobs.mapping]]
@@ -63,11 +66,12 @@ omit = true
 ```
 # With variables
 
-Also is possible to add a variable value, simply add a mapping where column source is preffixed with `variable::` and later the name of a variable. Example:
+Also is possible to add a variable value, simply add a mapping where column source key `source_is_variable` is `true` and `column_source` is the name of a variable. Example:
 
 ```toml
 [[jobs.mapping]]
-column_source = 'variable::my_variable'
+column_source = 'my_variable'
+source_is_variable = true
 column_destination = 'lastname'
 ```
 
