@@ -32,7 +32,7 @@ Kernel version 2.6.23 or later. Only x64.
 
 ### macOS
 
-macOS (OS X) 10.11 or higher. Only x64.
+macOS (OS X) 10.12 or higher. Only x64.
 
 ## Not officially supported OS and archs
 
