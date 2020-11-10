@@ -62,7 +62,7 @@ Latest stable version: [**1.3.0**](Changelog.md#unreleased)
     === "Red"
         - [x86](../dl/1.3.0/red/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
     === "Green"
-        - [x86](../dl/1.3.0/green/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
+        - [x86](../dl/1.3.0/green/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp;  **<a href="../dl/?info=1.3.0/green/windows/dixer_386.exe" target="_blank">File Hash</a>**
     === "Full"
         - [x86](../dl/1.3.0/full/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; *coming soon*
 

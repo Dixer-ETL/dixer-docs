@@ -9,6 +9,7 @@ This version upgrade the runtime to `go1.15.4` that requires macOS 10.12 Sierra 
 * New connection type [`aws`](documentation/Create-a-connection.md#connection-to-aws) to connect to Amazon Web Services.
 * New method for string expression [`RegexReplace`](documentation/expressions/String-methods.md#regexreplaceregex-string-replacement-string) to replace all characters that match expression.
 * New keys `source_is_variable` and `source_is_expression` in mapping for dataflow to defined if derivated column is a expression or variable. The old way using a prefix `variable::` and `expr::` are working but are deprecated.
+* Added binary for Windows x86 and Green edition.
 
 ### Changes
 * In version [1.1.0](#110-_-september-02-2020) the job type `for` was deprecated by `bucle`, now is removed.
