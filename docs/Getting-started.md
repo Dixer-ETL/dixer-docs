@@ -49,6 +49,7 @@ Dixer offers a variety of features. The importans are called **Jobs** with can d
 * Execute a group of jobs or workflow
 * Compress
 * Decompress
+* Amazon S3 tasks
 
 ### Aditional features
 
@@ -102,6 +103,7 @@ Dixer stands on the shoulder of many great open source libraries, in lexical ord
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [github.com/360EntSecGroup-Skylar/excelize](https://github.com/360EntSecGroup-Skylar/excelize)           | [9d470bb38f99](https://github.com/360EntSecGroup-Skylar/excelize/tree/9d470bb38f99)                                  |                                                                             | [BSD 3-Clause "New" or "Revised" License](dependencies-licenses/LICENSE-excelize.txt)             |
 | [github.com/antonmedv/expr](https://github.com/antonmedv/expr)                                           | [v1.8.9](https://github.com/antonmedv/expr/tree/v1.8.9)                                                              |                                                                             | [MIT License](dependencies-licenses/LICENSE-expr.txt)                                             |
+| [github.com/aws/aws-sdk-go](https://github.com/aws/aws-sdk-go)                                           | [v1.35.21](https://github.com/aws/aws-sdk-go/tree/v1.35.21)                                                          |                                                                             | [Apache License 2.0](dependencies-licenses/LICENSE-aws-sdk-go.txt)                                |
 | [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)                             | [1e08a3fab](https://github.com/denisenkom/go-mssqldb/tree/1e08a3fab)                                                 | [github.com/xhit/go-mssqldb](https://github.com/xhit/go-mssqldb/tree/sdi)   | [BSD 3-Clause "New" or "Revised" License](dependencies-licenses/LICENSE-go-mssqldb.txt)           |
 | [github.com/godror/godror](https://github.com/godror/godror)                                             | [v0.20.5](https://github.com/godror/godror/tree/v0.20.5)                                                             |                                                                             | [UPL-1.0](dependencies-licenses/LICENSE-godror.txt)                                               |
 | [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)                                 | [v1.5.0](https://github.com/go-sql-driver/mysql/tree/v1.5.0)                                                         |                                                                             | [Mozilla Public License 2.0](dependencies-licenses/LICENSE-mysql.txt)                             |

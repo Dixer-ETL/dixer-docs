@@ -35,6 +35,7 @@ The keys `encoding` and `encoding_var` are use to set the encoding of the connec
 - [`sap-hdb`](#connection-to-sap-hana-database)
 - [`html-table`](#connection-to-html-table)
 - [`markdown-table`](#connection-to-markdown-table)
+- [`aws`](#connection-to-aws)
 
 ## Connection to CSV file
 
@@ -1579,4 +1580,73 @@ Examples:
 
 !!! note
     In these examples the keys `path_var` and `encoding_var` can be omitted because are empty.
-    
+
+## Connection to AWS
+
+Keys:
+
+- `region`: Region to connect to AWS account. String.
+- `region_var`: key to set a variable with the region. String.
+- `access_key_id`: The Access Key ID to connect to AWS. String.
+- `access_key_id_var`: key to set a variable with the access_key_id. String.
+- `secret_access_key`: Secret Access Key to connect to AWS. String
+- `secret_access_key_var`: key to set a variable with the secret_access_key. String.
+- `secret_access_key_encrypted`: secret_access_key encrypted. String
+- `secret_access_key_encrypted_var`: key to set a variable with the secret_access_key_encrypted. String.
+
+
+Examples:
+
+=== "TOML"
+    ```toml
+    [[connections]]
+    id = 'aws-conn'
+    type = 'aws'
+    name = 'AWS Connection'
+    region = 'us-east-2'
+    access_key_id = 'ACCESSKEYID'
+    secret_access_key = 'SECRETACCESSKEY'
+    secret_access_key_encrypted = ''
+    region_var = ''
+    access_key_id_var = ''
+    secret_access_key_var = ''
+    secret_access_key_encrypted_var = ''
+    ```
+
+=== "YAML"
+    ```yaml
+    connections:
+      - id: aws-conn
+        type: ftp
+        name: AWS Connection
+        region: 'us-east-2'
+        access_key_id: ACCESSKEYID
+        secret_access_key: SECRETACCESSKEY
+        secret_access_key_encrypted: ''
+        region_var: ''
+        access_key_id_var: ''
+        secret_access_key_var: ''
+        secret_access_key_encrypted_var: ''
+    ```
+
+=== "JSON"
+    ```json
+    "connections": [
+        {
+          "id": "aws-conn",
+          "type": "ftp",
+          "name": "AWS Connection",
+          "region": "us-east-2",
+          "access_key_id": "ACCESSKEYID",
+          "secret_access_key": "SECRETACCESSKEY",
+          "secret_access_key_encrypted": "",
+          "region_var": "",
+          "access_key_id_var": "",
+          "secret_access_key_var": "",
+          "secret_access_key_encrypted_var": ""
+        }
+      ]
+    ```
+
+!!! note
+In these examples the keys `secret_access_key_encrypted`, `region_var`, `access_key_id_var`, `secret_access_key_var`, `secret_access_key_encrypted_var` can be omitted because are empty.
