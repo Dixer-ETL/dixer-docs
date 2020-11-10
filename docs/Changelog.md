@@ -6,7 +6,7 @@ This version upgrade the runtime to `go1.15.4` that requires macOS 10.12 Sierra 
 
 ### New
 * New job type [`s3operation`](documentation/jobs/S3-operations.md) to perform Amazon S3 tasks.
-* New connection type [`aws`] to connect to Amazon Web Services.
+* New connection type [`aws`](documentation/Create-a-connection.md#connection-to-aws) to connect to Amazon Web Services.
 * New method for string expression [`RegexReplace`](documentation/expressions/String-methods.md#regexreplaceregex-string-replacement-string) to replace all characters that match expression.
 * New keys `source_is_variable` and `source_is_expression` in mapping for dataflow to defined if derivated column is a expression or variable. The old way using a prefix `variable::` and `expr::` are working but are deprecated.
 
