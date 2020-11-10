@@ -48,6 +48,7 @@ nav:
       - Jobs group (jobsgroup): documentation/jobs/Jobs-group.md
       - Compress (compress): documentation/jobs/Compress.md
       - Decompress (decompress): documentation/jobs/Decompress.md
+      - AWS S3 operations (s3operation): documentation/jobs/S3-operations.md
     - Handle Jobs events: documentation/Handle-jobs-events.md
     - Time and date formatting: documentation/Time-and-date-formatting.md
     - Log: documentation/Log.md

@@ -19,6 +19,7 @@
     * [Jobs group (for)](jobs/Jobs-group.md)
     * [Compress (compress)](jobs/Compress.md)
     * [Decompress (decompress)](jobs/Decompress.md)
+    * [AWS S3 operations (s3operation)](jobs/S3-operations.md)
 * [Handle Jobs events](Handle-jobs-events.md)
 * [Time and date formatting](Time-and-date-formatting.md)
 * [Log](Log.md)
