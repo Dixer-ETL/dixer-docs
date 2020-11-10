@@ -76,7 +76,7 @@ theme:
     name: material
     features:
       - navigation.tabs
-      - navigation.instant
+      # - navigation.instant
 
 markdown_extensions:
   - admonition
