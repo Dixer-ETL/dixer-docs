@@ -54,6 +54,6 @@ The supported encodings are:
 - `windows-1257`
 - `windows-1258`
 
-# How works encoding?
+# How encoding works?
 
 Dixer works internally with UTF-8, so when a encoding is specified to a file, if is a source, Dixer transform supported characters in file to UTF-8, and for writing, transform the UTF-8 to speficied encoding. If a character doesn't match this will be ignored, for example, if you are writing a file in `ISO-8859-13` and some column value is `español` then the output result in destination file is `espaol`.
