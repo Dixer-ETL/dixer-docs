@@ -2,7 +2,7 @@
 
 ## 1.3.0 <small>_ UNRELEASED</small>
 
-This version upgrade the runtime to `go1.15.4` that requires macOS 10.12 Sierra or later, and has been progress in improving the stability and performance of the 64-bit RISC-V on Linux.
+This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra or later, and has been progress in improving the stability and performance of the 64-bit RISC-V on Linux.
 
 ### New
 * New job type [`s3operation`](documentation/jobs/S3-operations.md) to perform Amazon S3 tasks.
@@ -14,10 +14,12 @@ This version upgrade the runtime to `go1.15.4` that requires macOS 10.12 Sierra 
 ### Changes
 * In version [1.1.0](#110-_-september-02-2020) the job type `for` was deprecated by `bucle`, now is removed.
 * Correction in message for error code `8056` to better clarity.
+* If a job doesn't have name, so print the jod ID like the name.
 
 ### Bug Fixes
 * Fixed invalid escape in some values in JSON destination.
 * Fixed connecting to an instance in MSSQL Server.
+* In `mail` job type, `from_email` is optional. If not provided, the username to connect to SMTP Server is used instead launch an error.
 
 ### Libraries upgrades
 * PostgreSQL driver upgraded to commit [083382b7e](https://github.com/lib/pq/commit/083382b7e6fc78cc91eb57afab268fe2f1b6ed6d)

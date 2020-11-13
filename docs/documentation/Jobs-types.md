@@ -22,7 +22,7 @@ The supported are:
         All job types have these keys:
 
         - `id`: mandatory ID of the job with need to match `[a-zA-Z0-9_]+`. String.
-        - `name`: mandatory name of the job. String.
+        - `name`: optional name of the job. String.
         - `type`: mandatory type of the job. String.
         - `disable`: optional to enable or disable the job. Bool. Default `false`.
         - `ignore_error`: optional key to exit or not when an error happens. Bool. Default `false`.
