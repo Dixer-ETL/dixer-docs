@@ -49,3 +49,6 @@ DIXERLIC ALL = NOPASSWD: DMIDECODE
 ```
 
 The non-root user should now be able to execute the dmidecode command without being prompted for a password.
+
+!!! note
+    In some distros dmidecode is not installed, you can install it from terminal (in Ubuntu for arm64 for example, `sudo apt install dmidecode`)
