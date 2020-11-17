@@ -37,8 +37,8 @@ Options:
 -ncpu, --numcpu
         sets the number of logical processors to use
 
--ecp, --encryptconnpass
-        encrypts a password to use in a connection
+-ev, --encryptvalue
+        encrypts a value to use in a key with suffix "_encrypted" in PCF
 
 -genlicreq, --generatelicenserequest
         generates the file containing the information for license generation request

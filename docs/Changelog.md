@@ -15,6 +15,7 @@ This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra 
 * In version [1.1.0](#110-_-september-02-2020) the job type `for` was deprecated by `bucle`, now is removed.
 * Correction in message for error code `8056` to better clarity.
 * If a job doesn't have name, so print the jod ID like the name.
+* Encrypt connection password flag `--encryptconnpass` change to `--encryptvalue` to encrypt others texts to apply in other keys that accept `_encrypted` suffix.
 
 ### Bug Fixes
 * Fixed invalid escape in some values in JSON destination.
