@@ -1617,7 +1617,7 @@ Examples:
     ```yaml
     connections:
       - id: aws-conn
-        type: ftp
+        type: aws
         name: AWS Connection
         region: 'us-east-2'
         access_key_id: ACCESSKEYID
@@ -1634,7 +1634,7 @@ Examples:
     "connections": [
         {
           "id": "aws-conn",
-          "type": "ftp",
+          "type": "aws",
           "name": "AWS Connection",
           "region": "us-east-2",
           "access_key_id": "ACCESSKEYID",
