@@ -120,6 +120,8 @@ Keys:
 - `port_var`: key to set a variable with the port. String.
 - `username`: username to connect to the database in MySQL server. String
 - `username_var`: key to set a variable with the username. String.
+- `username_encrypted`: username encrypted to connect to the database in MySQL server. String
+- `username_encrypted_var`: key to set a variable with the username encrypted. String
 - `password`: password to connect to the database in MySQL server. String
 - `password_var`: key to set a variable with the password. String.
 - `password_encrypted`: password id saved with the password to connect to the database in MySQL server. String
@@ -136,7 +138,8 @@ Examples:
     host = 'localhost'
     username = 'root'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     database = 'test'
     port = 3306
     host_var = ''
@@ -144,7 +147,8 @@ Examples:
     password_var = ''
     database_var = ''
     port_var = 'mysqlport'
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -156,7 +160,8 @@ Examples:
         host: localhost
         username: root
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         database: test
         port: 3306
         host_var: ''
@@ -164,7 +169,8 @@ Examples:
         password_var: ''
         database_var: ''
         port_var: mysqlport
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -177,7 +183,8 @@ Examples:
           "host": "localhost",
           "username": "root",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "database": "test",
           "port": 3306,
           "host_var": "",
@@ -185,13 +192,14 @@ Examples:
           "password_var": "",
           "database_var": "",
           "port_var": "mysqlport",
-          "password_encrypted_var": "",
+          "username_encrypted_var": "",
+					"password_encrypted_var": "",
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `host_var`, `username_var`, `password_var`, `password_encrypted`, `password_encrypted_var` and `database_var` can be omitted because are empty.
+    In these examples the keys `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `database_var` can be omitted because are empty.
     
     Also `port` can be omitted because key `port_var` is set with a variable (should be `int`).
 
@@ -226,7 +234,8 @@ Examples:
     windows_auth = true
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     database = 'testdb'
     port = 1433
     host_var = ''
@@ -234,7 +243,8 @@ Examples:
     password_var = ''
     database_var = ''
     port_var = 'mssqlport'
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     windows_auth_var = ''
     ```
 
@@ -248,7 +258,8 @@ Examples:
         windows_auth: true
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         database: testdb
         port: 1433
         host_var: ''
@@ -256,7 +267,8 @@ Examples:
         password_var: ''
         database_var: ''
         port_var: mssqlport
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
         windows_auth_var: ''
     ```
 
@@ -271,7 +283,8 @@ Examples:
           "windows_auth": true,
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "database": "testdb",
           "port": 1433,
           "host_var": "",
@@ -279,7 +292,8 @@ Examples:
           "password_var": "",
           "database_var": "",
           "port_var": "mssqlport",
-          "password_encrypted_var": "",
+          "username_encrypted_var": "",
+					"password_encrypted_var": "",
           "windows_auth_var": ""
         }
       ]
@@ -536,7 +550,8 @@ Examples:
     host = 'localhost'
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     database = 'testdb'
     port = 5432
     host_var = ''
@@ -544,7 +559,8 @@ Examples:
     password_var = ''
     database_var = ''
     port_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -556,7 +572,8 @@ Examples:
         host: localhost
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         database: testdb
         port: 5432
         host_var: ''
@@ -564,7 +581,8 @@ Examples:
         password_var: ''
         database_var: ''
         port_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -577,7 +595,8 @@ Examples:
           "host": "localhost",
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "database": "testdb",
           "port": 5432,
           "host_var": "",
@@ -585,13 +604,14 @@ Examples:
           "password_var": "",
           "database_var": "",
           "port_var": "",
-          "password_encrypted_var": ""
+          "username_encrypted_var": "",
+					"password_encrypted_var": ""
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `password_encrypted_var` and `database_var` can be omitted because are empty.
+    In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `database_var` can be omitted because are empty.
 
 ## Connection to XLSX file
 
@@ -674,7 +694,8 @@ Examples:
     host = 'localhost'
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     database = 'C:/db/testdb.fdb'
     port = 3050
     host_var = ''
@@ -682,7 +703,8 @@ Examples:
     password_var = ''
     database_var = ''
     port_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -694,7 +716,8 @@ Examples:
         host: localhost
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         database: 'C:/db/testdb.fdb'
         port: 3050
         host_var: ''
@@ -702,7 +725,8 @@ Examples:
         password_var: ''
         database_var: ''
         port_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -715,7 +739,8 @@ Examples:
           "host": "localhost",
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "database": "C:/db/testdb.fdb",
           "port": 3050,
           "host_var": "",
@@ -723,13 +748,14 @@ Examples:
           "password_var": "",
           "database_var": "",
           "port_var": "",
-          "password_encrypted_var": ""
+          "username_encrypted_var": "",
+					"password_encrypted_var": ""
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `password_encrypted_var` and `database_var` can be omitted because are empty.
+    In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `database_var` can be omitted because are empty.
 
 ## Connection to SQLite3 database
 
@@ -804,7 +830,8 @@ Examples:
     host = 'localhost'
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     servicename = 'XE'
     port = 1521
     host_var = ''
@@ -812,7 +839,8 @@ Examples:
     password_var = ''
     servicename_var = ''
     port_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -824,7 +852,8 @@ Examples:
         host: localhost
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         servicename: 'XE'
         port: 1521
         host_var: ''
@@ -832,7 +861,8 @@ Examples:
         password_var: ''
         servicename_var: ''
         port_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -845,7 +875,8 @@ Examples:
           "host": "localhost",
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "servicename": "XE",
           "port": 1521,
           "host_var": "",
@@ -853,13 +884,14 @@ Examples:
           "password_var": "",
           "servicename_var": "",
           "port_var": "",
-          "password_encrypted_var": ""
+          "username_encrypted_var": "",
+					"password_encrypted_var": ""
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `password_encrypted_var` and `servicename_var` can be omitted because are empty.
+    In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `servicename_var` can be omitted because are empty.
 
 ## Connection to IBM DB2 database
 
@@ -891,7 +923,8 @@ Examples:
     host = 'localhost'
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     database = 'SAMPLE'
     schema = 'SCHEMATEST'
     port = 50000
@@ -900,7 +933,8 @@ Examples:
     password_var = ''
     database_var = ''
     port_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     schema_var = ''
     ```
 
@@ -913,7 +947,8 @@ Examples:
         host: localhost
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         database: 'SAMPLE'
         schema: 'SCHEMATEST'
         port: 50000
@@ -922,7 +957,8 @@ Examples:
         password_var: ''
         database_var: ''
         port_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
         schema_var: ''
     ```
 
@@ -936,7 +972,8 @@ Examples:
           "host": "localhost",
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "database": "SAMPLE",
           "schema": "SCHEMATEST",
           "port": 50000,
@@ -945,14 +982,15 @@ Examples:
           "password_var": "",
           "database_var": "",
           "port_var": "",
-          "password_encrypted_var": "",
+          "username_encrypted_var": "",
+					"password_encrypted_var": "",
           "schema_var": ""
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `port_var`, `schema_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `password_encrypted_var` and `database_var` can be omitted because are empty.
+    In these examples the keys `port_var`, `schema_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `database_var` can be omitted because are empty.
 
 ## Connection to Ragged Right file
 
@@ -1135,14 +1173,16 @@ Examples:
     port = 21
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     connect_timeout = 15
     host_var = ''
     port_var = ''
     username_var = ''
     password_var = ''
     connect_timeout_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -1155,14 +1195,16 @@ Examples:
         port: 21
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         connect_timeout: 15
         host_var: ''
         port_var: ''
         username_var: ''
         password_var: ''
         connect_timeout_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -1176,20 +1218,22 @@ Examples:
           "port": 21,
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "connect_timeout": 15,
           "host_var": "",
           "port_var": "",
           "username_var": "",
           "password_var": "",
           "connect_timeout_var": "",
-          "password_encrypted_var": ""
+          "username_encrypted_var": "",
+					"password_encrypted_var": ""
         }
       ]
     ```
 
 !!! note
-In these examples the keys `connect_timeout_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `password_encrypted_var` and `port_var` can be omitted because are empty.
+In these examples the keys `connect_timeout_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `port_var` can be omitted because are empty.
 
 ## Connection to HTTP URL
 
@@ -1226,13 +1270,15 @@ Examples:
     url = 'http://wsgeoip.lavasoft.com/ipservice.asmx?WSDL'
     username = 'aaaaa'
     password = 'bbbbb'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     timeout = 10
     url_var = ''
     username_var = ''
     password_var = ''
     timeout_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -1244,13 +1290,15 @@ Examples:
         url: 'http://wsgeoip.lavasoft.com/ipservice.asmx?WSDL'
         username: aaaaa
         password: bbbbb
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         timeout: 10
         url_var: ''
         username_var: ''
         password_var: ''
         timeout_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -1263,19 +1311,21 @@ Examples:
           "url": "http://wsgeoip.lavasoft.com/ipservice.asmx?WSDL",
           "username": "aaaaa",
           "password": "bbbbb",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "timeout": 10,
           "url_var": "",
           "username_var": "",
           "password_var": "",
           "timeout_var": "",
-          "password_encrypted_var": ""
+          "username_encrypted_var": "",
+					"password_encrypted_var": ""
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `url_var`, `timeout_var`, `username_var`, `password_var`, `password_encrypted` and `password_encrypted_var` can be omitted because are empty.
+    In these examples the keys `url_var`, `timeout_var`, `username_var`, `password_var`, `password_encrypted` and `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` can be omitted because are empty.
 
 ## Connection to SMTP server
 
@@ -1321,7 +1371,8 @@ Examples:
     port_var = 'port3'
     username_var = 'smtpuser'
     password_var = 'smtppass'
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     encryption_type_var = 'encryption'
     auth_type_var = ''
     connect_timeout_var = 'connecttimeout'
@@ -1347,7 +1398,8 @@ Examples:
         port_var: port3
         username_var: smtpuser
         password_var: smtppass
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
         encryption_type_var: encryption
         auth_type_var: ''
         connect_timeout_var: connecttimeout
@@ -1374,7 +1426,8 @@ Examples:
           "port_var": "smtpport",
           "username_var": "smtpuser",
           "password_var": "smtppass",
-          "password_encrypted_var": "",
+          "username_encrypted_var": "",
+					"password_encrypted_var": "",
           "encryption_type_var": "encryption",
           "auth_type_var": "",
           "connect_timeout_var": "connecttimeout",
@@ -1386,7 +1439,7 @@ Examples:
 !!! note
     In these examples the keys  `port`, `username`, `encryption_type`, `send_timeout`, and `connect_timeout` can be omitted because keys with suffix `_var` are set.
 
-    Also the keys  `host_var`, `password_encrypted_var` and `auth_type_var` can be omitted because keys are empty.
+    Also the keys  `host_var`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `auth_type_var` can be omitted because keys are empty.
 
     Also the keys  `password` and `password_var` can be omitted because key `password_encrypted` is set.
 
@@ -1418,14 +1471,16 @@ Examples:
     host = 'localhost'
     username = 'test'
     password = 'pass'
-    password_encrypted = ''
+    username_encrypted = ''
+		password_encrypted = ''
     schema = 'SCHEMATEST'
     port = 39013
     host_var = ''
     username_var = ''
     password_var = ''
     port_var = ''
-    password_encrypted_var = ''
+    username_encrypted_var = ''
+		password_encrypted_var = ''
     schema_var = ''
     ```
 
@@ -1438,14 +1493,16 @@ Examples:
         host: localhost
         username: test
         password: pass
-        password_encrypted: ''
+        username_encrypted: ''
+				password_encrypted: ''
         schema: 'SCHEMATEST'
         port: 39013
         host_var: ''
         username_var: ''
         password_var: ''
         port_var: ''
-        password_encrypted_var: ''
+        username_encrypted_var: ''
+				password_encrypted_var: ''
         schema_var: ''
     ```
 
@@ -1459,21 +1516,23 @@ Examples:
           "host": "localhost",
           "username": "test",
           "password": "pass",
-          "password_encrypted": "",
+          "username_encrypted": "",
+					"password_encrypted": "",
           "schema": "SCHEMATEST",
           "port": 39013,
           "host_var": "",
           "username_var": "",
           "password_var": "",
           "port_var": "",
-          "password_encrypted_var": "",
+          "username_encrypted_var": "",
+					"password_encrypted_var": "",
           "schema_var": ""
         }
       ]
     ```
 
 !!! note
-    In these examples the keys `port_var`, `schema_var`, `host_var`, `username_var`, `password_var`, `password_encrypted` and `password_encrypted_var` can be omitted because are empty.
+    In these examples the keys `port_var`, `schema_var`, `host_var`, `username_var`, `password_var`, `password_encrypted` and `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` can be omitted because are empty.
   
 ## Connection to HTML Table
 
@@ -1606,10 +1665,12 @@ Examples:
     region = 'us-east-2'
     access_key_id = 'ACCESSKEYID'
     secret_access_key = 'SECRETACCESSKEY'
+    access_key_id_encrypted = ''
     secret_access_key_encrypted = ''
     region_var = ''
     access_key_id_var = ''
     secret_access_key_var = ''
+    access_key_id_encrypted_var = ''
     secret_access_key_encrypted_var = ''
     ```
 
@@ -1622,10 +1683,12 @@ Examples:
         region: 'us-east-2'
         access_key_id: ACCESSKEYID
         secret_access_key: SECRETACCESSKEY
+        access_key_id_encrypted: ''
         secret_access_key_encrypted: ''
         region_var: ''
         access_key_id_var: ''
         secret_access_key_var: ''
+        access_key_id_encrypted_var: ''
         secret_access_key_encrypted_var: ''
     ```
 
@@ -1639,14 +1702,16 @@ Examples:
           "region": "us-east-2",
           "access_key_id": "ACCESSKEYID",
           "secret_access_key": "SECRETACCESSKEY",
+          "access_key_id_encrypted": "",
           "secret_access_key_encrypted": "",
           "region_var": "",
           "access_key_id_var": "",
           "secret_access_key_var": "",
+          "access_key_id_encrypted_var": "",
           "secret_access_key_encrypted_var": ""
         }
       ]
     ```
 
 !!! note
-In these examples the keys `secret_access_key_encrypted`, `region_var`, `access_key_id_var`, `secret_access_key_var`, `secret_access_key_encrypted_var` can be omitted because are empty.
+In these examples the keys `secret_access_key_encrypted`, `region_var`, `access_key_id_var`, `secret_access_key_var`, `secret_access_key_encrypted_var`, `access_key_id_encrypted`, `access_key_id_encrypted_var` can be omitted because are empty.

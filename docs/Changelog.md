@@ -10,6 +10,7 @@ This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra 
 * New method for string expression [`RegexReplace`](documentation/expressions/String-methods.md#regexreplaceregex-string-replacement-string) to replace all characters that match expression.
 * New keys `source_is_variable` and `source_is_expression` in mapping for dataflow to defined if derivated column is a expression or variable. The old way using a prefix `variable::` and `expr::` are working but are deprecated.
 * Added binary for Windows x86 and Green edition.
+* Added key to accept a encrypted username in connections `username_encrypted`. Can accept a variable with suffix `_var`.
 
 ### Changes
 * In version [1.1.0](#110-_-september-02-2020) the job type `for` was deprecated by `bucle`, now is removed.
@@ -18,6 +19,7 @@ This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra 
 * Encrypt connection password flag `--encryptconnpass` change to `--encryptvalue` to encrypt others texts to apply in other keys that accept `_encrypted` suffix.
 
 ### Bug Fixes
+* Fixed PCF decryption.
 * Fixed invalid escape in some values in JSON destination.
 * Fixed connecting to an instance in MSSQL Server.
 * In `mail` job type, `from_email` is optional. If not provided, the username to connect to SMTP Server is used instead launch an error.
