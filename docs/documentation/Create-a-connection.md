@@ -148,7 +148,7 @@ Examples:
     database_var = ''
     port_var = 'mysqlport'
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -161,7 +161,7 @@ Examples:
         username: root
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         database: test
         port: 3306
         host_var: ''
@@ -170,7 +170,7 @@ Examples:
         database_var: ''
         port_var: mysqlport
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -184,7 +184,7 @@ Examples:
           "username": "root",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "database": "test",
           "port": 3306,
           "host_var": "",
@@ -193,7 +193,7 @@ Examples:
           "database_var": "",
           "port_var": "mysqlport",
           "username_encrypted_var": "",
-					"password_encrypted_var": "",
+          "password_encrypted_var": "",
         }
       ]
     ```
@@ -235,7 +235,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     database = 'testdb'
     port = 1433
     host_var = ''
@@ -244,7 +244,7 @@ Examples:
     database_var = ''
     port_var = 'mssqlport'
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     windows_auth_var = ''
     ```
 
@@ -259,7 +259,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         database: testdb
         port: 1433
         host_var: ''
@@ -268,7 +268,7 @@ Examples:
         database_var: ''
         port_var: mssqlport
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
         windows_auth_var: ''
     ```
 
@@ -284,7 +284,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "database": "testdb",
           "port": 1433,
           "host_var": "",
@@ -293,7 +293,7 @@ Examples:
           "database_var": "",
           "port_var": "mssqlport",
           "username_encrypted_var": "",
-					"password_encrypted_var": "",
+          "password_encrypted_var": "",
           "windows_auth_var": ""
         }
       ]
@@ -551,7 +551,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     database = 'testdb'
     port = 5432
     host_var = ''
@@ -560,7 +560,7 @@ Examples:
     database_var = ''
     port_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -573,7 +573,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         database: testdb
         port: 5432
         host_var: ''
@@ -582,7 +582,7 @@ Examples:
         database_var: ''
         port_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -596,7 +596,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "database": "testdb",
           "port": 5432,
           "host_var": "",
@@ -605,7 +605,7 @@ Examples:
           "database_var": "",
           "port_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": ""
+          "password_encrypted_var": ""
         }
       ]
     ```
@@ -695,7 +695,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     database = 'C:/db/testdb.fdb'
     port = 3050
     host_var = ''
@@ -704,7 +704,7 @@ Examples:
     database_var = ''
     port_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -717,7 +717,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         database: 'C:/db/testdb.fdb'
         port: 3050
         host_var: ''
@@ -726,7 +726,7 @@ Examples:
         database_var: ''
         port_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -740,7 +740,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "database": "C:/db/testdb.fdb",
           "port": 3050,
           "host_var": "",
@@ -749,7 +749,7 @@ Examples:
           "database_var": "",
           "port_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": ""
+          "password_encrypted_var": ""
         }
       ]
     ```
@@ -831,7 +831,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     servicename = 'XE'
     port = 1521
     host_var = ''
@@ -840,7 +840,7 @@ Examples:
     servicename_var = ''
     port_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -853,7 +853,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         servicename: 'XE'
         port: 1521
         host_var: ''
@@ -862,7 +862,7 @@ Examples:
         servicename_var: ''
         port_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -876,7 +876,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "servicename": "XE",
           "port": 1521,
           "host_var": "",
@@ -885,7 +885,7 @@ Examples:
           "servicename_var": "",
           "port_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": ""
+          "password_encrypted_var": ""
         }
       ]
     ```
@@ -924,7 +924,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     database = 'SAMPLE'
     schema = 'SCHEMATEST'
     port = 50000
@@ -934,7 +934,7 @@ Examples:
     database_var = ''
     port_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     schema_var = ''
     ```
 
@@ -948,7 +948,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         database: 'SAMPLE'
         schema: 'SCHEMATEST'
         port: 50000
@@ -958,7 +958,7 @@ Examples:
         database_var: ''
         port_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
         schema_var: ''
     ```
 
@@ -973,7 +973,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "database": "SAMPLE",
           "schema": "SCHEMATEST",
           "port": 50000,
@@ -983,7 +983,7 @@ Examples:
           "database_var": "",
           "port_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": "",
+          "password_encrypted_var": "",
           "schema_var": ""
         }
       ]
@@ -1174,7 +1174,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     connect_timeout = 15
     host_var = ''
     port_var = ''
@@ -1182,7 +1182,7 @@ Examples:
     password_var = ''
     connect_timeout_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -1196,7 +1196,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         connect_timeout: 15
         host_var: ''
         port_var: ''
@@ -1204,7 +1204,7 @@ Examples:
         password_var: ''
         connect_timeout_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -1219,7 +1219,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "connect_timeout": 15,
           "host_var": "",
           "port_var": "",
@@ -1227,7 +1227,7 @@ Examples:
           "password_var": "",
           "connect_timeout_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": ""
+          "password_encrypted_var": ""
         }
       ]
     ```
@@ -1271,14 +1271,14 @@ Examples:
     username = 'aaaaa'
     password = 'bbbbb'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     timeout = 10
     url_var = ''
     username_var = ''
     password_var = ''
     timeout_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     ```
 
 === "YAML"
@@ -1291,14 +1291,14 @@ Examples:
         username: aaaaa
         password: bbbbb
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         timeout: 10
         url_var: ''
         username_var: ''
         password_var: ''
         timeout_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
     ```
 
 === "JSON"
@@ -1312,14 +1312,14 @@ Examples:
           "username": "aaaaa",
           "password": "bbbbb",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "timeout": 10,
           "url_var": "",
           "username_var": "",
           "password_var": "",
           "timeout_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": ""
+          "password_encrypted_var": ""
         }
       ]
     ```
@@ -1362,7 +1362,7 @@ Examples:
     port = 25
     username = 'test@example.com'
     password = 'pass'
-    password_encrypted = '20e54e43-1dad-457a-a9c6-a3520e598da9'
+    password_encrypted = 'ENCRYPTED PASS'
     encryption_type = 'none'
     auth_type = 'plain'
     connect_timeout = 10
@@ -1372,7 +1372,7 @@ Examples:
     username_var = 'smtpuser'
     password_var = 'smtppass'
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     encryption_type_var = 'encryption'
     auth_type_var = ''
     connect_timeout_var = 'connecttimeout'
@@ -1389,7 +1389,7 @@ Examples:
         port: 25
         username: test@example.com
         password: pass
-        password_encrypted: 20e54e43-1dad-457a-a9c6-a3520e598da9
+        password_encrypted: ENCRYPTED PASS
         encryption_type: none
         auth_type: plain
         connect_timeout: 10
@@ -1399,7 +1399,7 @@ Examples:
         username_var: smtpuser
         password_var: smtppass
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
         encryption_type_var: encryption
         auth_type_var: ''
         connect_timeout_var: connecttimeout
@@ -1417,7 +1417,7 @@ Examples:
           "port": 25,
           "username": "test@example.com",
           "password": "pass",
-          "password_encrypted": "20e54e43-1dad-457a-a9c6-a3520e598da9",
+          "password_encrypted": "ENCRYPTED PASS",
           "encryption_type": "none",
           "auth_type": "plain",
           "connect_timeout": 10,
@@ -1427,7 +1427,7 @@ Examples:
           "username_var": "smtpuser",
           "password_var": "smtppass",
           "username_encrypted_var": "",
-					"password_encrypted_var": "",
+          "password_encrypted_var": "",
           "encryption_type_var": "encryption",
           "auth_type_var": "",
           "connect_timeout_var": "connecttimeout",
@@ -1472,7 +1472,7 @@ Examples:
     username = 'test'
     password = 'pass'
     username_encrypted = ''
-		password_encrypted = ''
+    password_encrypted = ''
     schema = 'SCHEMATEST'
     port = 39013
     host_var = ''
@@ -1480,7 +1480,7 @@ Examples:
     password_var = ''
     port_var = ''
     username_encrypted_var = ''
-		password_encrypted_var = ''
+    password_encrypted_var = ''
     schema_var = ''
     ```
 
@@ -1494,7 +1494,7 @@ Examples:
         username: test
         password: pass
         username_encrypted: ''
-				password_encrypted: ''
+        password_encrypted: ''
         schema: 'SCHEMATEST'
         port: 39013
         host_var: ''
@@ -1502,7 +1502,7 @@ Examples:
         password_var: ''
         port_var: ''
         username_encrypted_var: ''
-				password_encrypted_var: ''
+        password_encrypted_var: ''
         schema_var: ''
     ```
 
@@ -1517,7 +1517,7 @@ Examples:
           "username": "test",
           "password": "pass",
           "username_encrypted": "",
-					"password_encrypted": "",
+          "password_encrypted": "",
           "schema": "SCHEMATEST",
           "port": 39013,
           "host_var": "",
@@ -1525,7 +1525,7 @@ Examples:
           "password_var": "",
           "port_var": "",
           "username_encrypted_var": "",
-					"password_encrypted_var": "",
+          "password_encrypted_var": "",
           "schema_var": ""
         }
       ]
