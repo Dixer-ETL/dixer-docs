@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.3.0 <small>_ UNRELEASED</small>
+## 1.3.0 <small>_ November 20, 2020</small>
 
 This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra or later, and has been progress in improving the stability and performance of the 64-bit RISC-V on Linux.
 
@@ -17,6 +17,7 @@ This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra 
 * Correction in message for error code `8056` to better clarity.
 * If a job doesn't have name, so print the jod ID like the name.
 * Encrypt connection password flag `--encryptconnpass` change to `--encryptvalue` to encrypt others texts to apply in other keys that accept `_encrypted` suffix.
+* License request cannot be generated in some Linux systems where dmidecode returns empty serial number like WSL. 
 
 ### Bug Fixes
 * Fixed PCF decryption.
