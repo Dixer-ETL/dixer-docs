@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4.0 <small>_ UNRELEASED</small>
+
+### New
+* Now it's possible to generate a Graphiz compatible diagram of the PCF.
+
+### Changes
+* The old way using a prefix `variable::` and `expr::` for column_source mapping was removed.
+
+### Bug Fixes
+* Fixed bug introduced in v1.3.0 when new mapping keys `source_is_variable` and `source_is_expression` are assigned to source JSON and XML.
+
 ## 1.3.0 <small>_ November 20, 2020</small>
 
 This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra or later, and has been progress in improving the stability and performance of the 64-bit RISC-V on Linux.
