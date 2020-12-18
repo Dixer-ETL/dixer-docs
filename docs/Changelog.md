@@ -3,7 +3,7 @@
 ## 1.4.0 <small>_ UNRELEASED</small>
 
 ### New
-* Now it's possible to generate a Graphiz compatible diagram of the PCF.
+* Now it's possible to generate a Graphviz compatible diagram of the PCF.
 
 ### Changes
 * The old way using a prefix `variable::` and `expr::` for column_source mapping was removed.

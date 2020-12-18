@@ -4,8 +4,11 @@ When executing the Dixer binary with `-h` or `--help` this is the information di
 
 ```
 Options:
--h, --help
-        display this help information
+-g, --graph
+        file path of generated graphviz compatible diagram file of PCF
+
+-gh, --graphhtml
+        same as --graph but result is the graph is embedded in html
 
 -lic, --license
         license file path
@@ -42,6 +45,9 @@ Options:
 
 -genlicreq, --generatelicenserequest
         generates the file containing the information for license generation request
+
+-h, --help
+        display this help information
 ```
 
 Examples:

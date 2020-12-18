@@ -16,6 +16,7 @@ nav:
     - Getting Dixer: documentation/Getting-Dixer.md
     - Package config file (PCF): documentation/Package-config-file.md
     - The key exec_workflow: documentation/Key-exec-workflow.md
+    - Generate a graph: documentation/Generate-graph.md
     - Create a variable: documentation/Create-a-variable.md
     - Default variables: documentation/Default-variables.md
     - Create an expression:
