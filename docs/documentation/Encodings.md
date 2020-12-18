@@ -1,6 +1,6 @@
 # Encodings
 
-Dixer support read and set encoding of connection types `csv`, `json`, `xml`, `ragged-right` and `fixed-width` using the `encoding` or `encoding_var` keys.
+Dixer supports read and set encoding of connection types `csv`, `json`, `xml`, `ragged-right` and `fixed-width` using the `encoding` or `encoding_var` keys.
 
 The supported encodings are:
 
