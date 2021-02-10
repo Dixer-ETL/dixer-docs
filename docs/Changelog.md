@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.4.0 <small>_ UNRELEASED</small>
+## 1.4.0 <small>_ February 10, 2021</small>
 
 This version upgrade the runtime to `go1.15.8`.
 
