@@ -2,6 +2,8 @@
 
 ## 1.4.0 <small>_ UNRELEASED</small>
 
+This version upgrade the runtime to `go1.15.8`.
+
 ### New
 * Now it's possible to generate a Graphviz compatible diagram of the PCF.
 
