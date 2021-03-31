@@ -62,6 +62,8 @@ datetime_format = '2006-01-02'
 
 The keys `name`, `type`, `value` and `datetime_format` are strings. The `value` key is optional for `string` variable type if this is empty.
 
+It's possible to get value of an environment variable in the OS. Use the boolean key `env` and set to `true`. You can omit the `value` key.
+
 To declare a variable that represents a expression in the value, use the boolean key `expressions` and set to `true`. Its values are evaluated with a expression, for example, concatenating these two variables the expression for type string will be:
 
 `firstname.Value + ' ' + age.ToString().Value`

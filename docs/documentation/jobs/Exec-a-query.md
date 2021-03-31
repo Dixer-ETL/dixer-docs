@@ -5,7 +5,9 @@ Dixer provides a way to execute a query in a database. To do this create a job w
 Keys:
 
 - `connection_id`: mandatory. The connection id. String.
-- `query`: mandatory. The query to execute. String.
+- `query`: optional. The query to execute. String.
+- `query_file_path`: optional. The path of file containing the query. String.
+- `query_file_path_var`: optional. variable with the path of file containing the query. String.
 
 Example:
 

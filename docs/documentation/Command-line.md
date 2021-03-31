@@ -46,6 +46,9 @@ Options:
 -genlicreq, --generatelicenserequest
         generates the file containing the information for license generation request
 
+-c, --color
+        enable or disable colored messages in terminal [0|1] default: 1
+
 -h, --help
         display this help information
 ```

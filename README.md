@@ -5,8 +5,8 @@ Documentation of [Dixer](https://dixer.stgo.do), the little but complete ETL and
 To build this documentation:
 
 - mkdocs 1.1.2
-- mkdocs material 6.2.8 `pip install mkdocs-material`
-- python 3.9.1
+- mkdocs material 7.1.0 `pip install mkdocs-material`
+- python 3.9.2
 
 ## Plugins
 

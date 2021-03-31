@@ -1,6 +1,6 @@
 # Error codes
 
-Dixer returns a code and exit with the same code when an error occurs.
+Dixer returns a code when an error occurs.
 
 Error code OVER 9000! (yes, like Vegeta) are internal errors.
 
@@ -120,6 +120,10 @@ Error code OVER 9000! (yes, like Vegeta) are internal errors.
 | 8110       | error reading directory                                                                      | an error occurred reading directory to upload to Amazon S3 Bucket                                                                                 |
 | 8111       | error deleting file in Amazon S3 Bucket                                                      | an error occurred deleting file in Amazon S3 Bucket                                                                                               |
 | 8112       | error deleting file in Amazon S3 Bucket                                                      | an error occurred waiting for file deletion in Amazon S3 Bucket                                                                                   |
+| 8113       | error assigning job with ID <<[ID]>>                                                         | an error occurred because the job ID is duplicated                                                                                                |
+| 8114       | error capturing output of process                                                            | isn't possible to capture output of process in job type process                                                                                   |
+| 8115       | error reading query file                                                                     | not possible read the query file specified in job type query                                                                                      |
+| 8116       | environment variable not exists                                                              | a variable that should be a environment variable not exists                                                                                       |
 | 9001       | internal error getting destination mapping columns                                           | a internal error happens with destination mapping columns in job type dataflow                                                                    |
 | 9002       | internal error scanning row of query                                                         | a internal error happens scanning the rows from source database in job type dataflow                                                              |
 | 9003       | internal error getting password from terminal                                                | internal error getting password from terminal                                                                                                     |

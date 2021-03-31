@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.5.0 <small>_ UNRELEASED</small>
+
+This version adds performance improvement with variables and connections.
+
+### New
+* Color in the terminal! Color for some messages in the terminal. It's beta. You can disable it with `-c false`.
+* Execute a query from file in job type `query`.
+* Declare variables that are environment variables in the OS with the new boolean key `env`.
+
+### Changes
+* The exit code for all errors in OSes not Windows is `1`.
+
+### Bug Fixes
+* Fixed the execution of PCF with multiples jobs with same ID. New error code `8113` is triggered.
+* In job type `process` send the SIGCHLD when finish to avoid zombie process.
+* Fixed not error when it's not possible to capture output of process in job type `process`. New error code `8114` is triggered.
+* Fixed error code `8092` not triggered for jobs not called in events.
+
 ## 1.4.0 <small>_ February 10, 2021</small>
 
 This version upgrade the runtime to `go1.15.8`.
