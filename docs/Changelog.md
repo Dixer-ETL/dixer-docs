@@ -2,7 +2,7 @@
 
 ## 1.5.0 <small>_ UNRELEASED</small>
 
-This version adds performance improvement with variables and connections.
+This version add performance improvements with variables and connections.
 
 ### New
 * Color in the terminal! Color for some messages in the terminal. It's beta. You can disable it with `-c false`.
