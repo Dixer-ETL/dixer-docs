@@ -17,8 +17,8 @@ For some operations, keys are differents.
 
 ## `uploadfile` and `downloadfile` operations
 
-- `local_filepath`: mandatory. The local file path to upload/download. String.
-- `local_filepath_var`: optional. Variable with the local file path. String.
+- `local_file_path`: mandatory. The local file path to upload/download. String.
+- `local_file_path_var`: optional. Variable with the local file path. String.
 - `remote_filepath`: mandatory. The remote file path. String.
 - `remote_filepath_var`: optional. Variable with the remote file path. String.
 
@@ -34,9 +34,9 @@ ignore_error = false
 disable = false
 connection_id = 'aws-connection'
 bucket = 'bucketid'
-local_filepath = 'test/file.xlsx'
+local_file_path = 'test/file.xlsx'
 remote_filepath = 'data/fileuploaded.xlsx'
-local_filepath_var = ''
+local_file_path_var = ''
 remote_filepath_var = ''
 ```
 
@@ -52,9 +52,9 @@ ignore_error = false
 disable = false
 connection_id = 'aws-connection'
 bucket = 'bucketid'
-local_filepath = 'test/filedownloaded.xlsx'
+local_file_path = 'test/filedownloaded.xlsx'
 remote_filepath = 'data/file.xlsx'
-local_filepath_var = ''
+local_file_path_var = ''
 remote_filepath_var = ''
 ```
 

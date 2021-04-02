@@ -18,8 +18,8 @@ For some operations, keys are differents.
 
 ## `uploadfile` operation keys
 
-- `local_filepath`: mandatory. The local file path to upload. String.
-- `local_filepath_var`: optional. Variable with the local file path. String.
+- `local_file_path`: mandatory. The local file path to upload. String.
+- `local_file_path_var`: optional. Variable with the local file path. String.
 - `remote_filepath`: mandatory. The remote file path. String.
 - `remote_filepath_var`: optional. Variable with the remote file path. String.
 
@@ -34,9 +34,9 @@ operation = 'uploadfile'
 ignore_error = false
 disable = false
 connection_id = 'ftp-connection'
-local_filepath = 'test/file.xlsx'
+local_file_path = 'test/file.xlsx'
 remote_filepath = 'data/fileuploaded.xlsx'
-local_filepath_var = ''
+local_file_path_var = ''
 remote_filepath_var = ''
 ```
 
@@ -62,8 +62,8 @@ local_directory_var = ''
 
 ## `downloadfile` operation keys
 
-- `local_filepath`: mandatory. The local file path to save the file downloaded. String.
-- `local_filepath_var`: optional. Variable with the local file path. String.
+- `local_file_path`: mandatory. The local file path to save the file downloaded. String.
+- `local_file_path_var`: optional. Variable with the local file path. String.
 - `remote_filepath`: mandatory. The remote file path. String.
 - `remote_filepath_var`: optional. Variable with the remote file path. String.
 - `chunk_size_kb`: optional. The chunk size of the download buffer. Int. Default 4 kilobytes.
@@ -80,9 +80,9 @@ operation = 'downloadfile'
 ignore_error = false
 disable = false
 connection_id = 'ftp-connection'
-local_filepath = 'test/filedownloaded.xlsx'
+local_file_path = 'test/filedownloaded.xlsx'
 remote_filepath = 'data/file.xlsx'
-local_filepath_var = ''
+local_file_path_var = ''
 remote_filepath_var = ''
 chunk_size_kb = 1000
 chunk_size_kb_var = ''
