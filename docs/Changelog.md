@@ -8,6 +8,7 @@ This version add performance improvements with variables and connections.
 * Color in the terminal! Color for some messages in the terminal. It's beta. You can disable it with `-c false`.
 * Execute a query from file in job type `query`.
 * Declare variables that are environment variables in the OS with the new boolean key `env`.
+* Upload a directory to an FTP Server with new FTP operation `uploaddir` 
 
 ### Changes
 * The exit code for all errors in OSes not Windows is `1`.

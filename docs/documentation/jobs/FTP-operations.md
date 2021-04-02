@@ -7,6 +7,7 @@ To do this, set the job with type `ftpoperation`.
 This job type has a key to define the file operation. The key is `operation` and accepts this values:
 
 - `uploadfile`: Upload a file.
+- `uploaddir`: Upload a directory.
 - `downloadfile`: Download a file.
 - `renamefile`: Rename a remote file.
 - `deletefile`: Delete a remote file.
@@ -37,6 +38,26 @@ local_filepath = 'test/file.xlsx'
 remote_filepath = 'data/fileuploaded.xlsx'
 local_filepath_var = ''
 remote_filepath_var = ''
+```
+
+## `uploaddir` operation keys
+
+- `local_directory`: mandatory. The local directory. String.
+- `local_directory_var`: optional. Variable with the local directory. String.
+
+Example:
+
+```toml
+[[jobs]]
+id = 'dir_upload'
+name = 'FTP Upload Directory'
+type = 'ftpoperation'
+operation = 'uploaddir'
+ignore_error = false
+disable = false
+connection_id = 'ftp-connection'
+local_directory = 'data/'
+local_directory_var = ''
 ```
 
 ## `downloadfile` operation keys
