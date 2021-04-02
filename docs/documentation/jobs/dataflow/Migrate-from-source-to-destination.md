@@ -157,6 +157,8 @@ Keys for `destination_config`:
 Keys for `source_config`:
 
 - `query`: Mandatory. To define the query to migrate the data. String.
+- `query_file_path`: Optional. The path of file containing the query. String.
+- `query_file_path_var`: Optional. variable with the path of file containing the query. String.
 
 Keys for `destination_config`:
 
