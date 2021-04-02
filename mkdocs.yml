@@ -80,6 +80,7 @@ theme:
     name: material
     features:
       - navigation.tabs
+      - navigation.top
       # - navigation.instant
 
 markdown_extensions:
