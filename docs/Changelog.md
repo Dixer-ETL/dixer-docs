@@ -9,6 +9,7 @@ This version add performance improvements with variables and connections.
 * Execute a query from file in job types `query` and `dataflow`.
 * Declare variables that are environment variables in the OS with the new boolean key `env`.
 * Upload a directory to an FTP Server with new FTP operation `uploaddir`.
+* New value `tls` for encryption type to connect to SMTP server with `SSL/TLS`. Previously only `ssl` was accepted for this encryption type.
 
 ### Changes
 * The exit code for all errors in OSes not Windows is `1`.
@@ -19,6 +20,9 @@ This version add performance improvements with variables and connections.
 * In job type `process` send the SIGCHLD when finish to avoid zombie process.
 * Fixed not error when it's not possible to capture output of process in job type `process`. New error code `8114` is triggered.
 * Fixed error code `8092` not triggered for jobs not called in events.
+
+### Libraries upgrades
+* go-simple-mail library upgraded to version [v2.8.1](https://github.com/xhit/go-simple-mail/tree/v2.8.1)
 
 ## 1.4.0 <small>_ February 10, 2021</small>
 

@@ -1345,7 +1345,7 @@ Keys:
 - `connect_timeout_var`: key to set a variable with the connect timeout. String.
 - `send_timeout`: timeout in seconds to send an email through SMTP server. Integer
 - `send_timeout_var`: key to set a variable with the send timeout. String.
-- `encryption_type`: encryption type of connection. Permitted values: `none`, `ssl`, `starttls`, otherwise `none` is used. String
+- `encryption_type`: encryption type of connection. Permitted values: `none`, `ssl`, `tls`, `starttls`, otherwise `none` is used. String
 - `encryption_type_var`: key to set a variable with the encryption type. String.
 - `auth_type`: authentication type of connection. Permitted values: `plain`, `login`, `cram-md5`, otherwise `plain` is used. String
 - `auth_type_var`: key to set a variable with the authentication type. String.
