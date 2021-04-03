@@ -20,9 +20,12 @@ This version add performance improvements with variables and connections.
 * In job type `process` send the SIGCHLD when finish to avoid zombie process.
 * Fixed not error when it's not possible to capture output of process in job type `process`. New error code `8114` is triggered.
 * Fixed error code `8092` not triggered for jobs not called in events.
+* Fixed error code `8108` never triggered when error happens uplaoding file to AWS S3.
+* Return error when isn't not possible set header in XLSX destination file.
 
 ### Libraries upgrades
 * go-simple-mail library upgraded to version [v2.8.1](https://github.com/xhit/go-simple-mail/tree/v2.8.1)
+* Excelize library upgraded to version [v2.3.2](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.3.2)
 
 ## 1.4.0 <small>_ February 10, 2021</small>
 
