@@ -16,6 +16,9 @@ This job type has a key to define the file operation. The key is `operation` and
 
 For some operations, keys are differents.
 
+!!! warning
+    In Dixer v1.4.0 and below, `local_file_path` is `local_filepath` and `remote_file_path` is `remote_filepath`.
+
 ## `uploadfile` operation keys
 
 - `local_file_path`: mandatory. The local file path to upload. String.
