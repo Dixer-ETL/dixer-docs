@@ -16,6 +16,9 @@ Options:
 -f, --file
         PCF file path
 
+-ef, --envfile
+        Environment variables file path
+
 -fmt, --format
         PCF format [toml|json|yaml] default: toml
 
