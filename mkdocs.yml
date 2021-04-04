@@ -53,6 +53,7 @@ nav:
     - Handle Jobs events: documentation/Handle-jobs-events.md
     - Time and date formatting: documentation/Time-and-date-formatting.md
     - Log: documentation/Log.md
+    - Environment variables file: documentation/Env-file.md
     - Command line: documentation/Command-line.md
     - Encrypt and decrypt the PCF: documentation/Encrypt-and-decrypt-the-PCF.md
     - Error codes: documentation/Error-codes.md

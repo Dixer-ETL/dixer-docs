@@ -8,13 +8,14 @@ The default format for Dixer is TOML. If you want to use a different format then
 
 The file can have this keys configurations:
 
-- `exec_workflow`: Optional. Key to configured your workflow with IDs of **Jobs**. See [The key `exec_workflow`](Key-exec-workflow.md). string.
+- `exec_workflow`: Optional. Key to configure your workflow with IDs of **Jobs**. See [The key `exec_workflow`](Key-exec-workflow.md). string.
+- `env_file_path`: Optional. Key with file path of environment variables files of PCF. See [Environment variables file](Env-file.md). string.
+- `variables`: Optional. Array of objects containing variables configurations. See [Create a variable](Create-a-variable.md).
+- `log`: Optional. Key where value is a object with the logger configuration. See [Log](Log.md).
+- `connections`: Optional. Array of objects containing connections configurations. See [Create a connection](Create-a-connection.md).
+- `jobs`: Mandatory. Array of objects containing **Jobs** configurations. See [Jobs types](Jobs-types.md).
 - `num_cpu`: Optional. Sets the number of logical processors to use. Int. Default is the total of logical processors.
 - `gc_percent`: Optional. Sets the garbage collection target percentage. Int. Default `100`.
-- `variables`: Optional. Array of objects containing variables configurations.
-- `log`: Optional. Key where value is a object with the logger configuration.
-- `connections`: Optional. Array of objects containing connections configurations.
-- `jobs`: Mandatory. Array of objects containing **Jobs** configurations.
 
 !!! note
     When you are creating your PCF, there are keys for your worflow works, but you also can add customized keys to meet your needs, Dixer will ignored at execution.
