@@ -1652,7 +1652,13 @@ Keys:
 - `secret_access_key_var`: key to set a variable with the secret_access_key. String.
 - `secret_access_key_encrypted`: secret_access_key encrypted. String
 - `secret_access_key_encrypted_var`: key to set a variable with the secret_access_key_encrypted. String.
+- `client_cert_file_path`: Cert file to connect to AWS if needed. String
+- `client_cert_file_path_var`: key to set a variable with the client_cert_file_path. String.
+- `client_key_file_path`: Cert fey file to connect to AWS if needed. String
+- `client_key_file_path_var`: key to set a variable with the client_key_file_path. String.
 
+!!! note
+    `client_cert_file_path` and `client_key_file_path`, if needed, both need to be set.
 
 Examples:
 

@@ -11,6 +11,7 @@ This version add performance improvements with variables and connections.
 * Execute a query from file in job types `query` and `dataflow`.
 * Declare variables that are environment variables in the OS with the new boolean key `env`.
 * New value `tls` for encryption type to connect to SMTP server with `SSL/TLS`. Previously only `ssl` was accepted for this encryption type.
+* Now it's possible to connect to AWS using TLS client certificates.
 
 ### Changes
 * The exit code for all errors in OSes not Windows is `1`.
