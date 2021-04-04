@@ -29,6 +29,7 @@ This version add performance improvements with variables and connections.
 * go-simple-mail library upgraded to version [v2.8.1](https://github.com/xhit/go-simple-mail/tree/v2.8.1)
 * Excelize library upgraded to version [v2.3.2](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.3.2)
 * copy library upgraded to version [v1.5.0](https://github.com/otiai10/copy/tree/v1.5.0)
+* aws-sdk-go library upgraded to version [v1.38.12](https://github.com/aws/aws-sdk-go/tree/v1.38.12)
 
 ## 1.4.0 <small>_ February 10, 2021</small>
 
