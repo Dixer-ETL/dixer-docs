@@ -5,10 +5,11 @@
 This version add performance improvements with variables and connections.
 
 ### New
+* Upload a directory to an FTP Server with new FTP operation `uploaddir`.
+* Delete a directory in AWS S3 with the new S3 operation `deletedir`.
 * Color in the terminal! Color for some messages in the terminal. It's beta. You can disable it with `-c false`.
 * Execute a query from file in job types `query` and `dataflow`.
 * Declare variables that are environment variables in the OS with the new boolean key `env`.
-* Upload a directory to an FTP Server with new FTP operation `uploaddir`.
 * New value `tls` for encryption type to connect to SMTP server with `SSL/TLS`. Previously only `ssl` was accepted for this encryption type.
 
 ### Changes

@@ -12,6 +12,7 @@ This job type has a key to define the file operation. The key is `operation` and
 - `uploaddir`: Upload a directory.
 - `downloadfile`: Download a file.
 - `deletefile`: Delete a remote file.
+- `deletedir`: Delete a remote directory.
 
 For some operations, keys are differents.
 
@@ -101,4 +102,22 @@ ignore_error = false
 disable = false
 connection_id = 'aws-connection'
 local_directory = "Path of local directory"
+```
+
+## `deletedir` operation keys
+
+- `remote_directory`: mandatory. The remote directory. String.
+- `remote_directory_var`: optional. Variable with the remote directory. String.
+
+```toml
+[[jobs]]
+id = 'dir_delete'
+name = 'S3 Delete directory'
+type = 's3operation'
+operation = 'deletedir'
+ignore_error = false
+disable = false
+connection_id = 'aws-connection'
+remote_directory = 'data/'
+remote_directory_var = ''
 ```
