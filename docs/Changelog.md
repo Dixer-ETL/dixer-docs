@@ -2,7 +2,7 @@
 
 ## 1.5.0 <small>_ UNRELEASED</small>
 
-This version add performance improvements with variables and connections.
+This version upgrade the runtime to `go1.15.11` and add performance improvements.
 
 ### New
 * Declare variables that are environment variables in the OS with the new boolean key `env`.
