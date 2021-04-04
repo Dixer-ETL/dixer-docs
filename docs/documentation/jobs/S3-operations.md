@@ -19,8 +19,8 @@ For some operations, keys are differents.
 
 - `local_file_path`: mandatory. The local file path to upload/download. String.
 - `local_file_path_var`: optional. Variable with the local file path. String.
-- `remote_filepath`: mandatory. The remote file path. String.
-- `remote_filepath_var`: optional. Variable with the remote file path. String.
+- `remote_file_path`: mandatory. The remote file path. String.
+- `remote_file_path_var`: optional. Variable with the remote file path. String.
 
 Example:
 
@@ -35,9 +35,9 @@ disable = false
 connection_id = 'aws-connection'
 bucket = 'bucketid'
 local_file_path = 'test/file.xlsx'
-remote_filepath = 'data/fileuploaded.xlsx'
+remote_file_path = 'data/fileuploaded.xlsx'
 local_file_path_var = ''
-remote_filepath_var = ''
+remote_file_path_var = ''
 ```
 
 Example to download:
@@ -53,15 +53,15 @@ disable = false
 connection_id = 'aws-connection'
 bucket = 'bucketid'
 local_file_path = 'test/filedownloaded.xlsx'
-remote_filepath = 'data/file.xlsx'
+remote_file_path = 'data/file.xlsx'
 local_file_path_var = ''
-remote_filepath_var = ''
+remote_file_path_var = ''
 ```
 
 ## `deletefile` operation
 
-- `remote_filepath`: mandatory. The remote file path. String.
-- `remote_filepath_var`: optional. Variable with the remote file path. String.
+- `remote_file_path`: mandatory. The remote file path. String.
+- `remote_file_path_var`: optional. Variable with the remote file path. String.
 
 Example:
 
@@ -75,8 +75,8 @@ ignore_error = false
 disable = false
 connection_id = 'aws-conn'
 bucket = 'bucketid'
-remote_filepath = 'data/file.xlsx'
-remote_filepath_var = ''
+remote_file_path = 'data/file.xlsx'
+remote_file_path_var = ''
 ```
 
 !!! tip

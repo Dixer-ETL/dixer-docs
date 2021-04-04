@@ -14,6 +14,7 @@ This version add performance improvements with variables and connections.
 ### Changes
 * The exit code for all errors in OSes not Windows is `1`.
 * Breaking change: key `local_filepath` renamed to `local_file_path` for AWS S3 and FTP operations `uploadfile` and `downloadfile`.
+* Breaking change: key `remote_filepath` renamed to `remote_file_path` for AWS S3 and FTP operations `uploadfile` and `downloadfile`(FTP only: `renamefile`).
 
 ### Bug Fixes
 * Fixed the execution of PCF with multiples jobs with same ID. New error code `8113` is triggered.
