@@ -30,7 +30,6 @@ This version upgrade the runtime to `go1.15.11` and add performance improvements
 ### Libraries upgrades
 * go-simple-mail library upgraded to version [v2.8.1](https://github.com/xhit/go-simple-mail/tree/v2.8.1)
 * Excelize library upgraded to version [v2.3.2](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.3.2)
-* copy library upgraded to version [v1.5.0](https://github.com/otiai10/copy/tree/v1.5.0)
 * aws-sdk-go library upgraded to version [v1.38.12](https://github.com/aws/aws-sdk-go/tree/v1.38.12)
 
 ## 1.4.0 <small>_ February 10, 2021</small>
