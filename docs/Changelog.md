@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.6.0 <small>_ UNRELEASED</small>
+
+### New
+* Support download a directory from AWS S3 using the new `s3operation` called `downloaddir`.
+* Support download a directory from FTP using the new `ftpoperation` called `downloaddir`.
+* New job type `updatevar` to update a variable value.
+* New job type `vartofile` to save variable value to file.
+
+### Enhancement
+* Improvements printing in terminal and saving in log file.
+* Improvements setting connections.
+* Minor improvement in `process` job type in non Windows systems.
+
+### Changes
+* Graph was refactored to add a link in job types `jobsgroup`, `bucle` and `dataflow` to see the workflow called by this. In `dataflow`, the workflow is called in `exec_workflow` in `foreach_row`.
+* The command line option `--grapthhtml` was removed and `--graph` is the same like removed `--grapthhtml`.
+
+### Bug Fixes
+* Fixed incorrect error code `8048` triggered when reading connections keys. Now new error code `8128` is triggered.
+* Handle a, maybe, future "bug" uploading local directory to AWS S3. Currently is a bug in AWS but theirs not returns any error yet.
+
 ## 1.5.0 <small>_ April 04, 2021</small>
 
 This version upgrade the runtime to `go1.15.11` and add performance improvements.

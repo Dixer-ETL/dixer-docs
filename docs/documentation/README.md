@@ -20,6 +20,8 @@
     * [Compress (compress)](jobs/Compress.md)
     * [Decompress (decompress)](jobs/Decompress.md)
     * [AWS S3 operations (s3operation)](jobs/S3-operations.md)
+    * [Update a variable (updatevar)](jobs/Update-variable.md)
+    * [Variable to file (vartofile)](jobs/Variable-to-file.md)
 * [Handle Jobs events](Handle-jobs-events.md)
 * [Time and date formatting](Time-and-date-formatting.md)
 * [Log](Log.md)

@@ -13,6 +13,7 @@ This job type has a key to define the file operation. The key is `operation` and
 - `downloadfile`: Download a file.
 - `deletefile`: Delete a remote file.
 - `deletedir`: Delete a remote directory.
+- `downloaddir`: Download a remote directory.
 
 For some operations, keys are differents.
 
@@ -21,9 +22,9 @@ For some operations, keys are differents.
 
 ## `uploadfile` and `downloadfile` operations
 
-- `local_file_path`: mandatory. The local file path to upload/download. String.
+- `local_file_path`: optional. The local file path to upload/download. String.
 - `local_file_path_var`: optional. Variable with the local file path. String.
-- `remote_file_path`: mandatory. The remote file path. String.
+- `remote_file_path`: optional. The remote file path. String.
 - `remote_file_path_var`: optional. Variable with the remote file path. String.
 
 Example:
@@ -64,7 +65,7 @@ remote_file_path_var = ''
 
 ## `deletefile` operation
 
-- `remote_file_path`: mandatory. The remote file path. String.
+- `remote_file_path`: optional. The remote file path. String.
 - `remote_file_path_var`: optional. Variable with the remote file path. String.
 
 Example:
@@ -89,7 +90,7 @@ remote_file_path_var = ''
 
 ## `uploaddir` operation
 
-- `local_directory`: mandatory. The local directory. String.
+- `local_directory`: optional. The local directory. String.
 - `local_directory_var`: optional. Variable with the local directory. String.
 
 ```toml
@@ -101,12 +102,13 @@ operation = 'uploaddir'
 ignore_error = false
 disable = false
 connection_id = 'aws-connection'
+bucket = 'bucketid'
 local_directory = "Path of local directory"
 ```
 
 ## `deletedir` operation keys
 
-- `remote_directory`: mandatory. The remote directory. String.
+- `remote_directory`: optional. The remote directory. String.
 - `remote_directory_var`: optional. Variable with the remote directory. String.
 
 ```toml
@@ -118,6 +120,26 @@ operation = 'deletedir'
 ignore_error = false
 disable = false
 connection_id = 'aws-connection'
+bucket = 'bucketid'
 remote_directory = 'data/'
 remote_directory_var = ''
+```
+
+## `downloaddir` operation keys
+
+- `remote_directory`: optional. The remote directory. String.
+- `remote_directory_var`: optional. Variable with the remote directory. String.
+- `local_directory`: optional. The local directory. String.
+- `local_directory_var`: optional. Variable with the local directory. String.
+
+```toml
+[[jobs]]
+id = 'dir_download'
+name = 'S3 Download directory'
+type = 's3operation'
+operation = 'downloaddir'
+connection_id = 'aws-connection'
+bucket = 'bucketid'
+remote_directory = 'data/'
+local_directory = "Path of local directory"
 ```

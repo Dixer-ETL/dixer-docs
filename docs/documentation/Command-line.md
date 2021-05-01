@@ -5,10 +5,7 @@ When executing the Dixer binary with `-h` or `--help` this is the information di
 ```
 Options:
 -g, --graph
-        file path of generated graphviz compatible diagram file of PCF
-
--gh, --graphhtml
-        same as --graph but result is the graph is embedded in html
+        file path of PCF graph in html
 
 -lic, --license
         license file path

@@ -13,6 +13,7 @@ This job type has a key to define the file operation. The key is `operation` and
 - `deletefile`: Delete a remote file.
 - `deletedir`: Delete a remote directory.
 - `createdir`: Create a remote directory.
+- `downloaddir`: Download a remote directory to local directory.
 
 For some operations, keys are differents.
 
@@ -153,4 +154,25 @@ disable = false
 connection_id = 'ftp-connection'
 remote_directory = 'data'
 remote_directory_var = ''
+```
+
+## `downloaddir` operation keys
+
+- `remote_directory`: mandatory. The remote directory. String.
+- `remote_directory_var`: optional. Variable with the remote directory. String.
+- `local_directory`: mandatory. The local directory. String.
+- `local_directory_var`: optional. Variable with the local directory. String.
+- `chunk_size_kb`: optional. The chunk size of the download buffer. Int. Default 4 kilobytes.
+- `chunk_size_kb_var`: optional. Variable with the chunk_size_kb. String.
+
+```toml
+[[jobs]]
+id = 'download_dir'
+name = 'FTP Download directory'
+type = 'ftpoperation'
+operation = 'downloaddir'
+connection_id = 'ftp-connection'
+remote_directory = 'f1'
+local_directory = 'test/out/test17'
+chunk_size_kb = 500
 ```
