@@ -20,6 +20,7 @@
 ### Bug Fixes
 * Fixed incorrect error code `8048` triggered when reading connections keys. Now new error code `8128` is triggered.
 * Handle a, maybe, future "bug" uploading local directory to AWS S3. Currently is a bug in AWS but theirs not returns any error yet.
+* Fixed a panic when is used the asterisk all columns way in dataflow mapping and error happens scanning rows from database.
 
 ## 1.5.0 <small>_ April 04, 2021</small>
 
