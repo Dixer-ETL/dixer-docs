@@ -12,15 +12,20 @@
 * Improvements printing in terminal and saving in log file.
 * Improvements setting connections.
 * Minor improvement in `process` job type in non Windows systems.
+* Improvements reading and writing DECIMAL datatype in SAP Hana Database.
 
 ### Changes
 * Graph was refactored to add a link in job types `jobsgroup`, `bucle` and `dataflow` to see the workflow called by this. In `dataflow`, the workflow is called in `exec_workflow` in `foreach_row`.
 * The command line option `--grapthhtml` was removed and `--graph` is the same like removed `--grapthhtml`.
+* When selecting a BOOLEAN column from SAP Hana Database, previously a `0` or `1` was returned. Now is a string `false` or `true`
 
 ### Bug Fixes
 * Fixed incorrect error code `8048` triggered when reading connections keys. Now new error code `8128` is triggered.
 * Handle a, maybe, future "bug" uploading local directory to AWS S3. Currently is a bug in AWS but theirs not returns any error yet.
 * Fixed a panic when is used the asterisk all columns way in dataflow mapping and error happens scanning rows from database.
+
+### Libraries upgrades
+* SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)
 
 ## 1.5.0 <small>_ April 04, 2021</small>
 
