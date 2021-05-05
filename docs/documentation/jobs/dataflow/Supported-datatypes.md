@@ -165,6 +165,7 @@ But, for destination, not all datatypes are covered. This is the list of support
 ## SAP HANA DB supported data type destinations
 
 - BLOB
+- BOOLEAN
 - INTEGER
 - REAL
 - BIGINT
