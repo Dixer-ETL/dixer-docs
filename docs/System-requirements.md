@@ -10,7 +10,7 @@ Dixer use in almost all **Jobs** few RAM.
 
 **Jobs** like migrate to a Excel File use hugh RAM depending the total rows to migrate.
 
-The mininal is 512 MB of RAM in most workflows.
+The mininal RAM used in most workflows is 8 MB, so you can use Dixer in low resources devices.
 
 ### Processor
 

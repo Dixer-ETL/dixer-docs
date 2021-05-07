@@ -2,6 +2,8 @@
 
 ## 1.6.0 <small>_ UNRELEASED</small>
 
+This version remove the SKY edition for unsupported platforms because SQLite3 driver only works for supported OS/ARCH.
+
 ### New
 * Support download a directory from AWS S3 using the new `s3operation` called `downloaddir`.
 * Support download a directory from FTP using the new `ftpoperation` called `downloaddir`.
@@ -27,6 +29,7 @@
 * Handle a, maybe, future "bug" uploading local directory to AWS S3. Currently is a bug in AWS but theirs not returns any error yet.
 * Fixed a panic when is used the asterisk all columns way in dataflow mapping and error happens scanning rows from database.
 * Fixed incorrect output to CSV file when delimiter is not defined.
+* Fixed error `Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work.` for officially supported platforms.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)

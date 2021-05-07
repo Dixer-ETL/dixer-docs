@@ -8,7 +8,7 @@ No support for SQLite3, IBM DB2 and ORACLE. Binaries in all platforms.
 
 ## Sky Edition
 
-White Edition + SQLite3 support. Binaries in all platforms.
+White Edition + SQLite3 support. Binaries only in officially supported platforms.
 
 ## Red Edition
 
