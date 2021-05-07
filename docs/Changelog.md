@@ -11,6 +11,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * Support download a directory from FTP using the new `ftpoperation` called `downloaddir`.
 * New job type `updatevar` to update a variable value.
 * New job type `vartofile` to save variable value to file.
+* New message when job finish successfully.
 
 ### Enhancement
 * Improvements printing in terminal and saving in log file.
