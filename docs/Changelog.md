@@ -37,6 +37,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)
+* go-toml library upgraded to version [v1.9.0](https://github.com/pelletier/go-toml/tree/v1.9.0)
 
 ## 1.5.0 <small>_ April 04, 2021</small>
 
