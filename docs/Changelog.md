@@ -15,6 +15,7 @@
 * Improvements reading and writing DECIMAL datatype in SAP Hana Database.
 * Full support BOOLEAN datatype in SAP Hana Database.
 * Added support to read a ST_GEOMETRY datatype from SAP Hana Database.
+* CSV connection default delimiter is comma if not defined.
 
 ### Changes
 * Graph was refactored to add a link in job types `jobsgroup`, `bucle` and `dataflow` to see the workflow called by this. In `dataflow`, the workflow is called in `exec_workflow` in `foreach_row`.
@@ -25,6 +26,7 @@
 * Fixed incorrect error code `8048` triggered when reading connections keys. Now new error code `8128` is triggered.
 * Handle a, maybe, future "bug" uploading local directory to AWS S3. Currently is a bug in AWS but theirs not returns any error yet.
 * Fixed a panic when is used the asterisk all columns way in dataflow mapping and error happens scanning rows from database.
+* Fixed incorrect output to CSV file when delimiter is not defined.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)

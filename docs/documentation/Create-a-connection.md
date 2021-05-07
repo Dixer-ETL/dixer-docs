@@ -47,7 +47,7 @@ Keys:
 - `delimiter_var`: key to set a variable with the delimiter. String.
 - `delimiter`: delimiter of csv file. String. Default `,`.
 - `delimiter_var`: key to set a variable with the delimiter. String.
-- `enclosure`: enclosure of csv file. String.
+- `enclosure`: enclosure of csv file. String. Default `"`.
 - `enclosure_var`: key to set a variable with the enclosure. String.
 - `encoding`: encoding of file. String. Default is `UTF-8` if not is specified.
 - `encoding_var`: key to set a variable with the encoding. String.
