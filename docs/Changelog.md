@@ -2,6 +2,8 @@
 
 ## 1.6.0 <small>_ UNRELEASED</small>
 
+This version upgrade the runtime to `go1.15.12` and add performance improvements.
+
 This version remove the SKY edition for unsupported platforms because SQLite3 driver only works for supported OS/ARCH.
 
 ### New
@@ -30,6 +32,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * Fixed a panic when is used the asterisk all columns way in dataflow mapping and error happens scanning rows from database.
 * Fixed incorrect output to CSV file when delimiter is not defined.
 * Fixed error `Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work.` for officially supported platforms.
+* Fixed error printed twice sometimes.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)
