@@ -21,6 +21,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * Full support BOOLEAN datatype in SAP Hana Database.
 * Added support to read a ST_GEOMETRY datatype from SAP Hana Database.
 * CSV connection default delimiter is comma if not defined.
+* Use the new terminal package [golang.org/x/term](https://pkg.go.dev/golang.org/x/term).
 
 ### Changes
 * Graph was refactored to add a link in job types `jobsgroup`, `bucle` and `dataflow` to see the workflow called by this. In `dataflow`, the workflow is called in `exec_workflow` in `foreach_row`.
