@@ -34,10 +34,13 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * Fixed incorrect output to CSV file when delimiter is not defined.
 * Fixed error `Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work.` for officially supported platforms.
 * Fixed error printed twice sometimes.
+* Fixed incorrect colors printed in terminal with high concurrency workflows.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)
 * go-toml library upgraded to version [v1.9.0](https://github.com/pelletier/go-toml/tree/v1.9.0)
+* Excelize library upgraded to version [v2.4.0](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.4.0)
+* Crypto library upgraded to commit [4f45737414dc](https://github.com/golang/crypto/tree/4f45737414dc)
 
 ## 1.5.0 <small>_ April 04, 2021</small>
 
