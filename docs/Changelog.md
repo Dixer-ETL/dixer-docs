@@ -42,6 +42,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * go-toml library upgraded to version [v1.9.0](https://github.com/pelletier/go-toml/tree/v1.9.0)
 * Excelize library upgraded to version [v2.4.0](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.4.0)
 * Crypto library upgraded to commit [4f45737414dc](https://github.com/golang/crypto/tree/4f45737414dc)
+* SQLite3 driver upgraded to version [v1.14.7](https://github.com/mattn/go-sqlite3/tree/v1.14.7)
 
 ## 1.5.0 <small>_ April 04, 2021</small>
 
