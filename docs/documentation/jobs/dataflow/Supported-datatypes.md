@@ -137,7 +137,7 @@ But, for destination, not all datatypes are covered. This is the list of support
 ## SQLite3 supported data type destinations
 
 - TEXT
-- BLOB
+- BLOB (in hexadeximal format)
 - INTEGER
 - REAL
 - NUMERIC
