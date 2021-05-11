@@ -2,7 +2,7 @@
 
 Dixer evaluation binaries for differents platforms.
 
-Latest stable version: [**1.6.0**](Changelog.md#160-_-unreleased)
+Latest stable version: [**1.6.0**](Changelog.md#160-_-may-11-2021)
 
 ## Officially supported platforms
 
@@ -56,8 +56,6 @@ Latest stable version: [**1.6.0**](Changelog.md#160-_-unreleased)
     === "White"
         - [x86](../dl/1.6.0/white/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.6.0/white/windows/dixer_386.exe" target="_blank">File Hash</a>**
         - [ARMv7](../dl/1.6.0/white/windows/dixer_armV7.exe) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.6.0/white/windows/dixer_armV7.exe" target="_blank">File Hash</a>**
-    === "Green"
-        - [x86](../dl/1.6.0/green/windows/dixer_386.exe) &nbsp;&nbsp;&nbsp;  **<a href="../dl/?info=1.6.0/green/windows/dixer_386.exe" target="_blank">File Hash</a>**
 
 ### Linux
 

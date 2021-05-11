@@ -1,10 +1,12 @@
 # Changelog
 
-## 1.6.0 <small>_ UNRELEASED</small>
+## 1.6.0 <small>_ May 11, 2021</small>
 
 This version upgrade the runtime to `go1.15.12` and add performance improvements.
 
 This version remove the SKY edition for unsupported platforms because SQLite3 driver only works for supported OS/ARCH.
+
+Binaries corrections. Now were built correctly.
 
 ### New
 * Support download a directory from AWS S3 using the new `s3operation` called `downloaddir`.
@@ -27,6 +29,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * Graph was refactored to add a link in job types `jobsgroup`, `bucle` and `dataflow` to see the workflow called by this. In `dataflow`, the workflow is called in `exec_workflow` in `foreach_row`.
 * The command line option `--grapthhtml` was removed and `--graph` is the same like removed `--grapthhtml`.
 * When selecting a `BOOLEAN` column from SAP Hana Database, previously a `0` or `1` was returned. Now is a string `false` or `true`.
+* Removed binary Green Edition for Windows 386.
 
 ### Bug Fixes
 * Fixed incorrect error code `8048` triggered when reading connections keys. Now new error code `8128` is triggered.
@@ -36,6 +39,7 @@ This version remove the SKY edition for unsupported platforms because SQLite3 dr
 * Fixed error `Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work.` for officially supported platforms.
 * Fixed error printed twice sometimes.
 * Fixed incorrect colors printed in terminal with high concurrency workflows.
+* Fixed errors in compiled binaries because failed builders.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.103.3](https://github.com/SAP/go-hdb/tree/v0.103.3)
