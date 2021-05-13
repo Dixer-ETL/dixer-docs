@@ -43,6 +43,7 @@ timeout = 0
 expected_code = 0
 save_output = true
 ```
+
 !!! tip
     You can save the output in a variable setting the `output_path` to `variable::var_name`
 
