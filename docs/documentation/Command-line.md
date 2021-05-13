@@ -53,10 +53,34 @@ Options:
         display this help information
 ```
 
-Examples:
+## Examples
 
-- Executing a PCF: `Dixer_binary -f path_of_pcf`
+### Execute a PCF
 
-- Executing a PCF setting variables values: `Dixer_binary -f path_of_pcf -v variable1="my name" -v variable2="my lastname"`
+```bash
+/path/dixer/binary -f path_of_pcf
+```
 
-- Encrypting a PCF: `Dixer_binary -f path_of_pcf -en`
+### Execute a PCF setting variables values
+
+```bash
+/path/dixer/binary -f path_of_pcf -v variable1="my name" -v variable2="my lastname"
+```
+
+### Encrypting a PCF
+
+```bash
+/path/dixer/binary -f path_of_pcf -en
+```
+
+### Execute a specific job in your PCF
+
+```bash
+/path/dixer/binary -f path_of_pcf -w jobID
+```
+
+### Execute a specific workflow in your PCF
+
+```bash
+/path/dixer/binary -f path_of_pcf -w jobID1:jobID2,jobID3
+```
