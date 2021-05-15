@@ -226,6 +226,8 @@ In Microsoft SQL Server, is possible to use the [Bulk Copy Fast Load Feature](ht
 
 The mapping values for `column_source` and `column_destination` is different depending the source and destination. See the mapping keys in [Keys for job `dataflow`](#keys-for-job-dataflow).
 
+For `column_source` and `column_destination` in databases, use the column name.
+
 For `column_source` in CSV, Ragged Right and Fixed Width are the index of columns in the file, starting with 0.
 
 For `column_destination` in Ragged Right and Fixed Width, this key isn't necessary.
