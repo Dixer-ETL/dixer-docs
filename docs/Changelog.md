@@ -12,7 +12,7 @@ TODO: Sky and Red edition for Linux ARM64
 * New method [`ToStringDecimal`](documentation/expressions/Float-methods.md#tostringdecimaln-int) for `float` variable type to convert the `float` to a string with fixed decimal values.
 * TODO: mapping from file
 * TODO: connections from file
-* TODO: variables from file
+* Now it's possible to set the variables in another file and call the file in the main PCF with `variables_file_path` key.
 
 ### Enhancement
 * With IBM DB driver upgrade, now is possible to read big numbers from `DECIMAL` datatype from DB2.

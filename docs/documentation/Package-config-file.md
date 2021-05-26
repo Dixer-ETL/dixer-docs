@@ -11,6 +11,7 @@ The file can have this keys configurations:
 - `exec_workflow`: Optional. Key to configure your workflow with IDs of **Jobs**. See [The key `exec_workflow`](Key-exec-workflow.md). string.
 - `env_file_path`: Optional. Key with file path of environment variables files of PCF. See [Environment variables file](Env-file.md). string.
 - `variables`: Optional. Array of objects containing variables configurations. See [Create a variable](Create-a-variable.md).
+- `variables_file_path`: Optional. File path containing the variables to avoid putting in the main PCF file. The file should be in the same format (toml, json, yaml) that main PCF file.
 - `log`: Optional. Key where value is a object with the logger configuration. See [Log](Log.md).
 - `connections`: Optional. Array of objects containing connections configurations. See [Create a connection](Create-a-connection.md).
 - `jobs`: Mandatory. Array of objects containing **Jobs** configurations. See [Jobs types](Jobs-types.md).
