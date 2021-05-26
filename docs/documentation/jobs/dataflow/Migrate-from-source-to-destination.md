@@ -38,7 +38,9 @@ The type is `dataflow`.
     - `connection_id`: Mandatory. To set connection ID. String.
 - `destination_config`: Mandatory. To define keys of destination configuration. Object.
     - `connection_id`: Mandatory. To set connection ID. String.
-- `mapping`: Mandatory. To define array of columns to mapping. Array Object.
+- `mapping_file_path`: Optional. File path containing the mapping to avoid putting in the main PCF file. The file should be in the same format (toml, json, yaml) that main PCF file. Mapping should be inside `jobs` object.
+- `mapping_file_path_var`: Optional. Variable defined with the file path of mapping file.
+- `mapping`: Mandatory if mapping should be in main PCF. To define array of columns to mapping. Array Object.
     - `column_source`: Mandatory. To define the source column. String.
     - `column_destination`: Mandatory. (*but not necessary when destination are Fixed Width or Ragged Right*) to define the destination column. String.
     - `omit`: Optional. To define omit the column in destination. Bool.
@@ -276,3 +278,5 @@ For JSON input file:
 To get `val` key, in `column_source` set `code->misc->comment->val` (Supposing `colors` is the value for json connection in key `array_key`). Same logic with XML input file.
 
 For JSON only: you can get a value from a JSON array specifying the index in `source_json_array_index` key.
+
+Mapping of a dataflow can be set in another file and called with `mapping_file_path` and can be accept variable with the path using `mapping_file_path_var`
