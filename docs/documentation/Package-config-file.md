@@ -14,6 +14,8 @@ The file can have this keys configurations:
 - `variables_file_path`: Optional. File path containing the variables to avoid putting in the main PCF file. The file should be in the same format (toml, json, yaml) that main PCF file.
 - `log`: Optional. Key where value is a object with the logger configuration. See [Log](Log.md).
 - `connections`: Optional. Array of objects containing connections configurations. See [Create a connection](Create-a-connection.md).
+- `connections_file_path`: Optional. File path containing the connections to avoid putting in the main PCF file. The file should be in the same format (toml, json, yaml) that main PCF file.
+- `connections_file_path_var`: Optional. Variable defined with the file path of connections file.
 - `jobs`: Mandatory. Array of objects containing **Jobs** configurations. See [Jobs types](Jobs-types.md).
 - `num_cpu`: Optional. Sets the number of logical processors to use. Int. Default is the total of logical processors.
 - `gc_percent`: Optional. Sets the garbage collection target percentage. Int. Default `100`.

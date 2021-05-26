@@ -11,7 +11,7 @@ TODO: Sky and Red edition for Linux ARM64
 * Support insert to `DOUBLE` column in FirebirdSQL.
 * New method [`ToStringDecimal`](documentation/expressions/Float-methods.md#tostringdecimaln-int) for `float` variable type to convert the `float` to a string with fixed decimal values.
 * TODO: mapping from file
-* TODO: connections from file
+* Now it's possible to set the connections in another file and call the file in the main PCF with `connections_file_path` key. It's possible to set a variable too indicating this file path with `connections_file_path_var`.
 * Now it's possible to set the variables in another file and call the file in the main PCF with `variables_file_path` key.
 
 ### Enhancement
