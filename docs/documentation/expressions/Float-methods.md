@@ -45,3 +45,11 @@ Returns a bool. If `f` value is `1` returns `true`, otherwise `false`. Example:
 ```javascript
 f.ToBool().Value //returns false
 ```
+
+## `ToStringDecimal(n int)`
+
+Returns a string of `float` with fixed decimal points defined in `n`. Example:
+
+```javascript
+f.ToStringDecimal(3).Value //returns "12.500"
+```

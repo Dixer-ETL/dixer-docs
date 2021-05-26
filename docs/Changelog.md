@@ -1,5 +1,43 @@
 # Changelog
 
+## 1.7.0 <small>_ UNRELEASED</small>
+
+TODO: runtime update
+TODO: Apple M1 binary
+TODO: Sky and Red edition for Linux ARM64
+
+### New
+* Disabe the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
+* Support insert to `DOUBLE` column in FirebirdSQL.
+* New method [`ToStringDecimal`](documentation/expressions/Float-methods.md#tostringdecimaln-int) for `float` variable type to convert the `float` to a string with fixed decimal values.
+* TODO: mapping from file
+* TODO: connections from file
+* TODO: variables from file
+
+### Enhancement
+* With IBM DB driver upgrade, now is possible to read big numbers from `DECIMAL` datatype from DB2.
+* Return error code 8130 when dataflow doesn't have a mapping defined.
+
+### Changes
+* When a column `TIME` is selected from FirebirdSQL and MySQL to a file without date formatting, the year is `0001` instead `0000`.
+* The time returned from date columns from Oracle Database respect the timezone of database. See [https://stackoverflow.com/a/29272926](https://stackoverflow.com/a/29272926/4734062).
+
+### Bug Fixes
+* Fixed exporting `CLOB` from DB2: now the output is a correct hexadeximal value when destination is not a database.
+* Fixed inserting not hexadecimal value to `BLOB` column in FirebirdSQL.
+* Fixed reading `CHAR` (internal Dixer datatype is `TEXT`) and `VARCHAR` (internal Dixer datatype is `VARYING`) columns from FirebirdSQL.
+* Fixed export duplicated last row when source is a XLSX file generated from Quickbooks (and maybe other software).
+
+### Libraries upgrades
+* color upgraded to version [v1.12.0](https://github.com/fatih/color/tree/v1.12.0)
+* IBM DB driver upgraded to version [v0.4.1](https://github.com/ibmdb/go_ibm_db/tree/v0.4.1)
+* FirebirdSQL driver upgraded to commit [8695045a86c3c5](https://github.com/nakagami/firebirdsql/tree/8695045a86c3c5)
+* decimal upgraded to version [v1.2.0](https://github.com/shopspring/decimal/tree/v1.2.0)
+* PostgreSQL driver upgraded to version [v1.10.2](https://github.com/lib/pq/tree/v1.10.2)
+* MySQL driver upgraded to version [v1.6.0](https://github.com/go-sql-driver/mysql/tree/v1.6.0)
+* Oracle driver upgraded to version [v0.24.3](https://github.com/godror/godror/tree/v0.24.3)
+* MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
+
 ## 1.6.0 <small>_ May 11, 2021</small>
 
 This version upgrade the runtime to `go1.15.12` and add performance improvements.

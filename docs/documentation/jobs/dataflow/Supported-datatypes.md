@@ -197,3 +197,4 @@ But, for destination, not all datatypes are covered. This is the list of support
 - INT64
 - SHORT
 - VARYING
+- DOUBLE

@@ -53,6 +53,9 @@ Options:
         display this help information
 ```
 
+!!! note
+    You can disable the color in terminal setting the [`NO_COLOR`](https://no-color.org/) environment variable to any value or setting the `TERM` environment variable to `dumb`.
+
 ## Examples
 
 ### Execute a PCF
