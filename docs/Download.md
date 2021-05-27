@@ -76,6 +76,10 @@ Latest stable version: [**1.7.0**](Changelog.md#170-_-unreleased)
         - [PPC64LE POWER9](../dl/1.7.0/white/linux/dixer_ppc64le_power9) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/linux/dixer_ppc64le_power9" target="_blank">File Hash</a>**
         - [S/390x](../dl/1.7.0/white/linux/dixer_s390x) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/linux/dixer_s390x" target="_blank">File Hash</a>**
         - [RISC-V 64 bit](../dl/1.7.0/white/linux/dixer_riscv64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/linux/dixer_riscv64" target="_blank">File Hash</a>**
+    === "Sky"
+        - [ARM64](../dl/1.7.0/sky/linux/dixer_arm64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/sky/linux/dixer_arm64" target="_blank">File Hash</a>**
+    === "Red"
+        - [ARM64](../dl/1.7.0/red/linux/dixer_arm64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/red/linux/dixer_arm64" target="_blank">File Hash</a>**
 
 ### macOS
 

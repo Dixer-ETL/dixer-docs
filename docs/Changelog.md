@@ -4,11 +4,11 @@
 
 This version upgrade the runtime to `go1.16.4`.
 
-Included White Edition binary for macOS with Apple Silicon.
-
-Included White Edition binary for OpenBSD in MIPS64 arch.
-
-- TODO: Sky and Red edition for Linux ARM64
+### New binaries:
+* White Edition for macOS with Apple Silicon.
+* White Edition for OpenBSD in MIPS64 arch.
+* Sky Edition for Linux in ARM64 arch.
+* Red Edition for Linux in ARM64 arch.
 
 ### New
 * Disabe the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
