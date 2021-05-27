@@ -77,6 +77,12 @@ Latest stable version: [**1.7.0**](Changelog.md#170-_-unreleased)
         - [S/390x](../dl/1.7.0/white/linux/dixer_s390x) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/linux/dixer_s390x" target="_blank">File Hash</a>**
         - [RISC-V 64 bit](../dl/1.7.0/white/linux/dixer_riscv64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/linux/dixer_riscv64" target="_blank">File Hash</a>**
 
+### macOS
+
+??? tip "Editions"
+    === "White"
+        - [ARM64](../dl/1.7.0/white/darwin/dixer_arm64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/darwin/dixer_arm64" target="_blank">File Hash</a>**
+
 ### AIX
 
 ??? tip "Editions"
@@ -125,6 +131,7 @@ Latest stable version: [**1.7.0**](Changelog.md#170-_-unreleased)
         - [ARMv6](../dl/1.7.0/white/openbsd/dixer_armV6) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/openbsd/dixer_armV6" target="_blank">File Hash</a>**
         - [ARMv7](../dl/1.7.0/white/openbsd/dixer_armV7) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/openbsd/dixer_armV7" target="_blank">File Hash</a>**
         - [ARM64](../dl/1.7.0/white/openbsd/dixer_arm64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/openbsd/dixer_arm64" target="_blank">File Hash</a>**
+        - [MIPS64](../dl/1.7.0/white/openbsd/dixer_mips64) &nbsp;&nbsp;&nbsp; **<a href="../dl/?info=1.7.0/white/openbsd/dixer_mips64" target="_blank">File Hash</a>**
 
 ### Plan9
 

@@ -32,7 +32,7 @@ Kernel version 2.6.23 or later. Only x64.
 
 ### macOS
 
-macOS (OS X) 10.12 or higher. Only x64.
+macOS 10.12 or higher. Only x64.
 
 ## Not officially supported OS and archs
 
@@ -46,16 +46,20 @@ Dixer offer evaluation binaries in these OS and Archs, but aren't officially sup
 ### Linux (others)
 
 * x86
-* ARM (v5,v6,v7,v8): requires newer kernels at least v3.1
+* ARM and ARM64 (v5,v6,v7,v8): requires newer kernels at least v3.1
 * MIPS, MIPSLE, MIPS64
 * MIPS64LE: kernel 4.1 fails, works 4.8
 * PPC64 and PPC64LE. POWER8 and POWER9
 * S/390x
 * RISC-V 64 bits
 
+### macOS
+
+macOS 11 or higher with Apple Silicon
+
 ### OpenBSD
 
-OpenBSD with kernel >= 6.2 and arch x86, x64, ARMv6, ARMv7, ARMv8
+OpenBSD with kernel >= 6.2 and arch x86, x64, ARMv6, ARMv7, ARMv8, MIPS64
 
 ### FreeBSD
 
@@ -63,9 +67,7 @@ FreeBSD 11.2 or higher. x86, x64, ARMv6, ARMv7, ARMv8
 
 ### NetBSD
 
-Kernel version >= 7.0 and x86, x64, ARMv6, ARMv7
-
-ARMv8 can be unestable.
+Kernel version >= 7.0 and x86, x64, ARMv6, ARMv7, ARMv8
 
 ### Solaris
 

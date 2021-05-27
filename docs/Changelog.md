@@ -4,9 +4,11 @@
 
 This version upgrade the runtime to `go1.16.4`.
 
-- TODO: Apple M1 binary
+Included White Edition binary for macOS with Apple Silicon.
+
+Included White Edition binary for OpenBSD in MIPS64 arch.
+
 - TODO: Sky and Red edition for Linux ARM64
-- TODO: add oses changes compatibility
 
 ### New
 * Disabe the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
@@ -19,6 +21,7 @@ This version upgrade the runtime to `go1.16.4`.
 ### Enhancement
 * With IBM DB driver upgrade, now is possible to read big numbers from `DECIMAL` datatype from DB2.
 * Return error code 8130 when dataflow doesn't have a mapping defined.
+* Binary for NetBSD in ARM64 more stable.
 
 ### Changes
 * When a column `TIME` is selected from FirebirdSQL and MySQL to a file without date formatting, the year is `0001` instead `0000`.
