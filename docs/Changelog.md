@@ -35,7 +35,7 @@ TODO: Sky and Red edition for Linux ARM64
 * decimal upgraded to version [v1.2.0](https://github.com/shopspring/decimal/tree/v1.2.0)
 * PostgreSQL driver upgraded to version [v1.10.2](https://github.com/lib/pq/tree/v1.10.2)
 * MySQL driver upgraded to version [v1.6.0](https://github.com/go-sql-driver/mysql/tree/v1.6.0)
-* Oracle driver upgraded to version [v0.24.3](https://github.com/godror/godror/tree/v0.24.3)
+* Oracle driver upgraded to version [v0.25.0](https://github.com/godror/godror/tree/v0.25.0)
 * MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
 
 ## 1.6.0 <small>_ May 11, 2021</small>
