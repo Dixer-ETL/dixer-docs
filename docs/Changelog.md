@@ -6,6 +6,7 @@ This version upgrade the runtime to `go1.16.4`.
 
 - TODO: Apple M1 binary
 - TODO: Sky and Red edition for Linux ARM64
+- TODO: add oses changes compatibility
 
 ### New
 * Disabe the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
