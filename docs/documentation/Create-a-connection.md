@@ -676,6 +676,8 @@ Keys:
 - `database_var`: key to set a variable with the path of database. String.
 - `port`: port to connect to the database in Firebird SQL server. Integer. Default 3050.
 - `port_var`: key to set a variable with the port. String.
+- `encoding`: encoding of database. String. Default is `UTF-8` if not is specified.
+- `encoding_var`: key to set a variable with the encoding. String.
 - `username`: username to connect to the database in Firebird SQL server. String
 - `username_var`: key to set a variable with the username. String.
 - `password`: password to connect to the database in Firebird SQL server. String

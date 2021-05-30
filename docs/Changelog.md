@@ -17,6 +17,7 @@ This version upgrade the runtime to `go1.16.4`.
 * Now it's possible to set the mapping in another file and call the file in the main PCF with `mapping_file_path` key. It's possible to set a variable too indicating this file path with `mapping_file_path_var`.
 * Now it's possible to set the connections in another file and call the file in the main PCF with `connections_file_path` key. It's possible to set a variable too indicating this file path with `connections_file_path_var`.
 * Now it's possible to set the variables in another file and call the file in the main PCF with `variables_file_path` key.
+* Support connect to FirebirdSQL database with encoding different to UTF-8 using the key `encoding` or `encoding_var` in the connection.
 
 ### Enhancement
 * With IBM DB driver upgrade, now is possible to read big numbers from `DECIMAL` datatype from DB2.
