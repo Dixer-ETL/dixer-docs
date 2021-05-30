@@ -36,9 +36,9 @@ This version upgrade the runtime to `go1.16.4`.
 ### Libraries upgrades
 * color upgraded to version [v1.12.0](https://github.com/fatih/color/tree/v1.12.0)
 * IBM DB driver upgraded to version [v0.4.1](https://github.com/ibmdb/go_ibm_db/tree/v0.4.1)
-* FirebirdSQL driver upgraded to commit [8695045a86c3c5](https://github.com/nakagami/firebirdsql/tree/8695045a86c3c5)
+* FirebirdSQL driver upgraded to version [v0.9.1](https://github.com/nakagami/firebirdsql/tree/v0.9.1)
 * decimal upgraded to version [v1.2.0](https://github.com/shopspring/decimal/tree/v1.2.0)
-* PostgreSQL driver upgraded to version [v1.10.2](https://github.com/lib/pq/tree/v1.10.2)
+* PostgreSQL driver upgraded to commit [9e747ca506](https://github.com/lib/pq/tree/9e747ca506)
 * MySQL driver upgraded to version [v1.6.0](https://github.com/go-sql-driver/mysql/tree/v1.6.0)
 * Oracle driver upgraded to version [v0.25.0](https://github.com/godror/godror/tree/v0.25.0)
 * MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
