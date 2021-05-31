@@ -43,6 +43,7 @@ This version upgrade the runtime to `go1.16.4`.
 * MySQL driver upgraded to version [v1.6.0](https://github.com/go-sql-driver/mysql/tree/v1.6.0)
 * Oracle driver upgraded to version [v0.25.0](https://github.com/godror/godror/tree/v0.25.0)
 * MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
+* SAP HANA DB driver upgraded to version [v0.104.0](https://github.com/SAP/go-hdb/tree/v0.104.0)
 
 ## 1.6.0 <small>_ May 11, 2021</small>
 
