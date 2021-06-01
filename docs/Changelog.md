@@ -24,7 +24,7 @@ This version upgrade the runtime to `go1.16.4`.
 ### Enhancement
 * With IBM DB driver upgrade, now is possible to read big numbers from `DECIMAL` datatype from DB2.
 * Return error code 8130 when dataflow doesn't have a mapping defined.
-* Binary for NetBSD in ARM64 more stable.
+* Stable binary for NetBSD in ARM64.
 
 ### Changes
 * When a column `TIME` is selected from FirebirdSQL and MySQL to a file without date formatting, the year is `0001` instead `0000`.
@@ -46,6 +46,9 @@ This version upgrade the runtime to `go1.16.4`.
 * Oracle driver upgraded to version [v0.25.0](https://github.com/godror/godror/tree/v0.25.0)
 * MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
 * SAP HANA DB driver upgraded to version [v0.104.0](https://github.com/SAP/go-hdb/tree/v0.104.0)
+* yaml upgraded to version [v2.4.0](https://github.com/go-yaml/yaml/tree/v2.4.0)
+* jsparser upgraded to version [v1.5.0](https://github.com/tamerh/jsparser/tree/v1.5.0)
+* ftp library upgraded to commit [5d4190119067](https://github.com/jlaffaye/ftp/tree/5d4190119067)
 
 ## 1.6.0 <small>_ May 11, 2021</small>
 
