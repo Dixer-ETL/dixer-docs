@@ -19,6 +19,7 @@ This version upgrade the runtime to `go1.16.4`.
 * Now it's possible to set the variables in another file and call the file in the main PCF with `variables_file_path` key.
 * Support connect to FirebirdSQL database with encoding different to UTF-8 using the key `encoding` or `encoding_var` in the connection.
 * Support execute a query from variable in job type `query` with the new key `query_var`.
+* Support execute a select query from variable in job type `dataflow` when source is a database with the new key `query_var`.
 
 ### Enhancement
 * With IBM DB driver upgrade, now is possible to read big numbers from `DECIMAL` datatype from DB2.
