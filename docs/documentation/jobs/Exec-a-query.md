@@ -6,6 +6,7 @@ Keys:
 
 - `connection_id`: mandatory. The connection id. String.
 - `query`: optional. The query to execute. String.
+- `query_var`: optional. variable with the query to execute. String.
 - `query_file_path`: optional. The path of file containing the query. String.
 - `query_file_path_var`: optional. variable with the path of file containing the query. String.
 
