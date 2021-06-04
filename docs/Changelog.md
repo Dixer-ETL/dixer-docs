@@ -1,10 +1,10 @@
 # Changelog
 
-## 1.7.0 <small>_ UNRELEASED</small>
+## 1.7.0 <small>_ June 03, 2021</small>
 
 This version upgrade the runtime to `go1.16.5`.
 
-### New binaries:
+### New binaries
 * White Edition for macOS with Apple Silicon (ARM64).
 * White Edition for OpenBSD in MIPS64 arch.
 * Sky Edition for Linux in ARM64 arch.
