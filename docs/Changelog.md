@@ -5,7 +5,7 @@
 This version upgrade the runtime to `go1.16.5`.
 
 ### New binaries:
-* White Edition for macOS with Apple Silicon.
+* White Edition for macOS with Apple Silicon (ARM64).
 * White Edition for OpenBSD in MIPS64 arch.
 * Sky Edition for Linux in ARM64 arch.
 * Red Edition for Linux in ARM64 arch.
