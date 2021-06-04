@@ -2,7 +2,7 @@
 
 ## 1.7.0 <small>_ UNRELEASED</small>
 
-This version upgrade the runtime to `go1.16.4`.
+This version upgrade the runtime to `go1.16.5`.
 
 ### New binaries:
 * White Edition for macOS with Apple Silicon.
@@ -31,6 +31,7 @@ This version upgrade the runtime to `go1.16.4`.
 * The time returned from date columns from Oracle Database respect the timezone of database. See [https://stackoverflow.com/a/29272926](https://stackoverflow.com/a/29272926/4734062).
 
 ### Bug Fixes
+* Fixed bug added in v1.5.0 executing job types `httprequest` and `soaprequest`.
 * Fixed exporting `CLOB` from DB2: now the output is a correct hexadeximal value when destination is not a database.
 * Fixed inserting not hexadecimal value to `BLOB` column in FirebirdSQL.
 * Fixed reading `CHAR` (internal Dixer datatype is `TEXT`) and `VARCHAR` (internal Dixer datatype is `VARYING`) columns from FirebirdSQL.
@@ -43,12 +44,16 @@ This version upgrade the runtime to `go1.16.4`.
 * decimal upgraded to version [v1.2.0](https://github.com/shopspring/decimal/tree/v1.2.0)
 * PostgreSQL driver upgraded to commit [9e747ca506](https://github.com/lib/pq/tree/9e747ca506)
 * MySQL driver upgraded to version [v1.6.0](https://github.com/go-sql-driver/mysql/tree/v1.6.0)
-* Oracle driver upgraded to version [v0.25.0](https://github.com/godror/godror/tree/v0.25.0)
+* Oracle driver upgraded to version [v0.25.1](https://github.com/godror/godror/tree/v0.25.1)
 * MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
 * SAP HANA DB driver upgraded to version [v0.104.0](https://github.com/SAP/go-hdb/tree/v0.104.0)
 * yaml upgraded to version [v2.4.0](https://github.com/go-yaml/yaml/tree/v2.4.0)
 * jsparser upgraded to version [v1.5.0](https://github.com/tamerh/jsparser/tree/v1.5.0)
 * ftp library upgraded to commit [5d4190119067](https://github.com/jlaffaye/ftp/tree/5d4190119067)
+* go-toml library upgraded to version [v1.9.1](https://github.com/pelletier/go-toml/tree/v1.9.1)
+* aws-sdk-go library upgraded to version [v1.38.54](https://github.com/aws/aws-sdk-go/tree/v1.38.54)
+* go-simple-mail library upgraded to version [v2.9.1](https://github.com/xhit/go-simple-mail/tree/v2.9.1)
+* gosoap library upgraded to version [v1.4.4](https://github.com/tiaguinho/gosoap/tree/v1.4.4)
 
 ## 1.6.0 <small>_ May 11, 2021</small>
 
