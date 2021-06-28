@@ -765,6 +765,8 @@ Keys:
 
 - `database`: path of SQLite3 database. String
 - `database_var`: key to set a variable with the path of SQLite3 database. String.
+- `journal_mode`: path of SQLite3 journal_mode. Allowed `DELETE`, `TRUNCATE`, `WAL`, `MEMORY`, `PERSIST`. Default `DELETE`. String
+- `journal_mode_var`: key to set a variable with the path of SQLite3 journal_mode. String.
 
 Examples:
 

@@ -104,6 +104,7 @@ But, for destination, not all datatypes are covered. This is the list of support
 - BYTEA
 - TIMESTAMPTZ
 - MACADDR8
+- JSONB
 
 !!! info
     There are a lot of datatypes in PostgreSQL, if you need support for one datatype please create an issue with result of this job:

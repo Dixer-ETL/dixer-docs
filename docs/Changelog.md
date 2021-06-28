@@ -1,5 +1,36 @@
 # Changelog
 
+## 1.8.0 <small>_ UNRELEASED</small>
+
+### New
+* Allowed read the license path file from environment variable `DIXER_LIC`.
+* Added new key to mapping in `dataflow` to return the timezone of datetime when source is DB.
+* Ability to set the journal mode to SQLite3 database.
+* Support `JSONB` datatype column destination in PostgreSQL.
+* Allow fixed value in mapping column_source when setting new key `source_is_value`.
+* Allow normal expressions for Mapping Expression and Skip Rule Expression.
+
+### Enhancement
+* Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
+* The `--format` command line option allow `yml` for `yaml`.
+* The `--format` command line option now is case insensitive.
+* FirebirdSQL can be used in RISC-V arch.
+* Allowed case insensitive `encoding` for connections.
+* Improved initial execution of binary.
+* Improvements with `dataflow` execution when expressions are used.
+
+### Changes
+* Date and times from DB in `dataflow` are returned without timezone applied.
+* `skip` object in `dataflow` job type renamed to `dataflow_skip`. Not a breaking change, but `skip` is deprecated.
+
+### Bug Fixes
+* Fixed access denied when using `decompress` job type in non Windows systems.
+* Fixed panic inserting to `DECIMAL` in SAP HANA DB.
+* Fixed reading DATARACE when using Skip Rule when you have two or more dataflow using it.
+
+### Libraries upgrades
+* SAP HANA DB driver upgraded to version [v0.104.1](https://github.com/SAP/go-hdb/tree/v0.104.1)
+
 ## 1.7.0 <small>_ June 03, 2021</small>
 
 This version upgrade the runtime to `go1.16.5`.
@@ -11,7 +42,7 @@ This version upgrade the runtime to `go1.16.5`.
 * Red Edition for Linux in ARM64 arch.
 
 ### New
-* Disabe the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
+* Disable the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
 * Support insert to `DOUBLE` column in FirebirdSQL.
 * New method [`ToStringDecimal`](documentation/expressions/Float-methods.md#tostringdecimaln-int) for `float` variable type to convert the `float` to a string with fixed decimal values.
 * Now it's possible to set the mapping in another file and call the file in the main PCF with `mapping_file_path` key. It's possible to set a variable too indicating this file path with `mapping_file_path_var`.

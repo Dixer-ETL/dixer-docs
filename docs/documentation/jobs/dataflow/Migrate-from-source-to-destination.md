@@ -45,7 +45,8 @@ The type is `dataflow`.
     - `column_destination`: Mandatory. (*but not necessary when destination are Fixed Width or Ragged Right*) to define the destination column. String.
     - `omit`: Optional. To define omit the column in destination. Bool.
     - `source_is_variable`: Optional. To define if `column_source` is a variable. Bool. 
-    - `source_is_expression`: Optional. To define if `column_source` is an expression. Bool. 
+    - `source_is_expression`: Optional. To define if `column_source` is an expression. Bool.
+    - `source_is_value`: Optional. To define if `column_source` is a fixed value. Bool.
     - `null_when_empty`: Optional. To define if `null` will be inserted in destination database if source value is empty. Bool.
     - `trim_space`: Optional. To trim all trailing spaces in the value when source is a file CSV, Fixed Width, JSON, XML, XLSX, Ragged Right. Bool.
     - `source_datetime_format`: Optional. To define the format of a datetime in the source where this is not a database and destination is a database (SQLITE3 excluded). String. [How formatting](../../Time-and-date-formatting.md).
@@ -55,7 +56,8 @@ The type is `dataflow`.
     - `destination_json_bool_as_string`: Optional. Use to define if bool input should be a string in JSON object destination. Bool. Default `false`.
     - `source_xml_unescape`: Optional. Use to define if value from xml source should be unescaped. Bool. Default `false`.
     - `destination_xml_cdata`: Optional. Use to define if value to xml source should be CDATA. Bool. Default `false`.
-- `skip`: Optional. To define a rule with an expression to skip rows when match. Object
+    - `source_time_with_tz`: Optional. To return the timezone for datetime column from database source. Bool. Default `false`.
+- `dataflow_skip`: Optional. To define a rule with an expression to skip rows when match. Object. (`skip in Dixer v1.7.0 and below`).
     - `rule`: Optional. To define expression to skip rows if match. String.
     - `rule_var`: Optional. To set variable with defined expression to skip rows if match. String.
     - `disable`: Optional. To enable or disable the skip rule expression. Bool. Default `false`.

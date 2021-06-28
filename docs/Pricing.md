@@ -19,7 +19,10 @@ License is only supported for `Windows`, `Linux` and `macOS` where the command f
 
 A one-time payment license that includes one year of updates.
 
-When buy it, send a mail to [`support+lic@stgo.do`](mailto:support+lic@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply will be sent with license file attached to it.
+When buy it, send a mail to [`support@stgo.do`](mailto:support@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply will be sent with license file attached to it.
 
 !!! tip
     Please use the [evaluation binary](Download.md) before buying a license.
+
+!!! tip
+    License file path can be set in environment variable `DIXER_LIC` to avoid use the `--license` option from command line.

@@ -25,7 +25,7 @@ source_is_expression = true
 column_destination = 'concatenated_name'
 ```
 
-The expression mapping should have always a mapping column index. If there isn't a  mapping index it will through an error.
+The expression mapping can be a normal expression without a mapping index column, but in v1.7.0 and below, the expression mapping should have always a mapping column index. If there isn't a  mapping index it will through an error.
 
 The `string` in the expression mapping it's the expected type of value. If value is a integer for example, it will be converted, but if you specified `int` and the value returned in the mapping is a string and cannot be converted to int, then an error is triggered.
 
