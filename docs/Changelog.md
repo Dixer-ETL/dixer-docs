@@ -30,6 +30,7 @@
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.104.1](https://github.com/SAP/go-hdb/tree/v0.104.1)
+* FirebirdSQL driver upgraded to commit [620d823b8097](https://github.com/nakagami/firebirdsql/tree/620d823b8097)
 
 ## 1.7.0 <small>_ June 03, 2021</small>
 

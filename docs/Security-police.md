@@ -5,7 +5,7 @@
 If you find a security vulnerability in Dixer, please **follow the steps below**.
 
 1. **Do NOT comment about the vulnerability publicly.**
-2. Please email [`support+sec@stgo.do`](mailto:support+sec@stgo.do) with the following format:
+2. Please email [`support@stgo.do`](mailto:support@stgo.do) with the following format:
 
     ```none
     Subject: Dixer Security Risk

@@ -205,6 +205,8 @@ Examples:
 
 ## Connection to MSSQL database
 
+To connect to Microsoft SQL Database you need have TCP enabled. [Open your SQL Server Configuration](https://docs.microsoft.com/en-us/sql/relational-databases/sql-server-configuration-manager?redirectedfrom=MSDN&view=sql-server-ver15) (Windows only) and [allow TCP connections](https://store.oceansystems.com/knowledgebase/quickdme-faqs/sql-server-sql-express/configure-sql-express-server-host-enable-tcp-ip-firewall-settings/)
+
 Keys:
 
 - `host`: ip or name of the MSSQL server. String
@@ -808,6 +810,12 @@ Examples:
 
 ## Connection to Oracle database
 
+To connect to Oracle, you need the Oracle Instant Client required in your platform.
+
+- [Windows](https://oracle.github.io/odpi/doc/installation.html#windows)
+- [Linux](https://oracle.github.io/odpi/doc/installation.html#linux)
+- [macOS](https://oracle.github.io/odpi/doc/installation.html#macos)
+
 Keys:
 
 - `host`: ip or name of the Oracle server. String
@@ -898,6 +906,23 @@ Examples:
     In these examples the keys `port_var`, `host_var`, `username_var`, `password_var`, `password_encrypted`, `username_encrypted`, `username_encrypted_var`, `password_encrypted_var` and `servicename_var` can be omitted because are empty.
 
 ## Connection to IBM DB2 database
+
+To connect to IBM DB2, you need the [clidriver for DB2](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/).
+
+For Windows, set in `PATH` the bin folder inside clidriver folder: PATH=`C:\clidriver\bin`
+
+For Linux and macOS:
+
+```bash
+export DB2HOME=/home/uname/ibmdb/clidriver
+
+To execute:
+
+Linux:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DB2HOME/lib
+Mac:
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$DB2HOME/lib
+```
 
 Keys:
 
