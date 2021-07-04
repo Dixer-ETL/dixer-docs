@@ -23,6 +23,7 @@
 ### Changes
 * Date and times from DB in `dataflow` are returned without timezone applied.
 * `skip` object in `dataflow` job type renamed to `dataflow_skip`. Not a breaking change, but `skip` is deprecated.
+* Error inserting row only returns the row data when source is not a database.
 
 ### Bug Fixes
 * Fixed access denied when using `decompress` job type in non Windows systems.
@@ -30,8 +31,10 @@
 * Fixed reading DATARACE when using Skip Rule when you have two or more dataflow using it.
 
 ### Libraries upgrades
-* SAP HANA DB driver upgraded to version [v0.104.1](https://github.com/SAP/go-hdb/tree/v0.104.1)
+* SAP HANA DB driver upgraded to version [v0.105.1](https://github.com/SAP/go-hdb/tree/v0.105.1)
 * FirebirdSQL driver upgraded to commit [620d823b8097](https://github.com/nakagami/firebirdsql/tree/620d823b8097)
+* go-toml library upgraded to version [v1.9.3](https://github.com/pelletier/go-toml/tree/v1.9.3)
+* term library upgraded to commit [6886f2dfbf5b](https://github.com/golang/term/tree/6886f2dfbf5b)
 
 ## 1.7.0 <small>_ June 03, 2021</small>
 

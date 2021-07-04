@@ -50,7 +50,7 @@ The type is `dataflow`.
     - `null_when_empty`: Optional. To define if `null` will be inserted in destination database if source value is empty. Bool. NOTE: From v1.8.0 you can use it when source is a database.
     - `trim_space`: Optional. To trim all trailing spaces in the value when source is a file CSV, Fixed Width, JSON, XML, XLSX, Ragged Right. Bool.
     - `source_datetime_format`: Optional. To define the format of a datetime in the source where this is not a database and destination is a database (SQLITE3 excluded). String. [How formatting](../../Time-and-date-formatting.md).
-    - `destination_datetime_format`: Optional. To define the format of a datetime in the destination where this is not a database (SQLITE3 excluded). String. [How formatting](../../Time-and-date-formatting.md).
+    - `destination_datetime_format`: Optional. To define the format of a datetime in the destination where this is not a database and source is database (SQLITE3 excluded). String. [How formatting](../../Time-and-date-formatting.md).
     - `source_json_array_index`: Optional. To define the index to get from a JSON array type value when source is JSON. int
     - `destination_json_number_as_string`: Optional. Use to define if number input should be a string in JSON object destination. Bool. Default `false`.
     - `destination_json_bool_as_string`: Optional. Use to define if bool input should be a string in JSON object destination. Bool. Default `false`.
