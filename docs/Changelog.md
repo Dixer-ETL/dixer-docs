@@ -9,6 +9,7 @@
 * Support `JSONB` datatype column destination in PostgreSQL.
 * Allow fixed value in mapping column_source when setting new key `source_is_value`.
 * Allow normal expressions for Mapping Expression and Skip Rule Expression.
+* `null_when_empty` now works when source is a database.
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
