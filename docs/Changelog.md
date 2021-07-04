@@ -2,6 +2,8 @@
 
 ## 1.8.0 <small>_ UNRELEASED</small>
 
+The evaluation time decreased from 1 minute to 15 seconds.
+
 ### New
 * Allowed read the license path file from environment variable `DIXER_LIC`.
 * Added new key to mapping in `dataflow` to return the timezone of datetime when source is DB.
@@ -19,6 +21,7 @@
 * Allowed case insensitive `encoding` for connections.
 * Improved initial execution of binary.
 * Improvements with `dataflow` execution when expressions are used.
+* Allow convert string with number with decimals to int in Expression Mapping.
 
 ### Changes
 * Date and times from DB in `dataflow` are returned without timezone applied.
