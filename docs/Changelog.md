@@ -12,6 +12,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Allow fixed value in mapping column_source when setting new key `source_is_value`.
 * Allow normal expressions for Mapping Expression and Skip Rule Expression.
 * `null_when_empty` now works when source is a database.
+* TODO: #269
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
@@ -22,6 +23,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Improved initial execution of binary.
 * Improvements with `dataflow` execution when expressions are used.
 * Allow convert string with number with decimals to int in Expression Mapping.
+* TODO: #284
 
 ### Changes
 * Date and times from DB in `dataflow` are returned without timezone applied.
