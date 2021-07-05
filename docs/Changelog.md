@@ -23,6 +23,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Improved initial execution of binary.
 * Improvements with `dataflow` execution when expressions are used.
 * Allow convert string with number with decimals to int in Expression Mapping.
+* Allow get `NUMBER` int64 from Oracle.
 * TODO: #284
 
 ### Changes
