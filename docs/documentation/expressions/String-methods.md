@@ -56,7 +56,7 @@ st.TrimSpace().Value //returns "abcdefgh ijklmnop"
 
 ## `ReplaceAll(old string, new string)`
 
-Returns the string with all contiguous sequence of characters in `old` replaced by `new`. Examples:
+Returns the string with all contiguous sequence of characters in `old` replaced by `new`. It's case sensitive Examples:
 
 ```javascript
 st.ReplaceAll(' ','').Value //returns "abcdefghijklmnop"
@@ -68,6 +68,14 @@ st.ReplaceAll('abcd','ZZZZ').Value //returns " ZZZZefgh ijklmnop "
 
 ```javascript
 st.ReplaceAll(' ','').ReplaceAll('abcd','ZZZZ').Value //returns "ZZZZefghijklmnop"
+```
+
+## `ReplaceAllInsensitive(old string, new string)`
+
+Returns the string with all contiguous sequence of characters in `old` replaced by `new`. It's case insensitive but more slow. Examples:
+
+```javascript
+st.ReplaceAllInsensitive('ABCD','zzzz').Value //returns " zzzzefgh ijklmnop "
 ```
 
 ## `Capitalize()`

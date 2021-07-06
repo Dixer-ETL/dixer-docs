@@ -1,6 +1,6 @@
 # Expression Mapping
 
-This feature allows to add a derivated column in your mapping with evaluates a expression or get the value of a variable for a new mapping column.
+This feature allows to add a derivated column or modify the current column value in your mapping that evaluates a expression or get the value of a variable for a new mapping column.
 
 It's possible to evaluate the value of a mapping and create a derivated column with expression with the key `source_is_expression` in `true` and format the expression in this form in the column source:
 
@@ -50,7 +50,7 @@ Also you can omit the columns for only get the derivated column:
 
 ```toml
 [[jobs.mapping]]
-column_source = 'mapping.string.1.Value + ' ' + mapping.string.2.Value'
+column_source = 'mapping.string.1.Value + " " + mapping.string.2.Value'
 source_is_expression = true
 column_destination = 'concatenated_name'
 
@@ -64,7 +64,24 @@ column_source = 'lastname'
 column_destination = 'lastname'
 omit = true
 ```
-# With variables
+
+## Apply expression to same column
+
+You can modify the same column using `this` instead index and the key `apply_expression` with the expression instead `source_is_expression`:
+
+```toml
+[[jobs.mapping]]
+column_source = 'firstname'
+column_destination = 'firstname'
+omit = true
+
+[[jobs.mapping]]
+column_source = 'lastname'
+apply_expression = 'mapping.string.0.Value + " " + mapping.string.this.Value'
+column_destination = 'fullname'
+```
+
+## With variables
 
 Also is possible to add a variable value, simply add a mapping where column source key `source_is_variable` is `true` and `column_source` is the name of a variable. Example:
 

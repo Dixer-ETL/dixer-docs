@@ -5,14 +5,16 @@
 The evaluation time decreased from 1 minute to 15 seconds.
 
 ### New
-* Allowed read the license path file from environment variable `DIXER_LIC`.
+* Allow read the license path file from environment variable `DIXER_LIC`.
 * Added new key to mapping in `dataflow` to return the timezone of datetime when source is DB.
 * Ability to set the journal mode to SQLite3 database.
 * Support `JSONB` datatype column destination in PostgreSQL.
 * Allow fixed value in mapping column_source when setting new key `source_is_value`.
 * Allow normal expressions for Mapping Expression and Skip Rule Expression.
 * `null_when_empty` now works when source is a database.
-* TODO: #269
+* Now it's possible add mapping expression for the same column using `mapping.{type}.this.Value`
+* New method for string expression [`ReplaceAllInsensitive`](documentation/expressions/String-methods.md#replaceallinsensitiveold-string-new-string) to replace strings case insensitive.
+* `bucle` can configured with a new key `counter_var` to update a int variable with actual counter from `init` to `end` and use that counter in your jobs.
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
@@ -24,9 +26,13 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Improvements with `dataflow` execution when expressions are used.
 * Allow convert string with number with decimals to int in Expression Mapping.
 * Allow get `NUMBER` int64 from Oracle.
-* TODO: #284
+* Allow repeat column source index for CSV, Ragged Right and Fixed Width.
+* MSSQL bulkcopy from int to varchar and nvarchar.
+* MSSQL bulkcopy from float to int.
+* MSSQL forked driver driver updated.
 
 ### Changes
+* Breaking change: job type `bucle` refactored. `iterations` replaced by `end` and is like a normal for loop.
 * Date and times from DB in `dataflow` are returned without timezone applied.
 * `skip` object in `dataflow` job type renamed to `dataflow_skip`. Not a breaking change, but `skip` is deprecated.
 * Error inserting row only returns the row data when source is not a database.
@@ -35,6 +41,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Fixed access denied when using `decompress` job type in non Windows systems.
 * Fixed panic inserting to `DECIMAL` in SAP HANA DB.
 * Fixed reading DATARACE when using Skip Rule when you have two or more dataflow using it.
+* Fixed dataflow variables to databases not evaluated.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.105.1](https://github.com/SAP/go-hdb/tree/v0.105.1)
