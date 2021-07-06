@@ -19,6 +19,8 @@ Keys:
 - `reply_to_var`: optional. Variable with Reply To of the mail. String.
 - `subject`: optional. Subject of the mail. String.
 - `subject_var`: optional. Variable with subject of the mail. String.
+- `message_content`: optional. Content of the mail. String.
+- `message_content_var`: optional. Variable with content of the mail. String.
 - `is_html`: optional. Define if message content is html. Bool. Default `false`.
 - `is_html_var`: optional. Variable with definition bool if message content is html. String.
 - `attachments`: optional. Define attachments path of mail. Array string.
