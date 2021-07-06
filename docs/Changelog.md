@@ -118,6 +118,7 @@ Binaries corrections. Now were built correctly.
 * New job type `updatevar` to update a variable value.
 * New job type `vartofile` to save variable value to file.
 * New message when job finish successfully.
+* Support exec a job if meet a condition with an expression with new key `exec_condition`.
 
 ### Enhancement
 * Improvements printing in terminal and saving in log file.
