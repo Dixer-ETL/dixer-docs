@@ -25,6 +25,8 @@ Keys:
 - `is_html_var`: optional. Variable with definition bool if message content is html. String.
 - `attachments`: optional. Define attachments path of mail. Array string.
 - `attachments_var`: optional. Variable with definition of attachments. Variable should be a string where the value is all attachments path separated by pipe `|`. String.
+- `attach_optional`: optional. To ignore empty attachments error. Bool.
+- `attach_optional_var`: optional. Variable with the value of `attach_optional`. String.
 
 Example:
 

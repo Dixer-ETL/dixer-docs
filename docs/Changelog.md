@@ -16,6 +16,8 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * New method for string expression [`ReplaceAllInsensitive`](documentation/expressions/String-methods.md#replaceallinsensitiveold-string-new-string) to replace strings case insensitive.
 * `bucle` can configured with a new key `counter_var` to update a int variable with actual counter from `init` to `end` and use that counter in your jobs.
 * New job type [`fileexists`](documentation/jobs/File-exists.md) to check if file exists.
+* New key `attach_optional` for `mail` job type to ignore empty attachments values.
+* Support connect to SMTP Server without authentication setting `none` in `auth_type`.
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
@@ -43,12 +45,14 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Fixed panic inserting to `DECIMAL` in SAP HANA DB.
 * Fixed reading DATARACE when using Skip Rule when you have two or more dataflow using it.
 * Fixed dataflow variables to databases not evaluated.
+* Avoid exec the events when job `exec_condition` is `false`.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.105.1](https://github.com/SAP/go-hdb/tree/v0.105.1)
 * FirebirdSQL driver upgraded to commit [620d823b8097](https://github.com/nakagami/firebirdsql/tree/620d823b8097)
 * go-toml library upgraded to version [v1.9.3](https://github.com/pelletier/go-toml/tree/v1.9.3)
 * term library upgraded to commit [6886f2dfbf5b](https://github.com/golang/term/tree/6886f2dfbf5b)
+* go-simple-mail library upgraded to version [v2.10.0](https://github.com/xhit/go-simple-mail/tree/v2.10.0)
 
 ## 1.7.0 <small>_ June 03, 2021</small>
 

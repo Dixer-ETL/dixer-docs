@@ -1376,7 +1376,7 @@ Keys:
 - `send_timeout_var`: key to set a variable with the send timeout. String.
 - `encryption_type`: encryption type of connection. Permitted values: `none`, `ssl`, `tls`, `starttls`, otherwise `none` is used. String
 - `encryption_type_var`: key to set a variable with the encryption type. String.
-- `auth_type`: authentication type of connection. Permitted values: `plain`, `login`, `cram-md5`, otherwise `plain` is used. String
+- `auth_type`: authentication type of connection. Permitted values: `plain`, `login`, `cram-md5`, `none`, otherwise `plain` is used. String (`none` from v1.8.0)
 - `auth_type_var`: key to set a variable with the authentication type. String.
 
 Examples:
