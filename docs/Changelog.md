@@ -15,6 +15,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Now it's possible add mapping expression for the same column using `mapping.{type}.this.Value`
 * New method for string expression [`ReplaceAllInsensitive`](documentation/expressions/String-methods.md#replaceallinsensitiveold-string-new-string) to replace strings case insensitive.
 * `bucle` can configured with a new key `counter_var` to update a int variable with actual counter from `init` to `end` and use that counter in your jobs.
+* New job type [`fileexists`](documentation/jobs/File-exists.md) to check if file exists.
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.

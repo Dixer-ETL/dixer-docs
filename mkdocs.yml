@@ -52,6 +52,7 @@ nav:
       - AWS S3 operations (s3operation): documentation/jobs/S3-operations.md
       - Update a variable (updatevar): documentation/jobs/Update-variable.md
       - Variable to file (vartofile): documentation/jobs/Variable-to-file.md
+      - File exists (fileexists): documentation/jobs/File-exists.md
     - Handle Jobs events: documentation/Handle-jobs-events.md
     - Time and date formatting: documentation/Time-and-date-formatting.md
     - Log: documentation/Log.md

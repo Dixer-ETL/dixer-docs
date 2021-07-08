@@ -17,6 +17,10 @@ The supported are:
 - [`jobsgroup`](jobs/Jobs-group.md): to execute a workflow like a unique job.
 - [`compress`](jobs/Compress.md): to compress files and directories in a zip file.
 - [`decompress`](jobs/Decompress.md): to decompress a zip file in a given path.
+- [`s3operation`](jobs/S3-operations.md): to make AWS S3 operations (upload, download, etc...).
+- [`updatevar`](jobs/Update-variable.md): to update a variable.
+- [`vartofile`](jobs/Variable-to-file.md) to save the content of variable to file.
+- [`fileexists`](jobs/File-exists.md): to check if file exists.
 
 !!! note "Important note"
         All job types have these keys:
