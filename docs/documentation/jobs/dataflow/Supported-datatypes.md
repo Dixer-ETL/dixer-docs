@@ -199,3 +199,4 @@ But, for destination, not all datatypes are covered. This is the list of support
 - SHORT
 - VARYING
 - DOUBLE
+- BOOLEAN

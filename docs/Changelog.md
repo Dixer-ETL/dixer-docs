@@ -18,6 +18,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * New job type [`fileexists`](documentation/jobs/File-exists.md) to check if file exists.
 * New key `attach_optional` for `mail` job type to ignore empty attachments values.
 * Support connect to SMTP Server without authentication setting `none` in `auth_type`.
+* Support insert to `BOOLEAN` datatype in FirebirdSQL.
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
@@ -33,6 +34,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * MSSQL bulkcopy from int to varchar and nvarchar.
 * MSSQL bulkcopy from float to int.
 * MSSQL forked driver driver updated.
+* Return error selecting FirebirdSQL 4.0 new datatypes `INT128`, `DECFLOAT(16)`, `DECFLOAT(34)`, `TIMESTAMP WITH TIME ZONE` and `TIMESTAMP WITH TIME ZONE`. Currently aren't supported.
 
 ### Changes
 * Breaking change: job type `bucle` refactored. `iterations` replaced by `end` and is like a normal for loop.
@@ -46,6 +48,8 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Fixed reading DATARACE when using Skip Rule when you have two or more dataflow using it.
 * Fixed dataflow variables to databases not evaluated.
 * Avoid exec the events when job `exec_condition` is `false`.
+* Fix panic when error checking Oracle Database rows (this panic wasn't never in released binaries)
+
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.105.1](https://github.com/SAP/go-hdb/tree/v0.105.1)
