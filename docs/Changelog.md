@@ -19,6 +19,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * New key `attach_optional` for `mail` job type to ignore empty attachments values.
 * Support connect to SMTP Server without authentication setting `none` in `auth_type`.
 * Support insert to `BOOLEAN` datatype in FirebirdSQL.
+* Support FirebirdSQL 4.0 read and insert to `INT128`, `TIME WITH TIME ZONE` and `TIMESTAMP WITH TIME ZONE`.
 
 ### Enhancement
 * Improvements in `dataflow` from DB to DB insertion. Now is possible insert a lot of types to another types with automatic convertions.
@@ -34,7 +35,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * MSSQL bulkcopy from int to varchar and nvarchar.
 * MSSQL bulkcopy from float to int.
 * MSSQL forked driver driver updated.
-* Return error selecting FirebirdSQL 4.0 new datatypes `INT128`, `DECFLOAT(16)`, `DECFLOAT(34)`, `TIMESTAMP WITH TIME ZONE` and `TIMESTAMP WITH TIME ZONE`. Currently aren't supported.
+* Return error selecting FirebirdSQL 4.0 new datatypes `DECFLOAT(16)`, `DECFLOAT(34)`. Currently aren't supported.
 
 ### Changes
 * Breaking change: job type `bucle` refactored. `iterations` replaced by `end` and is like a normal for loop.
@@ -49,11 +50,11 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Fixed dataflow variables to databases not evaluated.
 * Avoid exec the events when job `exec_condition` is `false`.
 * Fix panic when error checking Oracle Database rows (this panic wasn't never in released binaries)
-
+* Fixed panic selecting columns `TIME WITH TIME ZONE` and `TIMESTAMP WITH TIME ZONE` from FirebirdSQL 4.0
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.105.1](https://github.com/SAP/go-hdb/tree/v0.105.1)
-* FirebirdSQL driver upgraded to commit [620d823b8097](https://github.com/nakagami/firebirdsql/tree/620d823b8097)
+* (TODO: Upgrade commit) FirebirdSQL driver upgraded to commit [620d823b8097](https://github.com/nakagami/firebirdsql/tree/620d823b8097)
 * go-toml library upgraded to version [v1.9.3](https://github.com/pelletier/go-toml/tree/v1.9.3)
 * term library upgraded to commit [6886f2dfbf5b](https://github.com/golang/term/tree/6886f2dfbf5b)
 * go-simple-mail library upgraded to version [v2.10.0](https://github.com/xhit/go-simple-mail/tree/v2.10.0)
