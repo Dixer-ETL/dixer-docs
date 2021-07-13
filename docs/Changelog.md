@@ -1,8 +1,10 @@
 # Changelog
 
-## 1.8.0 <small>_ UNRELEASED</small>
+## 1.8.0 <small>_ July 12, 2021</small>
 
 This version upgrade the runtime to `go1.16.6`.
+
+Note: For Windows x64 Sky, Red, Green and Full editions, the runtime is `go1.16.5`.
 
 The evaluation time decreased from 1 minute to 15 seconds.
 

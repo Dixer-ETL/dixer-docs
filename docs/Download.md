@@ -2,7 +2,7 @@
 
 Dixer evaluation binaries for differents platforms.
 
-Latest stable version: [**1.8.0**](Changelog.md#180-_-unreleased)
+Latest stable version: [**1.8.0**](Changelog.md#180-_-july-12-2021)
 
 ## Officially supported platforms
 
