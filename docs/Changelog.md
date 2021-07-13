@@ -60,7 +60,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * go-toml library upgraded to version [v1.9.3](https://github.com/pelletier/go-toml/tree/v1.9.3)
 * term library upgraded to commit [6886f2dfbf5b](https://github.com/golang/term/tree/6886f2dfbf5b)
 * go-simple-mail library upgraded to version [v2.10.0](https://github.com/xhit/go-simple-mail/tree/v2.10.0)
-* (TODO: Upgrade commit) MSSQL driver upgraded to commit [35162394aa](https://github.com/denisenkom/go-mssqldb/tree/35162394aa)
+* MSSQL driver upgraded to commit [a78da2aabd817](https://github.com/denisenkom/go-mssqldb/tree/a78da2aabd817)
 
 ## 1.7.0 <small>_ June 03, 2021</small>
 
