@@ -200,3 +200,6 @@ But, for destination, not all datatypes are covered. This is the list of support
 - VARYING
 - DOUBLE
 - BOOLEAN
+- INT128
+- TIME WITH TIME ZONE
+- TIMESTAMP WITH TIME ZONE
