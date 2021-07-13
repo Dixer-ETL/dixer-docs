@@ -2,6 +2,8 @@
 
 ## 1.8.0 <small>_ UNRELEASED</small>
 
+This version upgrade the runtime to `go1.16.6`.
+
 The evaluation time decreased from 1 minute to 15 seconds.
 
 ### New
