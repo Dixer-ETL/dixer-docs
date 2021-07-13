@@ -56,7 +56,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 
 ### Libraries upgrades
 * SAP HANA DB driver upgraded to version [v0.105.1](https://github.com/SAP/go-hdb/tree/v0.105.1)
-* (TODO: Upgrade commit) FirebirdSQL driver upgraded to commit [620d823b8097](https://github.com/nakagami/firebirdsql/tree/620d823b8097)
+* FirebirdSQL driver upgraded to commit [1d8ebc461c6](https://github.com/nakagami/firebirdsql/tree/1d8ebc461c6)
 * go-toml library upgraded to version [v1.9.3](https://github.com/pelletier/go-toml/tree/v1.9.3)
 * term library upgraded to commit [6886f2dfbf5b](https://github.com/golang/term/tree/6886f2dfbf5b)
 * go-simple-mail library upgraded to version [v2.10.0](https://github.com/xhit/go-simple-mail/tree/v2.10.0)
