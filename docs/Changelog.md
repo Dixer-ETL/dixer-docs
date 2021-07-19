@@ -10,6 +10,9 @@
 * Improvements in `dataflow`.
 * Allow repeat column for XLSX source in `dataflow`.
 
+### Changes
+* When source is XLSX one column only, if cell is empty then is ignored.
+
 ### Bug Fixes
 * Fixed rows has duplicated values for previous row in `dataflow`.
 * Fixed reading XLSX file with empty rows and different indexes because Office 365.
