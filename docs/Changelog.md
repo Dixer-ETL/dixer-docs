@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.8.1 <small>_ UNRELEASED</small>
+## 1.8.1 <small>_ July 18, 2021</small>
 
 ### New
 * New default variable `OS` with the operative system listed in [`OS list`](documentation/OS-list.md).
