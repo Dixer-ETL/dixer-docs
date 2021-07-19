@@ -907,7 +907,7 @@ Examples:
 
 ## Connection to IBM DB2 database
 
-To connect to IBM DB2, you need the [clidriver for DB2](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/).
+To connect to IBM DB2, you need the clidriver for DB2. Use [this link](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/) or [this](https://www.ibm.com/support/pages/node/323035) to download it.
 
 For Windows, set in `PATH` the bin folder inside clidriver folder: PATH=`C:\clidriver\bin`
 

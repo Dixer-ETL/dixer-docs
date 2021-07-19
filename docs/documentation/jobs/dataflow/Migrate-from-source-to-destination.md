@@ -22,7 +22,7 @@ Dixer allows to migrate data from and to:
 
 **Microsoft SQL Server requires TLS 1.2 (MSSQL 2008 SP4 or superior, MSSQL 2008 R2 SP3 or superior)*
 
-**IBM-DB2 requires [clidriver](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/). In Windows is runtime need it, but others OS need it to execute the Dixer binary.*
+**IBM-DB2 requires clidriver, use [this link](https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/) or [this](https://www.ibm.com/support/pages/node/323035) to download it. In Windows is runtime need it, but others OS need it to execute the Dixer binary.*
 
 **Oracle requires [Oracle Instant Client](https://www.oracle.com/database/technologies/instant-client/downloads.html) at runtime.*
 
