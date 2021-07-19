@@ -78,7 +78,8 @@ For all destinations (except when source is variables), is possible to ignore ro
 
 Keys for `source_config`:
 
-- None
+- `has_wrong_number_fields`: Optional. To load data from CSV with ramdon columns length for row. Default `false`. Bool.
+- `has_wrong_number_fields_var`: Optional. Variable with value to load data from CSV with ramdon columns length for row. String.
 
 Keys for `destination_config`:
 

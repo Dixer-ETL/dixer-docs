@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.8.1 <small>_ UNRELEASED</small>
+
+### New
+* New default variable `OS` with the operative system listed in [`OS list`](documentation/OS-list.md).
+* New key `has_wrong_number_fields` for dataflow source config to load data from CSV with ramdon columns length.
+
+### Enhancement
+* Improvements in `dataflow`.
+* Allow repeat column for XLSX source in `dataflow`.
+
+### Bug Fixes
+* Fixed rows has duplicated values for previous row in `dataflow`.
+* Fixed reading XLSX file with empty rows and different indexes because Office 365.
+
+### Libraries upgrades
+* FirebirdSQL driver upgraded to commit [72ac8744015a](https://github.com/nakagami/firebirdsql/tree/72ac8744015a)
+
 ## 1.8.0 <small>_ July 12, 2021</small>
 
 This version upgrade the runtime to `go1.16.6`.
