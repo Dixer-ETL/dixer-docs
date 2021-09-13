@@ -348,6 +348,7 @@ Keys:
 
 - `path`: the path of file. String.
 - `path_var`: key to set a variable with the path. String.
+- `data_var`: variable with json fixed content to load instead using the key `path`.
 - `array_key`: json array key for get the data. String.
 - `array_key_var`: key to set a variable with the json array key. String.
 - `encoding`: encoding of file. String. Default is `UTF-8` if not is specified.
@@ -461,6 +462,7 @@ Keys:
 
 - `path`: the path of file. String.
 - `path_var`: key to set a variable with the path. String.
+- `data_var`: variable with xml fixed content to load instead using the key `path`.
 - `row_name`: xml row name key to get the data. String.
 - `row_name_var`: key to set a variable with the xml row name key. String.
 - `root_name`: xml name of root for output only. String.

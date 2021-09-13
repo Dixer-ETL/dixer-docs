@@ -9,7 +9,7 @@ This version upgrade the runtime to `go1.17.1`.
 * Support read protected XLSX file.
 * TODO: #322
 * TODO: #321
-* TODO: #316 and #317
+* Support load JSON and XML data from variable instead file with new key `data_var` when setting JSON and XML connections.
 * Support `arguments_var` in job type `process`.
 * SQLite3 it's has experimental support in White Edition in these os/arch combinations:
     - darwin/amd64
