@@ -60,7 +60,16 @@ value = "2020-01-01"
 datetime_format = '2006-01-02'
 ```
 
-The keys `name`, `type`, `value` and `datetime_format` are strings. The `value` key is optional for `string` variable type if this is empty.
+The keys `name`, `type`, `value` and `datetime_format` are strings. The `value` key is optional since v2.0.0.
+
+If `value` key is not set since v2.0.0, the default values are:
+
+* `int`: 0
+* `float`: 0
+* `bool`: false
+* `string`: *empty*
+* `map`:  *empty*
+* `datetime`: 0000-01-01 00:00:00
 
 It's possible to get value of an environment variable in the OS. Use the boolean key `env` and set to `true`. You can omit the `value` key.
 

@@ -1,5 +1,50 @@
 # Changelog
 
+## 2.0.0 <small>_ UNRELEASED</small>
+
+This version upgrade the runtime to `go1.17.1`.
+
+### New
+* White Edition for Windows ARM64.
+* Support read protected XLSX file.
+* TODO: #322
+* TODO: #321
+* TODO: #316 and #317
+* TODO: #310
+* SQLite3 it's has experimental support in White Edition in these os/arch combinations:
+    - darwin/amd64
+    - darwin/arm64
+    - freebsd/amd64
+    - linux/386
+    - linux/amd64
+    - linux/arm v5
+    - linux/arm v6
+    - linux/arm v7
+    - linux/arm64
+    - windows/amd64
+
+### Enhancement
+* Allow declare variables of type `int`, `float` and `bool` without `value` key in PCF.
+* Performance improvements reading large PCF.
+* Binary size reduced in some platforms (excluding white edition binaries with experimental SQLite3 support).
+* Upgrade to aws-sdk-go-v2.
+
+### Changes
+* TODO: #326
+* Dropped support to connect to AWS using client certificate.
+
+### Bug Fixes
+* Fix bucle iteration counter is printed with value 1 in terminal.
+
+### Libraries upgrades
+* go-toml library upgraded to version [v1.9.4](https://github.com/pelletier/go-toml/tree/v1.9.4)
+* Oracle driver upgraded to version [v0.25.4](https://github.com/godror/godror/tree/v0.25.4)
+* FirebirdSQL driver upgraded to version [v0.9.2](https://github.com/nakagami/firebirdsql/tree/v0.9.2)
+* SAP HANA DB driver upgraded to version [v0.105.3](https://github.com/SAP/go-hdb/tree/v0.105.3)
+* Excelize library upgraded to version [v2.4.1](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.4.1)
+* Expr library upgraded to version [v1.9.0](https://github.com/antonmedv/expr/tree/v1.9.0)
+* SQLite3 driver upgraded to version [v1.14.8](https://github.com/mattn/go-sqlite3/tree/v1.14.8)
+
 ## 1.8.1 <small>_ July 18, 2021</small>
 
 ### New

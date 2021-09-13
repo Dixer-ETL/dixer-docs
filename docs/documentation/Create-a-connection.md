@@ -623,6 +623,10 @@ Keys:
 - `path_var`: key to set a variable with the path. String.
 - `sheet_name`: name of sheet. String.
 - `sheet_name_var`: key to set a variable with the name of sheet. String.
+- `password`: password to read XLSX file. String
+- `password_var`: key to set a variable with the password. String.
+- `password_encrypted`: password id saved with the password to read XLSX file. String
+- `password_encrypted_var`: key to set a variable with the password_encrypted. String.
 
 Examples:
 
@@ -1681,9 +1685,11 @@ Keys:
 - `secret_access_key_var`: key to set a variable with the secret_access_key. String.
 - `secret_access_key_encrypted`: secret_access_key encrypted. String
 - `secret_access_key_encrypted_var`: key to set a variable with the secret_access_key_encrypted. String.
-- `client_cert_file_path`: Cert file to connect to AWS if needed. String
+
+On v1.8.1 and below:
+- `client_cert_file_path`: Cert file to connect to AWS if needed. String.
 - `client_cert_file_path_var`: key to set a variable with the client_cert_file_path. String.
-- `client_key_file_path`: Cert fey file to connect to AWS if needed. String
+- `client_key_file_path`: Cert fey file to connect to AWS if needed. String.
 - `client_key_file_path_var`: key to set a variable with the client_key_file_path. String.
 
 !!! note
