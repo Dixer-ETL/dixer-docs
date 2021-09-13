@@ -2,10 +2,16 @@
 
 This feature allows to add a derivated column or modify the current column value in your mapping that evaluates a expression or get the value of a variable for a new mapping column.
 
+!!! note
+    For Dixer v1, put .Value at end of mapping calling index. Example:<br>
+    ```
+    mapping.string.0.Value
+    ```
+
 It's possible to evaluate the value of a mapping and create a derivated column with expression with the key `source_is_expression` in `true` and format the expression in this form in the column source:
 
 ```javascript
-mapping.string.0.Value + ' ' + mapping.string.1.Value
+mapping.string.0 + ' ' + mapping.string.1
 ```
 
 This means that the column is a expression where mapping index 0 will be concatenated with mapping index 1. Example mapping:
@@ -20,7 +26,7 @@ column_source = 'lastname'
 column_destination = 'lastname'
 
 [[jobs.mapping]]
-column_source = 'mapping.string.0.Value + ' ' + mapping.string.1.Value'
+column_source = 'mapping.string.0 + ' ' + mapping.string.1'
 source_is_expression = true
 column_destination = 'concatenated_name'
 ```
@@ -33,7 +39,7 @@ If you change the order, the index also changes. This example add `concatenated_
 
 ```toml
 [[jobs.mapping]]
-column_source = 'mapping.string.1.Value + ' ' + mapping.string.2.Value'
+column_source = 'mapping.string.1 + ' ' + mapping.string.2'
 source_is_expression = true
 column_destination = 'concatenated_name'
 
@@ -50,7 +56,7 @@ Also you can omit the columns for only get the derivated column:
 
 ```toml
 [[jobs.mapping]]
-column_source = 'mapping.string.1.Value + " " + mapping.string.2.Value'
+column_source = 'mapping.string.1 + " " + mapping.string.2'
 source_is_expression = true
 column_destination = 'concatenated_name'
 
@@ -77,7 +83,7 @@ omit = true
 
 [[jobs.mapping]]
 column_source = 'lastname'
-apply_expression = 'mapping.string.0.Value + " " + mapping.string.this.Value'
+apply_expression = 'mapping.string.0 + " " + mapping.string.this'
 column_destination = 'fullname'
 ```
 

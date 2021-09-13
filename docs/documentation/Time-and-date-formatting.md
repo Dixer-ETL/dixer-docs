@@ -56,8 +56,14 @@ It’s not possible to specify a time containing a leap second: 23:59:60. In fac
 In default variable `NOW` you can get the date in a specific format:
 
 ```javascript
-NOW.Format('2006-01-02').Value // returns the date in YYYY-MM-DD string format
+NOW.Format('2006-01-02') // returns the date in YYYY-MM-DD string format
 ```
+
+!!! note
+    For Dixer v1 is<br>
+    ```javascript
+    NOW.Format('2006-01-02').Value // returns the date in YYYY-MM-DD string format
+    ```
 
 Also you can specify the format for source and destination in the mapping column keys `source_datetime_format` and `destination_datetime_format`.
 

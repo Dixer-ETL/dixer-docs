@@ -1,8 +1,5 @@
 # Expressions
 
-!!! info
-    Note: for v1.x.x, go [here](v1/)
-
 Expressions are used to change the value of a variable, to skip rows matched for avoid load in destination for `dataflow` and to use in your dataflow mapping like columns sources.
 
 ## Create a variable with expression value
@@ -15,8 +12,6 @@ Expressions returns the followed types:
 - `int`
 - `float`
 - `bool`
-- `datetime`
-- `map`
 
 Example to create a variable that returns a expression concatenating three variables values:
 
@@ -41,7 +36,7 @@ Example to create a variable that returns a expression concatenating three varia
     name = 'concatenate'
     type = 'string'
     expression = true
-    value = "firstname + ' ' + lastname  + ' ' + toString(age)"
+    value = "firstname.Value + ' ' + lastname.Value  + ' ' + age.ToString().Value"
     ```
 
 === "YAML"
@@ -59,7 +54,7 @@ Example to create a variable that returns a expression concatenating three varia
       - name: concatenate
         type: 'string'
         expression: true
-        value: firstname + ' ' + lastname  + ' ' + toString(age)
+        value: firstname.Value + ' ' + lastname.Value  + ' ' + age.ToString().Value
     ```
 
 === "JSON"
@@ -84,14 +79,40 @@ Example to create a variable that returns a expression concatenating three varia
           "name": "concatenate",
           "type": "string",
           "expression": true,
-          "value": "firstname + ' ' + lastname + ' ' + toString(age)"
+          "value": "firstname.Value + ' ' + lastname.Value + ' ' + age.ToString().Value"
         }
       ]
     ```
 
-!!! note
-    `age` is a `int`, but `toString()` function convert it to `string`.
+To get the value of a variable in a expression use `Value`. For example, if you want to capitalize your `concatenate` variable you can create another variable with expression `concatenate.Capitalize().Value` or change the value of `concatenate` variable to `firstname.Capitalize().Value + ' ' + lastname.Capitalize().Value  + ' ' + age.ToString().Capitalize.Value`
 
+!!! note
+    `age` is a `int`, but `ToString()` method convert it to `string` and you can use string methods after this.
+
+!!! tip
+    You can omit `Value` if the expression is simply one variable without operators and conditions.
+
+For example, these are equal and returns the same:
+
+```json
+{
+    "name": "firstname",
+    "type": "string",
+    "expression": true,
+    "value": "firstname.ToUpper()"
+}
+```
+
+and 
+
+```json
+{
+    "name": "firstname",
+    "type": "string",
+    "expression": true,
+    "value": "firstname.ToUpper().Value"
+}
+```
 
 ## Call variable with expression in other expression with Render method
 
@@ -106,7 +127,7 @@ Save a custom datetime format in a variable and call it in other expressions. Ex
 name = 'customnow'
 type = 'string'
 expression = true
-value = "replaceAll(NOW.Format('20060102150405.000'), '.', '')"
+value = "NOW.Format('20060102150405.000').ReplaceAll('.','').Value"
 
 [[variables]]
 name = 'logFileName'
@@ -115,15 +136,37 @@ type = 'string'
 value = "log' + '-' + customnow.Render + '.txt'"
 ```
 
-## Builtin functions
+## Methods
 
-See: [Builtin functions](Builtin-functions.md)
+The methods are defined by type of variable, means, methods for int cannot be used for string, a least you convert the returned value, after this, you can use string methods.
+
+For example, with above variables, you can't use for `concatenate` the expression `firstname.Value + ' ' + lastname.Value + ' ' + age.Value` because age is an `int`, you first need to convert to string with `ToString()` method.
+
+### String methods
+
+See [String methods](String-methods.md)
+
+### Int methods
+
+See [Int methods](Int-methods.md)
+
+### Float methods
+
+See [Float methods](Float-methods.md)
+
+### Bool methods
+
+See [Bool methods](Bool-methods.md)
+
+### Datetime methods
+
+See [Datetime methods](Datetime-methods.md)
 
 ## Language definition
 
-Dixer uses [Expr](https://github.com/antonmedv/expr/tree/v1.9.0) package for expressions support.
+Dixer uses [Expr](https://github.com/antonmedv/expr/tree/v1.8.6) package for expressions support.
 
-You can see the [Language Definition](https://github.com/antonmedv/expr/blob/v1.9.0/docs/Language-Definition.md) of this version to understand how works. Follow this guide adapted to cases tested in Dixer.
+You can see the [Language Definition](https://github.com/antonmedv/expr/blob/v1.8.6/docs/Language-Definition.md) of this version to understand how works. Follow this guide adapted to cases tested in Dixer.
 
 ### Supported Literals
 
@@ -131,8 +174,6 @@ You can see the [Language Definition](https://github.com/antonmedv/expr/blob/v1.
 * **numbers** - e.g. `103`, `2.5`, `.5`
 * **arrays** - e.g. `[1, 2, 3]`
 * **booleans** - `true` and `false`
-* **maps** - e.g. `{foo: "bar"}`
-* **nil** - `nil`
 
 ## Supported Operators
 
@@ -150,7 +191,7 @@ Expr comes with a lot of operators:
 Example:
 
 ```javascript
-firstname + lastname
+firstname.Value + lastname.Value
 ``` 
 
 ### Digit separators
@@ -181,7 +222,7 @@ Example:
 Example:
 
 ```
-age < 25 || age > somevar
+age.Value < 25 || age.Value > somevar.Value
 ```
 
 ### String Operators
@@ -216,15 +257,7 @@ Result will be set to `Arthur Dent`.
 Example:
 
 ```javascript
-firstname in ["santiago", "perla"]
-```
-
-```js
-user.Group in ["human_resources", "marketing"]
-```
-
-```js
-"foo" in {foo: 1, bar: 2}
+firstname.Value in ["santiago", "perla"]
 ```
 
 ### Numeric Operators
@@ -234,7 +267,7 @@ user.Group in ["human_resources", "marketing"]
 Example:
 
 ```javascript
-age in 18..45
+age.Value in 18..45
 ```
 
 The range is inclusive:
@@ -250,7 +283,5 @@ The range is inclusive:
 Example:
 
 ```javascript
-age > 30 ? "mature" : "immature"
+age.Value > 30 ? "mature" : "immature"
 ```
-
-TODO: See if Builtin functions should be added, because Dixer not support slices yet

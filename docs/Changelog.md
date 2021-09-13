@@ -8,7 +8,7 @@ This version upgrade the runtime to `go1.17.1`.
 * White Edition for Windows ARM64.
 * Support read protected XLSX file.
 * TODO: #322
-* TODO: #321
+* New inbuilt functions to replace methods. See (TODO link to inbuilt functions)
 * Support load JSON and XML data from variable instead file with new key `data_var` when setting JSON and XML connections.
 * Support `arguments_var` in job type `process`.
 * SQLite3 it's has experimental support in White Edition in these os/arch combinations:
@@ -82,7 +82,7 @@ The evaluation time decreased from 1 minute to 15 seconds.
 * Allow normal expressions for Mapping Expression and Skip Rule Expression.
 * `null_when_empty` now works when source is a database.
 * Now it's possible add mapping expression for the same column using `mapping.{type}.this.Value`
-* New method for string expression [`ReplaceAllInsensitive`](documentation/expressions/String-methods.md#replaceallinsensitiveold-string-new-string) to replace strings case insensitive.
+* New method for string expression [`ReplaceAllInsensitive`](documentation/expressions/v1/String-methods.md#replaceallinsensitiveold-string-new-string) to replace strings case insensitive.
 * `bucle` can configured with a new key `counter_var` to update a int variable with actual counter from `init` to `end` and use that counter in your jobs.
 * New job type [`fileexists`](documentation/jobs/File-exists.md) to check if file exists.
 * New key `attach_optional` for `mail` job type to ignore empty attachments values.
@@ -142,7 +142,7 @@ This version upgrade the runtime to `go1.16.5`.
 ### New
 * Disable the color in terminal setting environment variabe `NO_COLOR` with any value to complain with [`NO_COLOR`](https://no-color.org/).
 * Support insert to `DOUBLE` column in FirebirdSQL.
-* New method [`ToStringDecimal`](documentation/expressions/Float-methods.md#tostringdecimaln-int) for `float` variable type to convert the `float` to a string with fixed decimal values.
+* New method [`ToStringDecimal`](documentation/expressions/v1/Float-methods.md#tostringdecimaln-int) for `float` variable type to convert the `float` to a string with fixed decimal values.
 * Now it's possible to set the mapping in another file and call the file in the main PCF with `mapping_file_path` key. It's possible to set a variable too indicating this file path with `mapping_file_path_var`.
 * Now it's possible to set the connections in another file and call the file in the main PCF with `connections_file_path` key. It's possible to set a variable too indicating this file path with `connections_file_path_var`.
 * Now it's possible to set the variables in another file and call the file in the main PCF with `variables_file_path` key.
@@ -285,7 +285,7 @@ This version upgrade the runtime to `go1.15.5` that requires macOS 10.12 Sierra 
 ### New
 * New job type [`s3operation`](documentation/jobs/S3-operations.md) to perform Amazon S3 tasks.
 * New connection type [`aws`](documentation/Create-a-connection.md#connection-to-aws) to connect to Amazon Web Services.
-* New method for string expression [`RegexReplace`](documentation/expressions/String-methods.md#regexreplaceregex-string-replacement-string) to replace all characters that match expression.
+* New method for string expression [`RegexReplace`](documentation/expressions/v1/String-methods.md#regexreplaceregex-string-replacement-string) to replace all characters that match expression.
 * New keys `source_is_variable` and `source_is_expression` in mapping for dataflow to defined if derivated column is a expression or variable. The old way using a prefix `variable::` and `expr::` are working but are deprecated.
 * Added binary for Windows x86 and Green edition.
 * Added key to accept a encrypted username in connections `username_encrypted`. Can accept a variable with suffix `_var`.

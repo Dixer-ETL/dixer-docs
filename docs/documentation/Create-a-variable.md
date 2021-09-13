@@ -75,7 +75,11 @@ It's possible to get value of an environment variable in the OS. Use the boolean
 
 To declare a variable that represents a expression in the value, use the boolean key `expressions` and set to `true`. Its values are evaluated with a expression, for example, concatenating these two variables the expression for type string will be:
 
-`firstname.Value + ' ' + age.ToString().Value`
+`firstname + ' ' + toString(age)`
+
+!!! note
+    For Dixer v1 is<br>
+    `firstname.Value + ' ' + age.ToString().Value`
 
 **For expressions see [Expressions](expressions/README.md).*
 

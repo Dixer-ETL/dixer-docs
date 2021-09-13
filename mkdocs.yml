@@ -21,11 +21,13 @@ nav:
     - Default variables: documentation/Default-variables.md
     - Create an expression:
       - Expressions:  documentation/expressions/README.md
-      - String methods: documentation/expressions/String-methods.md
-      - Int methods: documentation/expressions/Int-methods.md
-      - Float methods: documentation/expressions/Float-methods.md
-      - Bool methods: documentation/expressions/Bool-methods.md
-      - Datetime methods: documentation/expressions/Datetime-methods.md
+      - Expressions for v1.x.x:
+        - v1: documentation/expressions/v1/README.md
+        - String methods: documentation/expressions/v1/String-methods.md
+        - Int methods: documentation/expressions/v1/Int-methods.md
+        - Float methods: documentation/expressions/v1/Float-methods.md
+        - Bool methods: documentation/expressions/v1/Bool-methods.md
+        - Datetime methods: documentation/expressions/v1/Datetime-methods.md
     - Create a connection: documentation/Create-a-connection.md
     - Encodings: documentation/Encodings.md
     - Jobs types:
