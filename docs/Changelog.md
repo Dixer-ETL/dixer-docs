@@ -10,7 +10,7 @@ This version upgrade the runtime to `go1.17.1`.
 * TODO: #322
 * TODO: #321
 * TODO: #316 and #317
-* TODO: #310
+* Support `arguments_var` in job type `process`.
 * SQLite3 it's has experimental support in White Edition in these os/arch combinations:
     - darwin/amd64
     - darwin/arm64

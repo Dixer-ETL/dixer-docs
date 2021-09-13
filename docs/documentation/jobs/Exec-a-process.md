@@ -9,6 +9,7 @@ Keys:
 - `process_path`: optional. The path of the process or process itself. String.
 - `process_path_var`: optional. Variable with process to execute. String.
 - `arguments`: optional. list of arguments and options. Array string.
+- `arguments_var`: optional. list of variables with arguments and options. Array string.
 - `save_output`: optional. Specified if the output will be saved. Bool.
 - `save_output_var`: optional. Variable with save output value bool. String.
 - `output_path`: optional. The path of the output of process executed. String.
