@@ -61,6 +61,22 @@ Example:
 toBool("TRUE") // returns true
 ```
 
+## `varType(in Any)`
+
+`in` can be `string`, `int`, `float`, `bool`, `datetime`, `map`.
+
+Get `string` with variable type of `in`
+
+Returns `string`.
+
+Example:
+
+```go
+varType(1) // returns "int"
+varType(now()) // returns "datetime"
+varType("santiago") // returns "string"
+```
+
 ## `customBoolString(in, t, f)`
 
 `in` should be `bool`.
