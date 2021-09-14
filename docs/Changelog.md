@@ -2,13 +2,18 @@
 
 ## 2.0.0 <small>_ UNRELEASED</small>
 
+!!! warning
+    This is a breaking change version if you use expressions. See [changes](#changes)
+
 This version upgrade the runtime to `go1.17.1`.
+
+For macOS, Dixer v2.0.0 requires macOS 10.13 High Sierra or later; support for previous versions has been discontinued. 
 
 ### New
 * White Edition for Windows ARM64.
 * Support read protected XLSX file.
-* TODO: #322
-* New inbuilt functions to replace methods. See (TODO link to inbuilt functions)
+* New variable type called `map` to navegate a JSON.
+* New inbuilt functions to replace methods. See [Builtin functions](documentation/expressions/Builtin-functions.md).
 * Support load JSON and XML data from variable instead file with new key `data_var` when setting JSON and XML connections.
 * Support `arguments_var` in job type `process`.
 * SQLite3 it's has experimental support in White Edition in these os/arch combinations:
@@ -30,7 +35,8 @@ This version upgrade the runtime to `go1.17.1`.
 * Upgrade to aws-sdk-go-v2.
 
 ### Changes
-* TODO: #326
+* Breaking change: [Builtin functions](documentation/expressions/Builtin-functions.md) to replace [Methods](documentation/expressions/v1/README.md#methods).
+* Breaking change: Not need more use `.Value` to get value of variable, function, and method. 
 * Dropped support to connect to AWS using client certificate.
 
 ### Bug Fixes

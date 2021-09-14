@@ -4,7 +4,7 @@ List of methods for strings. Consider name of variable is `st` and value is ` ab
 
 ## `SubString(a int, b int)`
 
-Returns the a contiguous sequence of characters within a string variable, where `a` (excluded) and `b` (included) are `int`. Examples:
+Returns the a contiguous sequence of characters within a `string` variable or value, where `start` (included) and `end` (excluded) are `int`. Examples:
 
 ```javascript
 st.SubString(4,6).Value //returns "de"

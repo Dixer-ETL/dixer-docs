@@ -253,4 +253,60 @@ Example:
 age > 30 ? "mature" : "immature"
 ```
 
-TODO: See if Builtin functions should be added, because Dixer not support slices yet
+### Expr Builtin functions
+
+* `len` (length of array, map or string)
+* `all` (will return `true` if all element satisfies the predicate)
+* `none` (will return `true` if all element does NOT satisfies the predicate)
+* `any` (will return `true` if any element satisfies the predicate)
+* `one` (will return `true` if exactly ONE element satisfies the predicate)
+* `filter` (filter array by the predicate)
+* `map` (map all items with the closure)
+* `count` (returns number of elements what satisfies the predicate)
+
+Examples:
+
+Ensure all tweets are less than 280 chars.
+
+```js
+all(Tweets, {.Size < 280})
+```
+
+Ensure there is exactly one winner.
+
+```js
+one(Participants, {.Winner})
+```
+
+### Closures
+
+* `{...}` (closure)
+
+Closures allowed only with builtin functions. To access current item use `#` symbol.
+
+```js
+map(0..9, {# / 2})
+```
+
+If the item of array is struct, it's possible to access fields of struct with omitted `#` symbol (`#.Value` becomes `.Value`).
+
+```js
+filter(Tweets, {len(.Value) > 280})
+```
+
+### Slices (used when map has array)
+
+* `array[:]` (slice)
+
+Slices can work with arrays or strings.
+
+Example:
+
+Variable `array` is `[1,2,3,4,5]`.
+
+```js
+array[1:5] == [2,3,4] 
+array[3:] == [4,5]
+array[:4] == [1,2,3]
+array[:] == array
+```

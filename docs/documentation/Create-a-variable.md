@@ -7,6 +7,7 @@ The variable types are:
 - float
 - bool
 - datetime
+- map
 
 To create a variable is used the array of objects `variables`. Example creating two variables:
 

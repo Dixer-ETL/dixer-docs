@@ -20,7 +20,9 @@ nav:
     - Create a variable: documentation/Create-a-variable.md
     - Default variables: documentation/Default-variables.md
     - Create an expression:
-      - Expressions:  documentation/expressions/README.md
+      - Expressions:
+        - v2: documentation/expressions/README.md
+        - Builtin functions: documentation/expressions/Builtin-functions.md
       - Expressions for v1.x.x:
         - v1: documentation/expressions/v1/README.md
         - String methods: documentation/expressions/v1/String-methods.md
