@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 <small>_ UNRELEASED</small>
+## 2.0.0 <small>_ September 15, 2021</small>
 
 !!! warning
     This is a breaking change version if you use expressions. See [changes](#changes)
