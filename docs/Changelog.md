@@ -1,5 +1,29 @@
 # Changelog
 
+## 2.1.0 <small>_ UNRELEASED</small>
+
+This version upgrade the runtime to `go1.17.8`.
+
+### New
+* `trim_space` support for dataflow mapping source variables.
+* `trim_space` support for dataflow mapping destination databases. 
+
+### Enhancement
+* Return better error message when datatype for destination database is invalid.
+* Improvements when source is ragged-right and fixed-width, now is compatible with dynamic row length.
+
+### Bug Fixes
+* Fixed panic when `ignore_row_error` is true for source ragged-right and fixed-width.
+
+### Libraries upgrades
+* FirebirdSQL driver upgraded to version [v0.9.3](https://github.com/nakagami/firebirdsql/tree/v0.9.3)
+* go-simple-mail library upgraded to version [v2.11.0](https://github.com/xhit/go-simple-mail/tree/v2.11.0)
+* copy library upgraded to commit [9aae5f772](https://github.com/otiai10/copy/tree/9aae5f772)
+* Oracle driver upgraded to version [v0.30.2](https://github.com/godror/godror/tree/v0.30.2)
+* SAP HANA DB driver upgraded to version [v0.105.6](https://github.com/SAP/go-hdb/tree/0.105.6)
+* Excelize library upgraded to version [v2.5.0](https://github.com/qax-os/excelize/tree/v2.5.0)
+* SQLite3 driver upgraded to version [v1.14.11](https://github.com/mattn/go-sqlite3/tree/v1.14.11)
+
 ## 2.0.0 <small>_ September 15, 2021</small>
 
 !!! warning
