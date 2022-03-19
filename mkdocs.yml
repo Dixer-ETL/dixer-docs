@@ -67,6 +67,7 @@ nav:
   - Download:
     - Download: Download.md
     - Older versions:
+      - '2.0.0': olderversions/2.0.0.md
       - '1.8.1': olderversions/1.8.1.md
       - '1.8.0': olderversions/1.8.0.md
       - '1.7.0': olderversions/1.7.0.md
@@ -97,7 +98,6 @@ theme:
 markdown_extensions:
   - admonition
   - codehilite
-  - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.details
   - markdown.extensions.toc:
@@ -105,6 +105,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
 
 plugins:
 - search # necessary for search to work

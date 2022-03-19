@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.1.0 <small>_ UNRELEASED</small>
+## 2.1.0 <small>_ March 19, 2022</small>
 
 This version upgrade the runtime to `go1.17.8`.
 
@@ -11,6 +11,7 @@ This version upgrade the runtime to `go1.17.8`.
 ### Enhancement
 * Return better error message when datatype for destination database is invalid.
 * Improvements when source is ragged-right and fixed-width, now is compatible with dynamic row length.
+* White Edition has full SQLite3 support for some platforms. [See list here](Editions.md#white-edition).
 
 ### Bug Fixes
 * Fixed panic when `ignore_row_error` is true for source ragged-right and fixed-width.
@@ -22,7 +23,14 @@ This version upgrade the runtime to `go1.17.8`.
 * Oracle driver upgraded to version [v0.30.2](https://github.com/godror/godror/tree/v0.30.2)
 * SAP HANA DB driver upgraded to version [v0.105.6](https://github.com/SAP/go-hdb/tree/0.105.6)
 * Excelize library upgraded to version [v2.5.0](https://github.com/qax-os/excelize/tree/v2.5.0)
-* SQLite3 driver upgraded to version [v1.14.11](https://github.com/mattn/go-sqlite3/tree/v1.14.11)
+* SQLite3 driver (used in SKY, RED, GREEN and FULL editions) upgraded to version [v1.14.11](https://github.com/mattn/go-sqlite3/tree/v1.14.11)
+* ftp library upgraded to commit [02685330ee35](https://github.com/jlaffaye/ftp/tree/02685330ee35)
+* GoDotEnv upgraded to version [v1.4.0](https://github.com/joho/godotenv/tree/v1.4.0)
+* term library upgraded to commit [03fcf44c2211](https://github.com/golang/term/tree/03fcf44c2211)
+* aws-sdk-go-v2 library upgraded to version [v1.14.0](https://github.com/aws/aws-sdk-go-v2/tree/v1.14.0)
+* decimal upgraded to version [v1.3.1](https://github.com/shopspring/decimal/tree/v1.3.1)
+* color upgraded to version [v1.13.0](https://github.com/fatih/color/tree/v1.13.0)
+* SQLite3 driver (used in WHITE edition) upgraded to version [v1.14.7](https://gitlab.com/cznic/sqlite/tree/v1.14.7)
 
 ## 2.0.0 <small>_ September 15, 2021</small>
 

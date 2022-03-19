@@ -4,10 +4,10 @@ Dixer has editions where the difference is the some database drivers support and
 
 ## White Edition
 
-No support for SQLite3, IBM DB2 and ORACLE. Binaries in all platforms.
+No support for SQLite3 (in some platforms), IBM DB2 and ORACLE. Binaries in all platforms.
 
 !!! info
-    Since v2.0.0, SQLite3 has experimental support in White Edition in these os/arch combinations:
+    In v2.0.0, SQLite3 has experimental support in White Edition in these os/arch combinations, but from v2.1.0 has full support!
     
     darwin/amd64<br>
     darwin/arm64<br>
