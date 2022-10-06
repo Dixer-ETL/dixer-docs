@@ -51,6 +51,18 @@ Options:
 
 -h, --help
         display this help information
+
+-licreqname, --licenserequestname
+        set the name in license request
+
+-licreqemail, --licenserequestemail
+        set the email in license request
+
+-licrequrl, --licenserequesturl
+        set the url in license request
+
+-licreqcompany, --licenserequestcompany
+        set the company name in license request
 ```
 
 !!! note

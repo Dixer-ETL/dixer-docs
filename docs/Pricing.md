@@ -15,7 +15,13 @@ Here is the pricing model of Dixer based in editions:
 | [Green](Editions.md#green-edition) | USD $199 | [Buy](https://www.paypal.me/hit/199) |
 | [Full](Editions.md#full-edition)   | USD $299 | [Buy](https://www.paypal.me/hit/299) |
 
-License is only supported for `Windows`, `Linux` and `macOS` where the command flag `-genlicreq` works. In Linux, you neeed to execute with sudo or go [here](documentation/Getting-Dixer.md#using-a-non-root-account-for-dmidecode-only-if-you-have-a-license) to disable sudo in `dmidecode`.
+License is only supported for `Windows`, `Linux` and `macOS` where the command flag `-genlicreq` works. In Linux, you need to execute with sudo or go [here](documentation/Getting-Dixer.md#using-a-non-root-account-for-dmidecode-only-if-you-have-a-license) to disable sudo in `dmidecode`.
+
+The license should be generated with the owner information like this:
+
+```bash
+dixer -genlicreq -licreqname "Santiago De la Cruz" -licreqemail hi@stgo.do -licreqcompany "My cool company name" -licrequrl https://stgo.do
+```
 
 A one-time payment license that includes one year of updates.
 

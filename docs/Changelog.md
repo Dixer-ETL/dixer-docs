@@ -1,5 +1,38 @@
 # Changelog
 
+## 2.2.0 <small>_ UNRELEASED</small>
+
+This version upgrade the runtime to `go1.19.2`.
+
+For personal use, you can execute Dixer for free without license, only you need to wait 30 seconds before worflow init. To avoid this limitation, consider buy a license.
+
+### New
+* New binary for `linux/loong64`.
+* Support sqlite3 for WHITE Edition in `freebsd/arm64`, `linux/riscv64`, `windows/arm64`.
+* Allow load connection, mapping and variables from different extensions different that main PCF.
+* License should have the owner information.
+
+### Enhancement
+* Jobs type `query` with connection `mysql` can accept multiline statements.
+* Avoid check hostname in license.
+* No need to specify PCFformat with `-fmt, --format`. The type now is read from file extension. Supported `json, toml, tml, yaml, yml`.
+
+
+### Bug Fixes
+* Binary for `windows/386` was built with experimental sqlite3 support by error (no announced as supported). Now is removed to make binary more tiny.
+
+### Libraries upgrades
+* aws-sdk-go-v2 library upgraded to version [v1.16.16](https://github.com/aws/aws-sdk-go-v2/tree/v1.16.16)
+* SQLite3 driver (used in WHITE edition) upgraded to version [v1.19.1](https://gitlab.com/cznic/sqlite/tree/v1.19.1)
+* go-simple-mail library upgraded to version [v2.12.0](https://github.com/xhit/go-simple-mail/tree/v2.12.0)
+* yaml upgraded to version [v3.0.1](https://github.com/go-yaml/yaml/tree/v3.0.1)
+* Oracle driver upgraded to version [v0.34.0](https://github.com/godror/godror/tree/v0.34.0)
+* SAP HANA DB driver upgraded to version [v0.108.2](https://github.com/SAP/go-hdb/tree/v0.108.2)
+* ftp library upgraded to version [v0.1.0](https://github.com/jlaffaye/ftp/tree/v0.1.0)
+* Excelize library upgraded to version [v2.6.1](https://github.com/qax-os/excelize/tree/v2.6.1)
+* go-toml library upgraded to version [v2.0.5](https://github.com/pelletier/go-toml/tree/v2.0.5)
+* SQLite3 driver (used in SKY, RED, GREEN and FULL editions) upgraded to version [v1.14.15](https://github.com/mattn/go-sqlite3/tree/v1.14.15)
+
 ## 2.1.0 <small>_ March 19, 2022</small>
 
 This version upgrade the runtime to `go1.17.8`.
