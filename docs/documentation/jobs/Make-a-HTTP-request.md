@@ -15,6 +15,8 @@ Keys:
 - `save_output_var`: optional. Variable save_output. String.
 - `output_path`: optional. Specify output path of request result content. String.
 - `output_path_var`: optional. Variable output path. String.
+- `expected_status_code`: optional. Specify the expected http status code. Trigger error `8135` when not expected is returned. Int.
+- `expected_status_code_var`: optional. Variable `expected_status_code`. String.
 
 If `save_output` is `true` then a output path need to be specified.
 
@@ -32,6 +34,7 @@ connection_id = 'http-connection'
 request_body = 'hola'
 output_path = 'requestget.txt'
 save_output = true
+expected_status_code = 200
 ```
 
 ```toml

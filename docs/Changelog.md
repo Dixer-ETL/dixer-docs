@@ -2,6 +2,8 @@
 
 ## 2.2.0 <small>_ UNRELEASED</small>
 
+<!-- TODO: 177, 179, 359, 366 -->
+
 This version upgrade the runtime to `go1.19.2`.
 
 For personal use, you can execute Dixer for free without license, only you need to wait 30 seconds before worflow init. To avoid this limitation, consider buy a license.
@@ -11,6 +13,8 @@ For personal use, you can execute Dixer for free without license, only you need 
 * Support sqlite3 for WHITE Edition in `freebsd/arm64`, `linux/riscv64`, `windows/arm64`.
 * Allow load connection, mapping and variables from different extensions different that main PCF.
 * License should have the owner information.
+* New key `expected_status_code` for `httprequest` job type to return error if http status code returned is not the expected.
+* New key `skip_cert_verification` for `smtp` connection type to avoid certificate validation.
 
 ### Enhancement
 * Jobs type `query` with connection `mysql` can accept multiline statements.

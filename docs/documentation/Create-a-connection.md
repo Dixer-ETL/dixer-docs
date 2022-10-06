@@ -1384,6 +1384,8 @@ Keys:
 - `encryption_type_var`: key to set a variable with the encryption type. String.
 - `auth_type`: authentication type of connection. Permitted values: `plain`, `login`, `cram-md5`, `none`, otherwise `plain` is used. String (`none` from v1.8.0)
 - `auth_type_var`: key to set a variable with the authentication type. String.
+- `skip_cert_verification`: boolean to ignore certificate validation. Boolean.
+- `skip_cert_verification_var`: key to set a variable with the skip_cert_verification. String.
 
 Examples:
 
@@ -1402,6 +1404,7 @@ Examples:
     auth_type = 'plain'
     connect_timeout = 10
     send_timeout = 10
+    skip_cert_verification = false
     host_var = ''
     port_var = 'port3'
     username_var = 'smtpuser'
