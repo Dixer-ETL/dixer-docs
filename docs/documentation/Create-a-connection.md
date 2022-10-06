@@ -625,7 +625,7 @@ Keys:
 - `path_var`: key to set a variable with the path. String.
 - `sheet_name`: name of sheet. String.
 - `sheet_name_var`: key to set a variable with the name of sheet. String.
-- `password`: password to read XLSX file. String
+- `password`: password to read or save XLSX file. String
 - `password_var`: key to set a variable with the password. String.
 - `password_encrypted`: password id saved with the password to read XLSX file. String
 - `password_encrypted_var`: key to set a variable with the password_encrypted. String.
@@ -1683,6 +1683,8 @@ Keys:
 - `region_var`: key to set a variable with the region. String.
 - `access_key_id`: The Access Key ID to connect to AWS. String.
 - `access_key_id_var`: key to set a variable with the access_key_id. String.
+- `access_key_id_encrypted`: access_key_id encrypted. String.
+- `access_key_id_encrypted_var`: key to set a variable with the access_key_id_encrypted. String.
 - `secret_access_key`: Secret Access Key to connect to AWS. String
 - `secret_access_key_var`: key to set a variable with the secret_access_key. String.
 - `secret_access_key_encrypted`: secret_access_key encrypted. String

@@ -7,7 +7,7 @@ This version upgrade the runtime to `go1.19.2`.
 For personal use, you can execute Dixer for free without license, only you need to wait 30 seconds before worflow init. To avoid this limitation, consider buy a license.
 
 ### New
-* New binary for `linux/loong64`.
+* New binary for `linux/loong64` WHITE Edition.
 * Support sqlite3 for WHITE Edition in `freebsd/arm64`, `linux/riscv64`, `windows/arm64`.
 * Allow load connection, mapping and variables from different extensions different that main PCF.
 * License should have the owner information.
@@ -16,6 +16,7 @@ For personal use, you can execute Dixer for free without license, only you need 
 * Jobs type `query` with connection `mysql` can accept multiline statements.
 * Avoid check hostname in license.
 * No need to specify PCFformat with `-fmt, --format`. The type now is read from file extension. Supported `json, toml, tml, yaml, yml`.
+* `password` in xlsx connection now is supported for save protected document.
 
 
 ### Bug Fixes
@@ -32,6 +33,9 @@ For personal use, you can execute Dixer for free without license, only you need 
 * Excelize library upgraded to version [v2.6.1](https://github.com/qax-os/excelize/tree/v2.6.1)
 * go-toml library upgraded to version [v2.0.5](https://github.com/pelletier/go-toml/tree/v2.0.5)
 * SQLite3 driver (used in SKY, RED, GREEN and FULL editions) upgraded to version [v1.14.15](https://github.com/mattn/go-sqlite3/tree/v1.14.15)
+* FirebirdSQL driver upgraded to commit [803b00772b9](https://github.com/nakagami/firebirdsql/tree/803b00772b9)
+* term library upgraded to commit [7a66f970e087](https://github.com/golang/term/tree/7a66f970e087)
+* copy library upgraded to commit [d69252f9c80a](https://github.com/otiai10/copy/tree/d69252f9c80a)
 
 ## 2.1.0 <small>_ March 19, 2022</small>
 
