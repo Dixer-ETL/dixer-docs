@@ -1288,6 +1288,8 @@ Keys:
 - `timeout_var`: key to set a variable with the timeout. String.
 - `auth_type`: optional. Authentication type of connection. Permitted values: `basic`, `digest`, `none`. String. Default `none`.
 - `auth_type_var`: optional. Key to set a variable with the authentication type. String.
+- `headers`: optional. Object to set headers used in `httprequest` job type for now. Object.
+- `headers_var`: optional. Key to set a variable with the headers, the variable shoule be a `map` type with a json in his value, example value: `{"authorization":"Basic dXNlcjpwYXNzd2Q="}` . String. 
 
 !!! warning
     Digest authentication is not supported for `soaprequest`.
@@ -1314,6 +1316,9 @@ Examples:
     timeout_var = ''
     username_encrypted_var = ''
     password_encrypted_var = ''
+
+    [connections.headers]
+    authorization = 'Basic dXNlcjpwYXNzd2Q='
     ```
 
 === "YAML"
@@ -1334,6 +1339,8 @@ Examples:
         timeout_var: ''
         username_encrypted_var: ''
         password_encrypted_var: ''
+        headers:
+          authorization: Basic dXNlcjpwYXNzd2Q=
     ```
 
 === "JSON"
@@ -1354,7 +1361,10 @@ Examples:
           "password_var": "",
           "timeout_var": "",
           "username_encrypted_var": "",
-          "password_encrypted_var": ""
+          "password_encrypted_var": "",
+          "headers": {
+            "authorization": "Basic dXNlcjpwYXNzd2Q="
+          }
         }
       ]
     ```

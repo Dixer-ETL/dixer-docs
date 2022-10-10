@@ -27,6 +27,15 @@ Keys:
 - `attachments_var`: optional. Variable with definition of attachments. Variable should be a string where the value is all attachments path separated by pipe `|`. String.
 - `attach_optional`: optional. To ignore empty attachments error. Bool.
 - `attach_optional_var`: optional. Variable with the value of `attach_optional`. String.
+- `attachments_base64`: optional. Define attachments base64 of mail. Array string.
+- `attachments_base64_names`: mandatory if `attachments_base64` is set. Define attachments names of `attachments_base64` of mail. Array string.
+- `inlines_base64`: optional. Define inlines base64 of mail. Array string.
+- `inlines_base64_cid`: mandatory if `inlines_base64` is set. Define inlines cid of `inlines_base64` of mail. Array string.
+- `attachments_base64_var`: optional. Variable with the value of `attachments_base64`. String.
+- `attachments_base64_names_var`: optional. Variable with the value of `attachments_base64_names`. String.
+- `inlines_base64_var`: optional. Variable with the value of `inlines_base64`. String.
+- `inlines_base64_cid_var`: optional. Variable with the value of `inlines_base64_cid`. String.
+
 
 Example:
 
@@ -51,4 +60,9 @@ attachments = [
     'test/data/file.json',
     'test/data/file.xlsx',
 ]
+attachments_base64 = [
+    'BASE64 OF FILE 1',
+    'BASE64 OF FILE 2',
+]
+attachments_base64_names = ['f1.png', 'f2.png']
 ```

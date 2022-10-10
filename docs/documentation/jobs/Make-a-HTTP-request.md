@@ -17,6 +17,8 @@ Keys:
 - `output_path_var`: optional. Variable output path. String.
 - `expected_status_code`: optional. Specify the expected http status code. Trigger error `8135` when not expected is returned. Int.
 - `expected_status_code_var`: optional. Variable `expected_status_code`. String.
+- `headers`: optional. Object to set headers. Will replace header keys in connection if configured. Object.
+- `headers_var`: optional. Key to set a variable with the headers, the variable shoule be a `map` type with a json in his value, example value: `{"authorization":"Basic dXNlcjpwYXNzd2Q="}` . String. 
 
 If `save_output` is `true` then a output path need to be specified.
 
@@ -35,6 +37,8 @@ request_body = 'hola'
 output_path = 'requestget.txt'
 save_output = true
 expected_status_code = 200
+[jobs.headers]
+    authorization = 'Basic dXNlcjpwYXNzd2Q='
 ```
 
 ```toml
