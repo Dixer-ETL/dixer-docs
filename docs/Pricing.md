@@ -1,9 +1,6 @@
 # Pricing
 
-Dixer has a couple options depending on your needs:
-
-1. Evaluation: a edition to evaluate the product. Practically is free to execture PCF with 15 seconds to do all jobs.
-2. Buy an [edition](Editions.md) to a specific host, operative system and hostname.
+Dixer can be used without restrictions for any user, but execution has a delay of 30 seconds before initialize workflow. To avoid this delay consider buying depending the edition you need.
 
 Here is the pricing model of Dixer based in editions:
 
@@ -28,7 +25,7 @@ A one-time payment license that includes one year of updates.
 When buy it, send a mail to [`support@stgo.do`](mailto:support@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply will be sent with license file attached to it.
 
 !!! tip
-    Please use the [evaluation binary](Download.md) before buying a license.
+    Please try downloading a binay in [download page](Download.md) before buying a license.
 
 !!! tip
     License file path can be set in environment variable `DIXER_LIC` to avoid use the `--license` option from command line.
