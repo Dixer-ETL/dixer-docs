@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.0 <small>_ UNRELEASED</small>
+## 2.2.0 <small>_ October 11, 2022</small>
 
 This version upgrade the runtime to `go1.19.2`.
 
