@@ -36,12 +36,14 @@ For personal use, you can execute Dixer for free without license, only you need 
 * Oracle driver upgraded to version [v0.34.0](https://github.com/godror/godror/tree/v0.34.0)
 * SAP HANA DB driver upgraded to version [v0.108.2](https://github.com/SAP/go-hdb/tree/v0.108.2)
 * ftp library upgraded to version [v0.1.0](https://github.com/jlaffaye/ftp/tree/v0.1.0)
-* Excelize library upgraded to version [v2.6.1](https://github.com/qax-os/excelize/tree/v2.6.1)
+* Excelize library upgraded to commit [c02346bafc6e](https://github.com/qax-os/excelize/tree/c02346bafc6e)
 * go-toml library upgraded to version [v2.0.5](https://github.com/pelletier/go-toml/tree/v2.0.5)
 * SQLite3 driver (used in SKY, RED, GREEN and FULL editions) upgraded to version [v1.14.15](https://github.com/mattn/go-sqlite3/tree/v1.14.15)
 * FirebirdSQL driver upgraded to commit [803b00772b9](https://github.com/nakagami/firebirdsql/tree/803b00772b9)
 * term library upgraded to commit [7a66f970e087](https://github.com/golang/term/tree/7a66f970e087)
 * copy library upgraded to commit [d69252f9c80a](https://github.com/otiai10/copy/tree/d69252f9c80a)
+* MSSQL driver upgraded to version [v0.12.3](https://github.com/denisenkom/go-mssqldb/tree/v0.12.3)
+* Go text package upgraded to commit [23407e72ed5b](https://github.com/golang/text/tree/23407e72ed5b)
 
 ## 2.1.0 <small>_ March 19, 2022</small>
 

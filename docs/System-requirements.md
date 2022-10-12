@@ -41,7 +41,8 @@ Dixer offer evaluation binaries in these OS and Archs, but aren't officially sup
 ### Windows (others)
 
 * x86
-* ARMv7 binary
+* ARMv7
+* ARM64
 
 ### Linux (others)
 
@@ -52,6 +53,7 @@ Dixer offer evaluation binaries in these OS and Archs, but aren't officially sup
 * PPC64 and PPC64LE. POWER8 and POWER9
 * S/390x
 * RISC-V 64 bits
+* LOONGARCH (requires kernel 5.19+)
 
 ### macOS
 
