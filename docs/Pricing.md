@@ -28,4 +28,4 @@ When buy it, send a mail to [`support@stgo.do`](mailto:support@stgo.do) with lic
     Please try downloading a binay in [download page](Download.md) before buying a license.
 
 !!! tip
-    License file path can be set in environment variable `DIXER_LIC` to avoid use the `--license` option from command line.
+    License file path can be set in environment variable `DIXER_LIC` to avoid use the `--license` option from command line. Also, you can set the content of the license file in environment variable `DIXER_LIC_RAW`.

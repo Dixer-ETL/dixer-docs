@@ -23,6 +23,72 @@ Keys:
 - `message_content_var`: optional. Variable with content of the mail. String.
 - `is_html`: optional. Define if message content is html. Bool. Default `false`.
 - `is_html_var`: optional. Variable with definition bool if message content is html. String.
+- `allow_duplicate_addresses`: optional. To allow duplicate recipients in email. Bool.
+- `allow_duplicate_addresses_var`: optional. Variable with the value of `allow_duplicate_addresses`. String.
+- `attachments_v2`: optional. array object to add attachment, has the following keys:
+    - `file_path`: optional. Path of attachment. String.
+    - `file_path_var`: optional. Variable with value of `file_path`. String.
+    - `base64`: optional. Base64 of the file to attach. String.
+    - `base64_var`: optional. Variable with value of `base64`. String.
+    - `file_name`: optional. Name of the attachment when is base64 or the `cid` of an inline attachment. String.
+    - `file_name_var`: optional. Variable with value of `file_name`. String.
+    - `inline`: optional. Define if attachment is a inline. Bool.
+    - `inline_var`: optional. Variable with value of `inline`. String.
+    - `mimetype`: optional. Mimetype of the attachment when is base64 or you want change the mimetype. String.
+    - `mimetype_var`: optional. Variable with value of `mimetype`. String.
+
+
+Example:
+
+```toml
+[[jobs]]
+id = 'mail_send_job'
+name = 'Send Mail'
+type = 'mail'
+disable = false
+ignore_error = false
+connection_id = '16'
+display_name = 'Dixer'
+from_email = 'test@example.com'
+to = 'to@to.com;ta@to.com'
+cc = 'cc@cc.ccom'
+bcc = 'bcc@bcc.com'
+reply_to = 'replyto@replyto.com'
+is_html = true
+subject = 'Hello World!'
+message_content = '<html>Hello World!<p><img src="cid:test3.png" alt="test3" /><img src="cid:img1.jpg" alt="cat1" /></p><p><img src="cid:img2.jpg" alt="cat2" /></p></html>'
+
+[[jobs.attachments_v2]]
+file_path = 'test/in/csvdata1.csv'
+
+[[jobs.attachments_v2]]
+file_path = 'test/in/cat.jpg'
+inline = true
+file_name = 'img1.jpg'
+
+[[jobs.attachments_v2]]
+file_path = 'test/in/cat.jpg'
+inline = true
+file_name = 'img2.jpg'
+
+[[jobs.attachments_v2]]
+base64 = 'iVBORw0......'
+file_name = "test.png"
+
+[[jobs.attachments_v2]]
+base64_var = "attachment_base64_v2"
+file_name = "test2.png"
+
+[[jobs.attachments_v2]]
+base64_var = "attachment_base64_v2"
+inline = true
+file_name = "test3.png"
+```
+
+Example old way attachments (will be remved in v2.4.0):
+
+Keys:
+
 - `attachments`: optional. Define attachments path of mail. Array string.
 - `attachments_var`: optional. Variable with definition of attachments. Variable should be a string where the value is all attachments path separated by pipe `|`. String.
 - `attach_optional`: optional. To ignore empty attachments error. Bool.
@@ -35,9 +101,6 @@ Keys:
 - `attachments_base64_names_var`: optional. Variable with the value of `attachments_base64_names`. String.
 - `inlines_base64_var`: optional. Variable with the value of `inlines_base64`. String.
 - `inlines_base64_cid_var`: optional. Variable with the value of `inlines_base64_cid`. String.
-
-
-Example:
 
 ```toml
 [[jobs]]

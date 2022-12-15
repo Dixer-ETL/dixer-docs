@@ -20,6 +20,8 @@ No support for SQLite3 (in some platforms), IBM DB2 and ORACLE. Binaries in all 
     linux/arm v7<br>
     linux/arm64<br>
     linux/riscv64<br>
+    linux/ppc64le POWER PC 8<br>
+    linux/ppc64le POWER PC 9<br>
     windows/amd64<br>
     windows/arm64
 

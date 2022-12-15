@@ -1,5 +1,25 @@
 # Changelog
 
+## 2.3.0 <small>_ UNRELEASED</small>
+
+This version upgrade the runtime to `go1.19.4`.
+
+### New
+* Possible to break a `bucle` using a expression with new key `break_condition`.
+* Support sqlite3 for WHITE Edition in `linux/ppc64le` for `POWER PC 8` and `POWER PC 9`.
+* You can set the license raw content in environment variable `DIXER_LIC_RAW`.
+* `mail` job now has possibility to allow duplicate recipients in email, using `allow_duplicate_addresses = true`.
+* `mail` job now have a new and simplest way to add attachments using the array object key `attachments_v2`. In `v2.4.0` will be `attachments` and old way will be removed but `attachments_v2` can be used too. In `v2.5.0` the key `attachments_v2` will be removed.
+
+### Enhancement
+* All files uploaded to `S3` will now have the Content-Type of the file using the extension.
+
+### Bug Fixes
+* Licenses request generated in `v2.2.0` were wrong, if you have a license for this version and wan't to upgrade, please contact us to generate another one for the same host.
+
+### Libraries upgrades
+TODO
+
 ## 2.2.0 <small>_ October 11, 2022</small>
 
 This version upgrade the runtime to `go1.19.2`.
