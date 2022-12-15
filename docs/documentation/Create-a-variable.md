@@ -51,6 +51,15 @@ To create a variable is used the array of objects `variables`. Example creating 
       ]
     ```
 
+Also, you can read environment variables using `env=true`:
+
+```toml
+[[variables]]
+name = 'AWS_SECRET'
+type = 'string'
+env = true
+```
+
 For a datetime variable, there are the additional key `datetime_format` to defined the format of the value:
 
 ```toml
