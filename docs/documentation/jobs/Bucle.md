@@ -14,6 +14,7 @@ Keys
 - `infinite`: Optional. Define if loop is infinite. Bool. Default `false`.
 - `infinite_var`: Optional. Variable with the infinite value. String.
 - `exec_workflow`: Mandatory: The workflow to execute.
+- `break_condition`: Optional: To set expression to break the loop if condition is true. String
 
 Example:
 
@@ -39,8 +40,19 @@ type = 'bucle'
 ignore_error = false
 disable = false
 init = 1
-iterations = 5
+end = 5
 init_var = ''
-iterations_var = ''
+end_var = ''
 exec_workflow = '1:2'
+```
+
+Infinite with `break_condition`, this will break when variable `i` is > 10
+```toml
+[[jobs]]
+id = '185'
+name = 'Infinite BUCLE'
+type = 'bucle'
+infinite = true
+exec_workflow = '41:192'
+break_condition = 'i > 10'
 ```
