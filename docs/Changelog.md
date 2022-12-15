@@ -18,7 +18,18 @@ This version upgrade the runtime to `go1.19.4`.
 * Licenses request generated in `v2.2.0` were wrong, if you have a license for this version and wan't to upgrade, please contact us to generate another one for the same host.
 
 ### Libraries upgrades
-TODO
+* Excelize library upgraded to commit [61fda0b1cad4](https://github.com/qax-os/excelize/tree/61fda0b1cad4)
+* IBM DB driver upgraded to version [v0.4.2](https://github.com/ibmdb/go_ibm_db/tree/v0.4.2)
+* MySQL driver upgraded to version [v1.7.0](https://github.com/go-sql-driver/mysql/tree/v1.7.0)
+* Oracle driver upgraded to version [v0.36.0](https://github.com/godror/godror/tree/v0.36.0)
+* copy library upgraded to version [v1.9.0](https://github.com/otiai10/copy/tree/v1.9.0)
+* aws-sdk-go-v2 library upgraded to version [v1.17.2](https://github.com/aws/aws-sdk-go-v2/tree/v1.17.2)
+* SQLite3 driver (used in SKY, RED, GREEN and FULL editions) upgraded to version [v1.14.16](https://github.com/mattn/go-sqlite3/tree/v1.14.16)
+* SQLite3 driver (used in WHITE edition) upgraded to version [v1.20.0](https://gitlab.com/cznic/sqlite/tree/v1.20.0)
+* go-simple-mail library upgraded to version [v2.13.0](https://github.com/xhit/go-simple-mail/tree/v2.13.0)
+* go-str2duration upgraded to version [v2.1.0](https://github.com/xhit/go-str2duration/tree/v2.1.0)
+* go-toml library upgraded to version [v2.0.6](https://github.com/pelletier/go-toml/tree/v2.0.6)
+* SAP HANA DB driver upgraded to version [v0.111.7](https://github.com/SAP/go-hdb/tree/v0.111.7)
 
 ## 2.2.0 <small>_ October 11, 2022</small>
 

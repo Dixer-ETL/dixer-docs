@@ -85,7 +85,7 @@ inline = true
 file_name = "test3.png"
 ```
 
-Example old way attachments (will be remved in v2.4.0):
+Example old way attachments until `v2.3.0` (will be removed in `v2.4.0`):
 
 Keys:
 
