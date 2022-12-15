@@ -74,6 +74,10 @@ But, for destination, not all datatypes are covered. This is the list of support
 - DATETIME
 - TIMESTAMP
 - DOUBLE
+- UNSIGNED INT
+- UNSIGNED TINYINT
+- UNSIGNED SMALLINT
+- UNSIGNED BIGINT
 
 ## PostgreSQL supported data type destinations
 
