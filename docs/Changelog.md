@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.3.0 <small>_ UNRELEASED</small>
+## 2.3.0 <small>_ December 15, 2022</small>
 
 This version upgrade the runtime to `go1.19.4`.
 
