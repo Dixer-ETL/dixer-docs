@@ -22,4 +22,4 @@ serve:
 .PHONY: build
 ## build: Build site
 build:
-	@docker run --rm -it -v ${PWD}:/docs dixer-docs:latest 'mkdocs build && ls -l && chown -R 1000:1000 site'
+	@docker run --rm -it -v ${PWD}:/docs dixer-docs:latest 'mkdocs build && chown -R 1000:1000 site'
