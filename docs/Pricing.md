@@ -17,7 +17,7 @@ License is only supported for `Windows`, `Linux` and `macOS` where the command f
 The license should be generated with the owner information like this:
 
 ```bash
-dixer -genlicreq -licreqname "Santiago De la Cruz" -licreqemail hi@stgo.do -licreqcompany "My cool company name" -licrequrl https://stgo.do
+dixer -genlicreq -licreqname "Santiago De la Cruz" -licreqemail email@example.com -licreqcompany "My cool company name" -licrequrl https://stgo.do
 ```
 
 A one-time payment license that includes one year of updates.
