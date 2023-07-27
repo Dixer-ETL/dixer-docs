@@ -17,10 +17,10 @@ License is only supported for `Windows`, `Linux` and `macOS` where the command f
 The license should be generated with the owner information like this:
 
 ```bash
-dixer -genlicreq -licreqname "Santiago De la Cruz" -licreqemail hi@stgo.do -licreqcompany "My cool company name" -licrequrl https://stgo.do
+dixer -genlicreq -licreqname "Santiago De la Cruz" -licreqemail email@example.com -licreqcompany "My cool company name" -licrequrl https://stgo.do
 ```
 
-A one-time payment license that includes one year of updates.
+A one-time payment license that includes one year of updates. If you need a new version after a year of the license, you need to buy another license.
 
 When buy it, send a mail to [`support@stgo.do`](mailto:support@stgo.do) with license request generated from [Command line](documentation/Command-line.md) with option `-genlicreq` and include the transaction detail generated from PayPal. A reply will be sent with license file attached to it.
 

@@ -17,9 +17,9 @@ build-image:
 .PHONY: serve
 ## serve: To serve in port 8010 to develop
 serve:
-	@docker run --rm -it -p 8010:8000 -v ${PWD}:/docs dixer-docs:latest 'mkdocs serve --dev-addr=0.0.0.0:8000'
+	@docker run --rm -p 8010:8000 -v ${PWD}:/docs dixer-docs:latest 'mkdocs serve --dev-addr=0.0.0.0:8000'
 
 .PHONY: build
-## build: Build site
+## build: Build site and set the permisions to user triggered the command. Call make build user=user_id:group or dynamic with user=$(id -u $(whoami)):$(id -g)
 build:
-	@docker run --rm -it -v ${PWD}:/docs dixer-docs:latest 'mkdocs build && chown -R 1000:1000 site'
+	@docker run --rm -v ${PWD}:/docs dixer-docs:latest 'mkdocs build && chown -R $(user) site'

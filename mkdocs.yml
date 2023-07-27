@@ -4,7 +4,7 @@ repo_name: Dixer-ETL/dixer-docs
 repo_url: https://github.com/Dixer-ETL/dixer-docs
 edit_uri: blob/master/docs/
 site_url: https://dixer.stgo.do
-copyright: Copyright © 2022 Santiago De la Cruz - All Rights Reserved
+copyright: Copyright © 2023 Santiago De la Cruz - All Rights Reserved
 
 # Ignore warnings relative path when build
 nav:
@@ -95,7 +95,11 @@ theme:
     features:
       - navigation.tabs
       - navigation.top
-      # - navigation.instant
+      - content.code.copy
+      - content.action.edit
+      - content.action.view
+      - navigation.footer
+      - navigation.instant
 
 markdown_extensions:
   - admonition

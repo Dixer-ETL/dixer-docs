@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:8.5.11
+FROM squidfunk/mkdocs-material:9.1.21
 
 RUN pip install mkdocs-git-revision-date-localized-plugin
 

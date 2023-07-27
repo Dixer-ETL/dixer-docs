@@ -51,7 +51,7 @@ Dixer offer evaluation binaries in these OS and Archs, but aren't officially sup
 * MIPS, MIPSLE, MIPS64
 * MIPS64LE: kernel 4.1 fails, works 4.8
 * PPC64 and PPC64LE. POWER8 and POWER9
-* S/390x
+* s390x
 * RISC-V 64 bits
 * LOONGARCH (requires kernel 5.19+)
 
