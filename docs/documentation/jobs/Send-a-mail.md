@@ -25,7 +25,7 @@ Keys:
 - `is_html_var`: optional. Variable with definition bool if message content is html. String.
 - `allow_duplicate_addresses`: optional. To allow duplicate recipients in email. Bool.
 - `allow_duplicate_addresses_var`: optional. Variable with the value of `allow_duplicate_addresses`. String.
-- `attachments_v2`: optional. array object to add attachment, has the following keys:
+- `attachments`: optional. array object to add attachment, has the following keys:
     - `file_path`: optional. Path of attachment. String.
     - `file_path_var`: optional. Variable with value of `file_path`. String.
     - `base64`: optional. Base64 of the file to attach. String.
@@ -36,6 +36,7 @@ Keys:
     - `inline_var`: optional. Variable with value of `inline`. String.
     - `mimetype`: optional. Mimetype of the attachment when is base64 or you want change the mimetype. String.
     - `mimetype_var`: optional. Variable with value of `mimetype`. String.
+- `attachments_v2`: optional. Same as `attachments`, this key will be removed in `v2.5.0`
 
 
 Example:
@@ -58,34 +59,34 @@ is_html = true
 subject = 'Hello World!'
 message_content = '<html>Hello World!<p><img src="cid:test3.png" alt="test3" /><img src="cid:img1.jpg" alt="cat1" /></p><p><img src="cid:img2.jpg" alt="cat2" /></p></html>'
 
-[[jobs.attachments_v2]]
+[[jobs.attachments]]
 file_path = 'test/in/csvdata1.csv'
 
-[[jobs.attachments_v2]]
+[[jobs.attachments]]
 file_path = 'test/in/cat.jpg'
 inline = true
 file_name = 'img1.jpg'
 
-[[jobs.attachments_v2]]
+[[jobs.attachments]]
 file_path = 'test/in/cat.jpg'
 inline = true
 file_name = 'img2.jpg'
 
-[[jobs.attachments_v2]]
+[[jobs.attachments]]
 base64 = 'iVBORw0......'
 file_name = "test.png"
 
-[[jobs.attachments_v2]]
+[[jobs.attachments]]
 base64_var = "attachment_base64_v2"
 file_name = "test2.png"
 
-[[jobs.attachments_v2]]
+[[jobs.attachments]]
 base64_var = "attachment_base64_v2"
 inline = true
 file_name = "test3.png"
 ```
 
-Example old way attachments until `v2.3.0` (will be removed in `v2.4.0`):
+Example old way attachments until `v2.3.0` (Removed from `v2.4.0`):
 
 Keys:
 

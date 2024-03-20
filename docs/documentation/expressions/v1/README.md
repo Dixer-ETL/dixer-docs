@@ -164,9 +164,9 @@ See [Datetime methods](Datetime-methods.md)
 
 ## Language definition
 
-Dixer uses [Expr](https://github.com/antonmedv/expr/tree/v1.8.6) package for expressions support.
+Dixer v1.x.x uses [Expr](https://github.com/expr-lang/expr/tree/v1.8.6) package for expressions support.
 
-You can see the [Language Definition](https://github.com/antonmedv/expr/blob/v1.8.6/docs/Language-Definition.md) of this version to understand how works. Follow this guide adapted to cases tested in Dixer.
+You can see the [Language Definition](https://github.com/expr-lang/expr/blob/v1.8.6/docs/Language-Definition.md) of this version to understand how works. Follow this guide adapted to cases tested in Dixer.
 
 ### Supported Literals
 

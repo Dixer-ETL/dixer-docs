@@ -1,5 +1,54 @@
 # Changelog
 
+## 2.4.0 <small>_ March 20, 2024</small>
+
+This version upgrade the runtime to `go1.20.6`.
+
+This version doesn't have binary for `openbsd/mips64` due compatibility issues.
+
+This version will be the last with the binaries of all os/arch supported. From `v2.5.0` only these versions will be always uploaded:
+
+- windows/amd64 (all editions)
+- linux/amd64 (all editions)
+
+Other versions can be uploaded after compiled on demand.
+
+### New
+* Support sqlite3 for WHITE Edition in `linux/s390x`.
+* (Experimental) Support set max memory limit to use by this binary setting `-memlimit` in bytes
+
+### Enhancement
+* Now you can compare a nil item in `map` using `Nil coalescing`.
+* You can get the error when `decompress` fails creating directory.
+* You can get the error when `s3` `downloaddir` fails creating directory.
+* As mentioned in release `v2.3.0`, the `mail` job has a new and simplest way to add attachments, the old way is removed in `v2.4.0`.
+* In `v1.8.0` `skip` object was renamed to `dataflow_skip` but for compatibility `skip` was still using. In this version, `skip` was removed.
+* Creating excel files in `dataflow` with sheetname with these characters will through an error: `:\/?*[]`.
+
+### Bug Fixes
+* Fixed error in `fileoperation` when `overwrite_destination` is `false`.
+* Fixed memory leaks in `dataflow` when `ignore_error` is `true`.
+* Fixed save variable to file in `httprequest` when `output_path` is a variable.
+* Fixed panic decrypting invalid PCF.
+
+### Libraries upgrades
+* SAP HANA DB driver upgraded to version [v1.3.10](https://github.com/SAP/go-hdb/tree/v1.3.10)
+* SQLite3 driver (used in WHITE edition) upgraded to version [v1.24.0](https://gitlab.com/cznic/sqlite/tree/v1.24.0)
+* Excelize library upgraded to commit [b667987084c8](https://github.com/qax-os/excelize/tree/b667987084c8)
+* go-simple-mail library upgraded to version [v2.15.0](https://github.com/xhit/go-simple-mail/tree/v2.15.0)
+* copy library upgraded to version [v1.12.0](https://github.com/otiai10/copy/tree/v1.12.0)
+* SQLite3 driver (used in SKY, RED, GREEN and FULL editions) upgraded to version [v1.14.17](https://github.com/mattn/go-sqlite3/tree/v1.14.17)
+* term library upgraded to version [v0.10.0](https://github.com/golang/term/tree/v0.10.0)
+* GoDotEnv upgraded to version [v1.5.1](https://github.com/joho/godotenv/tree/v1.5.1)
+* ftp library upgraded to version [v0.2.0](https://github.com/jlaffaye/ftp/tree/v0.2.0)
+* IBM DB2 driver upgraded to version [v0.4.4](https://github.com/ibmdb/go_ibm_db/tree/v0.4.4)
+* Oracle driver upgraded to version [v0.37.0](https://github.com/godror/godror/tree/v0.37.0)
+* color upgraded to version [v1.15.0](https://github.com/fatih/color/tree/v1.15.0)
+* MySQL driver upgraded to version [v1.7.1](https://github.com/go-sql-driver/mysql/tree/v1.7.1)
+* go-toml library upgraded to version [v2.0.8](https://github.com/pelletier/go-toml/tree/v2.0.8)
+* aws-sdk-go-v2 library upgraded to version [v1.18.1](https://github.com/aws/aws-sdk-go-v2/tree/v1.18.1)
+* Expr library upgraded to version [v1.12.6](https://github.com/expr-lang/expr/tree/v1.12.6)
+
 ## 2.3.0 <small>_ December 15, 2022</small>
 
 This version upgrade the runtime to `go1.19.4`.
@@ -156,7 +205,7 @@ For macOS, Dixer v2.0.0 requires macOS 10.13 High Sierra or later; support for p
 * FirebirdSQL driver upgraded to version [v0.9.2](https://github.com/nakagami/firebirdsql/tree/v0.9.2)
 * SAP HANA DB driver upgraded to version [v0.105.3](https://github.com/SAP/go-hdb/tree/v0.105.3)
 * Excelize library upgraded to version [v2.4.1](https://github.com/360EntSecGroup-Skylar/excelize/tree/v2.4.1)
-* Expr library upgraded to version [v1.9.0](https://github.com/antonmedv/expr/tree/v1.9.0)
+* Expr library upgraded to version [v1.9.0](https://github.com/expr-lang/expr/tree/v1.9.0)
 * SQLite3 driver upgraded to version [v1.14.8](https://github.com/mattn/go-sqlite3/tree/v1.14.8)
 
 ## 1.8.1 <small>_ July 18, 2021</small>
@@ -450,7 +499,7 @@ The evaluation time increased from 25 seconds to 1 minute.
 * SQLite3 driver upgraded to version [v1.14.4](https://github.com/mattn/go-sqlite3/tree/v1.14.4)
 * ftp library upgraded to commit [0de5c29d4555](https://github.com/jlaffaye/ftp/tree/0de5c29d4555)
 * Excelize library upgraded to commit [9d470bb38f99](https://github.com/360EntSecGroup-Skylar/excelize/tree/9d470bb38f99)
-* Expr library upgraded to version [v1.8.9](https://github.com/antonmedv/expr/tree/v1.8.9)
+* Expr library upgraded to version [v1.8.9](https://github.com/expr-lang/expr/tree/v1.8.9)
 * Crypto library upgraded to commit [9e8e0b390897](https://github.com/golang/crypto/tree/9e8e0b390897)
 * Oracle driver upgraded to version [v0.20.5](https://github.com/godror/godror/tree/v0.20.5)
 

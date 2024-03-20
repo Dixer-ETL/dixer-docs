@@ -119,194 +119,268 @@ value = "log' + '-' + customnow.Render + '.txt'"
 
 See: [Builtin functions](Builtin-functions.md)
 
-## Language definition
+# Language definition
 
-Dixer uses [Expr](https://github.com/antonmedv/expr/tree/v1.9.0) package for expressions support.
+Dixer uses [Expr](https://github.com/expr-lang/expr/tree/v1.12.6) package for expressions support.
 
-You can see the [Language Definition](https://github.com/antonmedv/expr/blob/v1.9.0/docs/Language-Definition.md) of this version to understand how works. Follow this guide adapted to cases tested in Dixer.
+You can see the [Language Definition](https://github.com/expr-lang/expr/blob/v1.12.6/docs/Language-Definition.md) of this version to understand how works. Below the content:
 
-### Supported Literals
+## Literals
 
-* **strings** - single and double quotes (e.g. `"hello"`, `'hello'`)
-* **numbers** - e.g. `103`, `2.5`, `.5`
-* **arrays** - e.g. `[1, 2, 3]`
-* **booleans** - `true` and `false`
-* **maps** - e.g. `{foo: "bar"}`
-* **nil** - `nil`
+<table>
+    <tr>
+        <td>Comment</td>
+        <td>
+             <code>/* */</code> or <code>//</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Boolean</td>
+        <td>
+            <code>true</code>, <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Integer</td>
+        <td>
+            <code>42</code>, <code>0x2A</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Float</td>
+        <td>
+            <code>0.5</code>, <code>.5</code>
+        </td>
+    </tr>
+    <tr>
+        <td>String</td>
+        <td>
+            <code>"foo"</code>, <code>'bar'</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Array</td>
+        <td>
+            <code>[1, 2, 3]</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Map</td>
+        <td>
+            <code>&#123;a: 1, b: 2, c: 3&#125;</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Nil</td>
+        <td>
+            <code>nil</code>
+        </td>
+    </tr>
+</table>
 
-## Supported Operators
 
-Expr comes with a lot of operators:
+## Operators
 
-### Arithmetic Operators
-
-* `+` (addition)
-* `-` (subtraction)
-* `*` (multiplication)
-* `/` (division)
-* `%` (modulus)
-* `**` (pow)
-
-Example:
-
-```javascript
-firstname + lastname
-``` 
-
-### Digit separators
-
-Integer literals may contain digit separators to allow digit grouping into more legible forms.
-
-Example:
-
-```
-10_000_000_000
-```
-
-### Comparison Operators
-
-* `==` (equal)
-* `!=` (not equal)
-* `<` (less than)
-* `>` (greater than)
-* `<=` (less than or equal to)
-* `>=` (greater than or equal to)
-
-### Logical Operators
-
-* `not` or `!`
-* `and` or `&&`
-* `or` or `||`
-
-Example:
-
-```
-age < 25 || age > somevar
-```
-
-### String Operators
-
-* `+` (concatenation)
-* `matches` (regex match)
-* `contains` (string contains)
-* `startsWith` (has prefix)
-* `endsWith` (has suffix)
-
-To test if a string does *not* match a regex, use the logical `not` operator in combination with the `matches` operator:
-
-```javascript
-not ("foo" matches "^b.+")
-```
-
-You must use parenthesis because the unary operator `not` has precedence over the binary operator `matches`.
-
-Example:
-
-```javascript
-'Arthur' + ' ' + 'Dent'
-```
-
-Result will be set to `Arthur Dent`.
-
-### Membership Operators
-
-* `in` (contain)
-* `not in` (does not contain)
-
-Example:
-
-```javascript
-firstname in ["santiago", "perla"]
-```
-
-```js
-user.Group in ["human_resources", "marketing"]
-```
-
-```js
-"foo" in {foo: 1, bar: 2}
-```
-
-### Numeric Operators
-
-* `..` (range)
-
-Example:
-
-```javascript
-age in 18..45
-```
-
-The range is inclusive:
-
-```javascript
-1..3 == [1, 2, 3]
-```
-
-### Ternary Operators
-
-* `foo ? 'yes' : 'no'`
-
-Example:
-
-```javascript
-age > 30 ? "mature" : "immature"
-```
-
-### Expr Builtin functions
-
-* `len` (length of array, map or string)
-* `all` (will return `true` if all element satisfies the predicate)
-* `none` (will return `true` if all element does NOT satisfies the predicate)
-* `any` (will return `true` if any element satisfies the predicate)
-* `one` (will return `true` if exactly ONE element satisfies the predicate)
-* `filter` (filter array by the predicate)
-* `map` (map all items with the closure)
-* `count` (returns number of elements what satisfies the predicate)
+<table>
+    <tr>
+        <td>Arithmetic</td>
+        <td>
+            <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulus), <code>^</code> or <code>**</code> (exponent)
+        </td>
+    </tr>
+    <tr>
+        <td>Comparison</td>
+        <td>
+            <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Logical</td>
+        <td>
+            <code>not</code> or <code>!</code>, <code>and</code> or <code>&amp;&amp;</code>, <code>or</code> or <code>||</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Conditional</td>
+        <td>
+            <code>?:</code> (ternary), <code>??</code> (nil coalescing)
+        </td>
+    </tr>
+    <tr>
+        <td>Membership</td>
+        <td>
+            <code>[]</code>, <code>.</code>, <code>?.</code>, <code>in</code>
+        </td>
+    </tr>
+    <tr>
+        <td>String</td>
+        <td>
+            <code>+</code> (concatenation), <code>contains</code>, <code>startsWith</code>, <code>endsWith</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Regex</td>
+        <td>
+            <code>matches</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Range</td>
+        <td>
+            <code>..</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Slice</td>
+        <td>
+            <code>[:]</code>
+        </td>
+    </tr>
+</table>
 
 Examples:
 
-Ensure all tweets are less than 280 chars.
+```expr
+user.Age in 18..45 and user.Name not in ["admin", "root"]
+```
 
-```js
+```expr
+foo matches "^[A-Z].*"
+```
+
+### Membership Operator
+
+Fields of structs and items of maps can be accessed with `.` operator
+or `[]` operator. Elements of arrays and slices can be accessed with 
+`[]` operator. Negative indices are supported with `-1` being 
+the last element.
+
+The `in` operator can be used to check if an item is in an array or a map.
+
+```python
+user.Name in list["available-names"]
+```
+
+#### Optional chaining
+
+The `?.` operator can be used to access a field of a struct or an item of a map
+without checking if the struct or the map is `nil`. If the struct or the map is
+`nil`, the result of the expression is `nil`.
+
+```expr
+author?.User?.Name
+```
+
+#### Nil coalescing
+
+The `??` operator can be used to return the left-hand side if it is not `nil`,
+otherwise the right-hand side is returned.
+
+```expr
+author?.User?.Name ?? "Anonymous"
+```
+
+### Slice Operator
+
+The slice operator `[:]` can be used to access a slice of an array.
+
+For example, variable `array` is `[1, 2, 3, 4, 5]`:
+
+```expr
+array[1:4] == [2, 3, 4]
+array[1:-1] == [2, 3, 4]
+array[:3] == [1, 2, 3]
+array[3:] == [4, 5]
+array[:] == array
+```
+
+
+## Built-in Functions
+
+### all(array, predicate)
+
+Returns **true** if all elements satisfies the [predicate](#predicate).
+If the array is empty, returns **true**.
+
+```expr
 all(Tweets, {.Size < 280})
 ```
 
-Ensure there is exactly one winner.
+### any(array, predicate)
 
-```js
+Returns **true** if any elements satisfies the [predicate](#predicate).
+If the array is empty, returns **false**.
+
+### one(array, predicate)
+
+Returns **true** if _exactly one_ element satisfies the [predicate](#predicate).
+If the array is empty, returns **false**.
+
+```expr
 one(Participants, {.Winner})
 ```
 
-### Closures
+### none(array, predicate)
 
-* `{...}` (closure)
+Returns **true** if _all elements does not_ satisfy the [predicate](#predicate).
+If the array is empty, returns **true**.
 
-Closures allowed only with builtin functions. To access current item use `#` symbol.
+### map(array, predicate)
 
-```js
+Returns new array by applying the [predicate](#predicate) to each element of
+the array.
+
+### filter(array, predicate)
+
+Returns new array by filtering elements of the array by [predicate](#predicate).
+
+### count(array, predicate)
+
+Returns the number of elements what satisfies the [predicate](#predicate).
+Equivalent to:
+
+```expr
+len(filter(array, predicate))
+```
+
+### len(v)
+
+Returns the length of an array, a map or a string.
+
+### abs(v)
+
+Returns the absolute value of a number.
+
+### int(v)
+
+Returns the integer value of a number or a string.
+
+```expr
+int("123") == 123
+```
+
+### float(v)
+
+Returns the float value of a number or a string.
+
+## Predicate
+
+The predicate is an expression that accepts a single argument. To access
+the argument use the `#` symbol.
+
+```expr
 map(0..9, {# / 2})
 ```
 
-If the item of array is struct, it's possible to access fields of struct with omitted `#` symbol (`#.Value` becomes `.Value`).
+If items of the array is a struct or a map, it is possible to access fields with
+omitted `#` symbol (`#.Value` becomes `.Value`).
 
-```js
+```expr
 filter(Tweets, {len(.Value) > 280})
 ```
 
-### Slices (used when map has array)
+Braces `{` `}` can be omitted:
 
-* `array[:]` (slice)
-
-Slices can work with arrays or strings.
-
-Example:
-
-Variable `array` is `[1,2,3,4,5]`.
-
-```js
-array[1:5] == [2,3,4] 
-array[3:] == [4,5]
-array[:4] == [1,2,3]
-array[:] == array
+```expr
+filter(Tweets, len(.Value) > 280)
 ```

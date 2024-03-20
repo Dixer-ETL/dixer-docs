@@ -26,7 +26,7 @@ All rows matched with the expression will be omitted.
 From v1.8.0, you can use normal expressions to skip, not only a expression with a mapping column.
 
 !!! note
-    For Dixer v1, put .Value at end of mapping calling index. Example:<br>
+    For Dixer v1.x.x, put .Value at end of mapping calling index. Example:<br>
     ```
     mapping.string.0.Value
     ```

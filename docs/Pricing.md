@@ -1,16 +1,11 @@
 # Pricing
 
-Dixer can be used without restrictions for any user, but execution has a delay of 30 seconds before initialize workflow. To avoid this delay consider buying depending the edition you need.
+!!! info
+    Dixer is in the process of being maintained by [Ofimatic](https://ofimatic.com)
 
-Here is the pricing model of Dixer based in editions:
+Dixer can be used without restrictions for users, but execution has a delay of 30 seconds before initialize workflow. To avoid this delay consider to buy depending the edition you need.
 
-| Edition                            | Price    | PayPal Link                          |
-|------------------------------------|----------|--------------------------------------|
-| [White](Editions.md#white-edition) | USD $149 | [Buy](https://www.paypal.me/hit/149) |
-| [Sky](Editions.md#sky-edition)     | USD $159 | [Buy](https://www.paypal.me/hit/159) |
-| [Red](Editions.md#red-edition)     | USD $199 | [Buy](https://www.paypal.me/hit/199) |
-| [Green](Editions.md#green-edition) | USD $199 | [Buy](https://www.paypal.me/hit/199) |
-| [Full](Editions.md#full-edition)   | USD $299 | [Buy](https://www.paypal.me/hit/299) |
+For companies, consider to buy a license, please contact us to [`support@stgo.do`](mailto:support@stgo.do).
 
 License is only supported for `Windows`, `Linux` and `macOS` where the command flag `-genlicreq` works. In Linux, you need to execute with sudo or go [here](documentation/Getting-Dixer.md#using-a-non-root-account-for-dmidecode-only-if-you-have-a-license) to disable sudo in `dmidecode`.
 

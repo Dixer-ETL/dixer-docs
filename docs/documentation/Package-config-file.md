@@ -22,6 +22,7 @@ The file can have this keys configurations:
 - `jobs`: Mandatory. Array of objects containing **Jobs** configurations. See [Jobs types](Jobs-types.md).
 - `num_cpu`: Optional. Sets the number of logical processors to use. Int. Default is the total of logical processors.
 - `gc_percent`: Optional. Sets the garbage collection target percentage. Int. Default `100`.
+- `memory_limit`: Optional. Sets max number of bytes to consume in memory by the binary (Experimental).
 
 !!! note
     When you are creating your PCF, there are keys for your worflow works, but you also can add customized keys to meet your needs, Dixer will ignored at execution.

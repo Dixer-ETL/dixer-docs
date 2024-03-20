@@ -40,6 +40,9 @@ Options:
 -ncpu, --numcpu
         sets the number of logical processors to use
 
+-memlimit, --memorylimit
+        sets the memory limit to use in bytes
+
 -ev, --encryptvalue
         encrypts a value to use in a key with suffix "_encrypted" in PCF
 

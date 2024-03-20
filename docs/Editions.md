@@ -7,7 +7,7 @@ Dixer has editions where the difference is the some database drivers support and
 No support for SQLite3 (in some platforms), IBM DB2 and ORACLE. Binaries in all platforms.
 
 !!! info
-    Binaries os/arch with sqlite3 in White Edition (list updated v2.2.0)
+    Binaries os/arch with sqlite3 in White Edition (list updated v2.4.0)
     
     darwin/amd64<br>
     darwin/arm64<br>
@@ -22,6 +22,7 @@ No support for SQLite3 (in some platforms), IBM DB2 and ORACLE. Binaries in all 
     linux/riscv64<br>
     linux/ppc64le POWER PC 8<br>
     linux/ppc64le POWER PC 9<br>
+    linux/s390x
     windows/amd64<br>
     windows/arm64
 
